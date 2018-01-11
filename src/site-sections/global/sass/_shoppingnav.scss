@@ -1,0 +1,177 @@
+/* */
+/*			HTML Example			*/
+/* */
+/* 
+		<div id="shopping">  or  <div id="filters">
+            <div id="crumb">
+                <a href="homepage.aspx">&laquo;&nbsp;Home</a></div>
+            <dl class="hilites">
+                <dt>AAAAA</dt>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                <dd>
+                    <a href="#">xxx</a></dd>
+			</dl>
+			<dl class="categories">
+
+                <dt>AAAAA</dt>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                <dd>
+                    <a href="#">xxx</a></dd>
+			</dl>
+			<dl>
+                <dt>AAAAA/dt>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                
+            </dl>
+			<dl>
+                <dt>AAAAA/dt>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                <dd>
+                    <a href="#">xxx</a></dd>
+                
+            </dl>
+        </div>
+
+*/
+/* */
+/*		Sidebar Categories and Sub-Categories	*/
+/* */
+div#sidebar #shopping dd,
+div#sidebar #filters dd.sidebarList2 {
+	line-height: 1.5em;
+	padding-left: 12px;
+}
+div#sidebar #shopping dl.hilites dd,
+div#sidebar #filters dl.hilites dd,
+div#sidebar #shopping dl.categories dd,
+div#sidebar #filters dl.categories dd {
+	padding-left: 0;
+}
+div#sidebar #shopping dl.selected {
+	margin: 6px 0 9px 0;
+	padding: 0;
+}
+div#sidebar #shopping dl.selected dt {
+	font-weight: bold;
+	margin: 0 0 3px 0;
+	border: none;
+}
+div#sidebar #shopping dl.selected dd {
+	padding-left: 12px;
+}
+div#sidebar #shopping dt,
+div#sidebar #filters dt.sidebarList1 {
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+div#sidebar #shopping dd,
+div#sidebar #filters dd {
+	margin-left: 0em;
+}
+div#sidebar a {
+	border-bottom: solid 1px white;
+}
+div#sidebar a.link {
+	border-bottom: dotted 1px #444444;
+}
+div#sidebar a:hover {
+	//border-bottom: solid 1px #5C2946 /* eggplant */;
+	color: #5c2946;
+}
+div#sidebar a.button:hover {
+	border: none;
+	text-decoration: underline;
+}
+div#sidebar a.buttonsmall:hover {
+	border: none;
+	text-decoration: underline;
+}
+div#sidebar a.imagelink,
+div#sidebar a.imagelink:hover {
+	border-bottom: none;
+}
+/*div#sidebar #culinarysearch p.note
+{
+	clear: both;
+}
+div#sidebar #culinarysearch fieldset
+{
+	margin-bottom: 8px;
+}
+div#sidebar #culinarysearch fieldset label
+{
+	font-size: .90em;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 8px;
+}
+div#sidebar #culinarysearch fieldset input.searchterm
+{
+	width: 128px;
+	display: inline;
+	float: left;
+}
+div#sidebar #culinarysearch fieldset a.buttonsmall:hover
+{
+	border-bottom: none;
+}*/
+div#sidebar ul,
+div#sidebar ul ul {
+	margin-left: 12px;
+}
+div#sidebar ul li div {
+	display: none;
+}
+div#sidebar ul {
+	margin-bottom: 8px;
+}
+div#sidebar ul ul {
+}
+div#sidebar ul li {
+	margin: 0 0 3px 0;
+}
+div#sidebar .openned,
+div#sidebar .openned a {
+	font-weight: bold;
+}
+div#sidebar h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 12px 0 5px 0;
+	border: none;
+}
+div#sidebar h3.spaced {
+	margin: 20px 0 20px 0;
+}
+/* *******************************
+	Expanding Nav in Sidebar
+   ******************************* */
+div#sidebar .accordion h4 {
+	font-size: 16px;
+	line-height: 12px;
+	padding-bottom: 8px;
+	margin-left: 1em;
+}
+div#sidebar .accordion div {
+	display: none;
+}
+div#sidebar .accordion ul {
+	list-style: none;
+}
+div#sidebar .accordion ul li {
+	margin-left: 0.5em;
+}
+div#sidebar .accordion div {
+	display: none;
+}

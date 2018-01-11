@@ -1,0 +1,19 @@
+#storelocator .boxsides {
+	width: auto !important;
+}
+#storelocator .boxsides .newstores {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+#storelocator .boxsides .newstores:before,
+.boxsides .newstores:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+#storelocator .boxsides .newstores,
+#storelocator .boxsides .newstores .box,
+#storelocator .boxsides .newstores .box .content {
+	background: none !important;
+}

@@ -1,0 +1,188 @@
+﻿/*
+	name:	Recipe Promotion Widget
+	file:	recipepromo.css
+	with:	recipepromo.htm
+*/
+.recipepromo.wrapper {
+	clear: both;
+	width: 792px;
+	overflow: auto;
+	margin-bottom: 16px;
+}
+/* *********************************
+		Main 
+   ********************************* */
+.recipepromo.main {
+	float: left;
+	display: inline;
+	width: 568px;
+	padding: 6px 0 0 0;
+	background: url(../images/single_promo_top.gif) no-repeat top left;
+}
+.recipepromo.main .box {
+	float: left;
+	display: inline;
+	width: 536px;
+	padding: 10px 16px 16px 16px;
+	background: url(../images/single_promo_btm.gif) no-repeat bottom left;
+	overflow: auto;
+}
+.recipepromo.main img {
+	width: 97px;
+	height: 97px;
+	float: left;
+	display: inline;
+	margin-right: 12px;
+	border: solid 1px #aaaaaa;
+}
+.recipepromo.main .message {
+	float: left;
+	display: inline;
+	width: 424px;
+}
+.recipepromo.main .message h2 {
+	font-size: 23px;
+	line-height: 23px;
+	margin-bottom: 8px;
+}
+.recipepromo.main .message h3 {
+	font-size: 15px;
+	line-height: 15px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.recipepromo.main .message p {
+	font-size: 14px;
+	margin: 0;
+}
+/* *********************************
+		Gutter 
+   ********************************* */
+.recipepromo.gutter {
+	float: left;
+	display: inline;
+	width: 16px;
+}
+/* *********************************
+		Sidebar 
+   ********************************* */
+div.recipepromo.sidebar {
+	background-color: #fff2c7;
+}
+.recipepromo.sidebar {
+	float: left;
+	display: inline;
+	width: 208px;
+	padding: 6px 0 0 0;
+	background: url(../images/promo_side_box_top.gif) no-repeat top left;
+}
+.recipepromo.sidebar .box {
+	padding: 10px 16px 16px 16px;
+	overflow: auto;
+	background: url(../images/promo_side_box_btm.gif) no-repeat bottom left;
+}
+.recipepromo.sidebar ul li {
+	font-size: 12px;
+	line-height: 11px;
+	margin-bottom: 11px;
+}
+.recipepromo.sidebar ul li.last {
+	margin-bottom: 0;
+}
+
+/*
+	name:	Recipe Promotion Widget
+	file:	recipepromo2.css
+	with:	recipepromo2.htm
+*/
+.recipepromo2.wrapper {
+	clear: both;
+	width: 792px;
+	overflow: auto;
+	margin-bottom: 16px;
+}
+/* *********************************
+		Main 
+   ********************************* */
+.recipepromo2.main {
+	float: left;
+	display: inline;
+	width: 792px;
+	padding: 6px 0 0 0;
+	background: url(../images/content_box2_top.gif) no-repeat scroll left top;
+}
+.recipepromo2.main .box {
+	float: left;
+	display: inline;
+	width: 760px;
+	padding: 10px 16px 16px 16px;
+	background: url(../images/content_box2_btm.gif) no-repeat scroll left bottom;
+}
+.recipepromo2.main img {
+	width: 97px;
+	height: 97px;
+	float: left;
+	display: block;
+	margin-right: 12px;
+	border: solid 1px #aaaaaa;
+}
+.recipepromo2.main img.imgwide {
+	width: 157px;
+}
+.recipepromo2.main .message {
+	display: inline;
+}
+.recipepromo2.main .message h2 {
+	font-size: 23px;
+	line-height: 23px;
+	margin-bottom: 10px;
+}
+.recipepromo2.main .message h3 {
+	font-size: 15px;
+	line-height: 15px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.recipepromo2.main .message p {
+	font-size: 14px;
+	margin: 0;
+}
+/* *********************************
+	     Cul Loc Pop 
+   ********************************* */
+
+.culMenu {
+	border: solid 1px #bfbfbf;
+	padding: 4px 4px 4px 4px;
+	background-color: #ffffff;
+}
+
+.culMenuItem {
+	padding: 1px 1px 1px 1px;
+}
+
+.culMenuItem:hover {
+	background-color: #f1f1f1;
+}
+
+.culMenuItem a {
+	color: #666666;
+	text-decoration: none;
+}
+
+#CulList {
+	background-color: #ffffff;
+	cursor: pointer;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0;
+	width: 532px;
+}
+
+#CulList span {
+	padding: 3px 5px 0px 5px;
+	cursor: pointer;
+}
+
+#CulList span:hover {
+	text-decoration: underline;
+}

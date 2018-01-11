@@ -1,0 +1,15 @@
+// Vars
+
+@mixin descriptionTagSpan() {
+	font-family: $font-bold;
+	text-transform: uppercase;
+	&:after {
+		content: "|";
+		color: #777;
+		margin-left: 5px;
+		margin-right: 3px;
+	}
+	&:last-of-type:after {
+		content: none;
+	}
+}

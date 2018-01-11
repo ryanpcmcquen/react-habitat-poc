@@ -1,0 +1,350 @@
+/*
+**    Product Center
+*/
+
+div#product {
+	.TurnToItemInputTeaser {
+		clear: both;
+	}
+
+	div.relateditems {
+		min-height: 220px;
+	}
+
+	div#product-links {
+		width: 990px;
+		border-bottom: 1px solid #aaaaaa;
+		min-height: 50px;
+		> a {
+			border-left: 1px solid #aaaaaa;
+			border-right: 1px solid #aaaaaa;
+			font-family: $font-bold;
+			margin-left: -1px;
+			margin-top: 15px;
+			float: left;
+			text-align: center;
+			&:first-of-type {
+				border-left: none;
+			}
+			&:last-of-type {
+				border-right: none;
+			}
+			&:hover {
+				border-bottom: none;
+				color: #5c2946;
+				//border-bottom: solid 1px #5C2946 /* eggplant */;
+				text-decoration: none;
+			}
+		}
+	}
+
+	img.product-document-pdf-icon {
+		vertical-align: bottom;
+		padding-right: 5px;
+	}
+
+	/*
+    **    Chat/contact
+    */
+	div#product-chat {
+		float: left;
+		font-family: $font-bold;
+		margin: 20px;
+		> *:nth-child(n + 2) {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+	/*
+    **    Descriptions
+    */
+	div#product-descriptions > span {
+		display: block;
+	}
+	div#product-descriptions > div {
+		display: none;
+	}
+
+	/*
+    **    Accessory and companion products
+    */
+	div.product-otherItems {
+		> h2 {
+			display: block;
+			font-size: 36px;
+		}
+		> div {
+			cursor: pointer;
+			width: 470px;
+			float: left;
+			display: block;
+			margin-bottom: 20px;
+			&:nth-child(even) {
+				margin-right: 50px;
+			}
+			> div.product-otherItemsDetails,
+			> img {
+				float: left;
+			}
+			> img {
+				margin-right: 20px;
+			}
+			.product-otherItemsDetails-description {
+				float: left;
+				display: block;
+			}
+			> div.product-otherItemsDetails {
+				display: block;
+				float: left;
+				width: 245px;
+				height: auto;
+				span.product-otherItemsDetails-name,
+				span.product-otherItemsDetails-price {
+					font-family: $font-bold;
+					font-size: 24px;
+					line-height: 1;
+				}
+				p {
+					margin: 0;
+					line-height: 1.2;
+					> span {
+						font-family: $font-bold;
+						text-transform: uppercase;
+						&:after {
+							content: "|";
+							color: #777;
+							margin-left: 5px;
+							margin-right: 5px;
+						}
+						&:last-of-type:after {
+							content: none;
+						}
+						&:last-of-type {
+							margin-right: 2px;
+						}
+					}
+				}
+				a {
+					color: #b2b2b2;
+					font-family: $font-bold;
+					display: block;
+					float: left;
+					margin-top: 10px;
+					text-decoration: underline;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		div.product-price {
+			font-family: $font-bold;
+			display: block;
+			float: left;
+
+			div.product-priceMain {
+				font-size: 22px;
+				span.product-priceMain-dollars:before {
+					font-size: 22px;
+					bottom: auto;
+				}
+				span.product-priceMain-cents {
+					font-size: 22px;
+					bottom: auto;
+					margin-left: -4px;
+					&:before {
+						content: ".";
+					}
+				}
+			}
+		}
+	}
+
+	/*
+    **    Recipe carousel
+    */
+	div#product-recipeSlides {
+		position: relative;
+		width: 990px;
+		margin-bottom: 15px;
+		h2 {
+			display: block;
+			font-size: 36px;
+		}
+		> div {
+			float: left;
+			min-height: 0;
+		}
+		div#product-recipeSlides-carousel {
+			font-family: $font-bold;
+			max-width: 950px;
+			width: 950px;
+			min-height: 150px;
+			margin-left: 20px;
+		}
+
+		.slick-slide > span {
+			font-family: $font-regular;
+			display: inline-block;
+			font-size: 14px;
+			font-weight: normal;
+			line-height: 1em;
+			margin-left: 3px;
+			margin-right: 10px;
+		}
+
+		a.slick-slide {
+			width: 110px;
+			> img {
+				height: 100px;
+				margin-bottom: 5px;
+				width: 100px;
+			}
+			&:not([data-link=""]) {
+				border-bottom: none;
+				cursor: pointer;
+			}
+			&:not([data-link=""]):hover span {
+				text-decoration: underline;
+			}
+			&:hover {
+				border-bottom: none;
+			}
+		}
+	}
+	/*
+    **    New Recipe carousel
+    */
+	div#product-recipeSlides1 {
+		position: relative;
+		width: 990px;
+		margin-bottom: 15px;
+		h2 {
+			display: block;
+			font-size: 36px;
+		}
+		> div {
+			float: left;
+			min-height: 0;
+		}
+		div#product-recipeSlides1-carousel1 {
+			font-family: $font-bold;
+			max-width: 950px;
+			width: 950px;
+			min-height: 150px;
+			margin-left: 20px;
+		}
+
+		.slick-slide > span {
+			font-family: $font-regular;
+			display: inline-block;
+			font-size: 10px;
+			font-weight: normal;
+			line-height: 1em;
+			margin-left: 3px;
+			margin-right: 10px;
+		}
+
+		a.slick-slide {
+			width: 110px;
+			> img {
+				height: 100px;
+				margin-bottom: 5px;
+				width: 100px;
+			}
+			&:not([data-link=""]) {
+				border-bottom: none;
+				cursor: pointer;
+			}
+			&:not([data-link=""]):hover span {
+				text-decoration: underline;
+			}
+			&:hover {
+				border-bottom: none;
+			}
+		}
+	}
+
+	/*
+    **    TurnTo
+    */
+	div#product-turnTo {
+		width: 990px;
+		> h2 {
+			display: block;
+			font-size: 36px;
+			color: #333;
+			font-family: $font-regular !important;
+		}
+		h2#TurnToCustomerReviewsHeader,
+		h2#TurnToQuestionAndAnswers {
+			font-family: $font-regular !important;
+			font-size: 36px;
+			color: #333;
+			display: none;
+		}
+	}
+
+	/*
+    **    Return to top
+    */
+	div#productReturnToTop {
+		font-family: $font-bold;
+		position: fixed;
+		bottom: calc(50% - (75px / 2));
+		right: 20px;
+		height: 75px;
+		width: 50px;
+		background-color: #333333;
+		color: #aaa;
+		display: none;
+		cursor: pointer;
+		border-radius: 5px;
+		div#productReturnToTop-arrow {
+			width: 0px;
+			height: 0px;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid #aaa;
+			margin-left: 15px;
+			position: absolute;
+			top: 15px;
+		}
+		hr {
+			color: #aaa;
+			background-color: #aaa;
+			position: relative;
+			top: 40px;
+			height: 1px;
+			width: 40px;
+			margin: 0 auto;
+		}
+		span {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+		}
+	}
+}
+
+#TurnToReviewsContent > div,
+#TurnToContent > div,
+.TTaskArea,
+.TT3qText,
+.TT4bestAnswerBlock,
+.TT3metaText,
+.TT3linkLine {
+	font-family: $font-regular !important;
+	font-size: 16px !important;
+}
+
+div#TTsearchSort {
+	input#TTreviewSearchTerm {
+		font-size: 13.3px;
+		background-color: transparent;
+	}
+	select#TTreviewSort {
+		font-size: 13.3px;
+	}
+}

@@ -1,0 +1,94 @@
+//- Notify Me
+div#notifyMe_div {
+	position: relative;
+	z-index: 999;
+	font-family: $font-regular;
+}
+
+div#notifyMe_div .error {
+	color: red;
+	display: none;
+}
+div#notifyMe_div input[type="submit"] {
+	background: transparent;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	text-transform: uppercase;
+	&:disabled {
+		cursor: default;
+	}
+}
+
+div#notifyMe_div div#product-availability-outOfStockPopover,
+div#notifyMe_div div#product-availability-outOfStockPopover-thankYou {
+	width: auto;
+	height: auto;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	position: absolute;
+	left: 40%;
+	top: 390px;
+	background-color: #fff;
+	box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+	display: none;
+}
+div#notifyMe_div div#product-availability-outOfStockPopover h2,
+div#notifyMe_div div#product-availability-outOfStockPopover-thankYou h2 {
+	font-family: $font-regular !important;
+	font-size: 24px;
+	line-height: 28px;
+	color: $green;
+	text-transform: uppercase;
+}
+div#notifyMe_div div#product-availability-outOfStockPopover > p {
+	line-height: 1;
+	margin-bottom: 10px;
+}
+div#notifyMe_div div#product-availability-outOfStockPopover > p > input {
+	display: inline;
+	width: 20px;
+	position: relative;
+	top: 5px;
+}
+div#notifyMe_div
+	div#product-availability-outOfStockPopover
+	input[type="email"] {
+	display: block;
+	width: 300px;
+	height: 32px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 13.333px;
+}
+div#notifyMe_div div#product-availability-outOfStockPopover label {
+	display: inline;
+	width: auto;
+}
+div#notifyMe_div
+	div#product-availability-outOfStockPopover
+	div#product-availability-outOfStockPopover-action {
+	float: right;
+	height: 40px;
+	width: 150px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-right: 10px;
+	line-height: 2.3;
+	cursor: pointer;
+	background-color: #6d8b19;
+	&.disabled {
+		background-color: #333;
+		cursor: default;
+	}
+}
+form[name="notifyMeForm"] label {
+	font-weight: normal;
+}

@@ -1,0 +1,397 @@
+﻿/*
+	Name:		Theme Favorites (Gift Shops)
+	File:		themeFavorites.css	
+*/
+
+.themeFavorites .box h2 {
+	font-size: 23px;
+	line-height: 23px;
+	font-weight: normal;
+	margin: 0 0 12px 0;
+}
+
+.themeFavorites .itemBox h3 {
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	margin-bottom: 9px;
+}
+
+.themeFavorites .itemBox {
+	width: 100%;
+	overflow: auto;
+}
+
+.themeFavorites .itemBox li a {
+	font-size: 11px;
+	line-height: 1.5em;
+}
+/* ********************************
+	Shared Styles
+   ******************************** */
+.themeFavorites {
+	clear: both;
+	width: 792px;
+	background: url(/styles/images/content_box2_top.gif) no-repeat top left;
+	padding-top: 4px;
+	margin-bottom: 16px;
+}
+
+.themeFavorites .box {
+	width: 760px;
+	background: url(/styles/images/content_box2_btm.gif) no-repeat bottom left;
+	padding: 0 16px 16px 16px;
+	margin-top: 12px;
+	overflow: auto;
+}
+
+.themeFavorites .itemBox .item {
+	float: left;
+	width: 162px;
+	margin-left: 18px;
+	padding-right: 18px;
+	border-right: solid 1px #aaaaaa;
+	display: inline;
+}
+
+.themeFavorites .itemBox .item.first {
+	margin-left: 0;
+	padding-right: 18px;
+}
+
+.themeFavorites .itemBox .item.last {
+	margin-left: 18px;
+	padding-right: 0;
+	border-right: none;
+}
+
+.themeFavorites .itemBox img {
+	display: block;
+	width: 160px;
+	height: 160px;
+}
+
+.themeFavorites .itemBox a.itemPicture,
+.themeFavorites .itemBox a.itemPicture:hover {
+	display: block;
+	width: 160px;
+	height: 160px;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #aaaaaa;
+	text-decoration: none;
+	margin-bottom: 9px;
+}
+
+/* *************************************** 
+	Wide Theme Favorites Styles
+   *************************************** */
+.themeFavoritesWide {
+	clear: both;
+	width: 990px;
+	background: url(/styles/images/content_box1_top.gif) no-repeat top left;
+}
+.themeFavoritesWide .box {
+	width: 958px;
+	overflow: auto;
+	background: url(/styles/images/content_box1_btm.gif) no-repeat bottom left;
+}
+
+.themeFavoritesWide .itemBox img {
+	width: 196px;
+	height: 196px;
+}
+.themeFavoritesWide .itemBox a.itemPicture,
+.themeFavoritesWide .itemBox a.itemPicture:hover {
+	display: block;
+	width: 196px;
+	height: 196px;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #aaaaaa;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.themeFavoritesWide .itemBox .item {
+	width: 198px;
+	margin-left: 27px;
+	padding-right: 27px;
+}
+
+.themeFavoritesWide .itemBox .item p,
+.themeFavorites .itemBox .item p {
+	font-size: 11px;
+	line-height: 1.5em;
+	margin: 0 0 1px 0;
+	padding: 0;
+}
+
+.themeFavoritesWide .itemBox .item.first {
+	margin-left: 0px;
+	padding-right: 27px;
+}
+
+.themeFavoritesWide .itemBox .item.last {
+	margin-left: 28px;
+	padding-right: 0;
+	border-right: none;
+}
+.themeFavorites .itemBox .item.reverse,
+.themeFavoritesWide .itemBox .item.reverse,
+.themeFavorites .itemBox .item.reverse a,
+.themeFavoritesWide .itemBox .item.reverse a {
+	color: #ffffff;
+}
+.themeFavorites .itemBox .item.reverse a:hover,
+.themeFavoritesWide .itemBox .item.reverse a:hover {
+	border-bottom: solid 1px #ffffff;
+}
+/* *************************************** 
+	Fix for buttons included in Theme Favorites
+   *************************************** */
+.themeFavorites .itemBox .item.reverse a.button:hover,
+.themeFavoritesWide .itemBox .item.reverse a.button:hover,
+.themeFavorites .itemBox .item.reverse a.buttonqv:hover,
+.themeFavoritesWide .itemBox .item.reverse a.buttonqv:hover,
+.themeFavorites .itemBox .item.reverse a.buttonalt:hover,
+.themeFavoritesWide .itemBox .item.reverse a.buttonalt:hover,
+.themeFavorites .itemBox .item.reverse a.buttonsmall:hover,
+.themeFavoritesWide .itemBox .item.reverse a.buttonsmall:hover,
+.themeFavorites .itemBox .item.reverse a.buttonlarge:hover,
+.themeFavoritesWide .itemBox .item.reverse a.buttonlarge:hover,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover {
+	border-bottom: none;
+	text-decoration: underline;
+}
+.themeFavorites .itemBox .item.reverse a.button:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.button:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonqv:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.buttonqv:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonalt:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.buttonalt:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonsmall:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.buttonsmall:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonlarge:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.buttonlarge:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.first,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span.first,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.first.arrow,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span.first.arrow,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.second,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span.second,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.second.arrow,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span.second.arrow {
+	text-decoration: underline;
+}
+.themeFavorites .itemBox .item.reverse a.buttonBox.imageonly:hover,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox.imageonly:hover,
+.themeFavorites .itemBox .item.reverse a.buttonBox.imageonly:hover span,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox.imageonly:hover span,
+.themeFavorites .itemBox .item.reverse a.buttonBox.imageonly:hover span.first,
+.themeFavoritesWide
+	.itemBox
+	.item.reverse
+	a.buttonBox.imageonly:hover
+	span.first,
+.themeFavorites .itemBox .item.reverse a.buttonBox.imageonly:hover span.second,
+.themeFavoritesWide
+	.itemBox
+	.item.reverse
+	a.buttonBox.imageonly:hover
+	span.second,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.arrow,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span.arrow,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.arrow:after,
+.themeFavoritesWide .itemBox .item.reverse a.buttonBox:hover span.arrow:after,
+.themeFavorites .itemBox .item.reverse a.buttonBox:hover span.first.arrow:after,
+.themeFavoritesWide
+	.itemBox
+	.item.reverse
+	a.buttonBox:hover
+	span.first.arrow:after,
+.themeFavorites
+	.itemBox
+	.item.reverse
+	a.buttonBox:hover
+	span.second.arrow:after,
+.themeFavoritesWide
+	.itemBox
+	.item.reverse
+	a.buttonBox:hover
+	span.second.arrow:after {
+	text-decoration: none;
+}
+/* *************************************** 
+	Wide Five Theme Favorites Styles
+   *************************************** */
+.themeFavoritesWideFive {
+	clear: both;
+	width: 990px;
+	background: url(/styles/images/content_box1_top.gif) no-repeat top left;
+}
+.themeFavoritesWideFive .box {
+	width: 958px;
+	overflow: auto;
+	background: url(/styles/images/content_box1_btm.gif) no-repeat bottom left;
+}
+
+.themeFavoritesWideFive .itemBox img {
+	width: 160px;
+	height: 160px;
+}
+.themeFavoritesWideFive .itemBox a.itemPicture,
+.themeFavoritesWideFive .itemBox a.itemPicture:hover {
+	display: block;
+	width: 160px;
+	height: 160px;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #aaaaaa;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.themeFavoritesWideFive .itemBox .item {
+	width: 162px;
+	margin-left: 18px;
+	padding-right: 18px;
+}
+.themeFavoritesWideFive .itemBox .item.first {
+	margin-left: 0;
+	padding-right: 18px;
+}
+
+.themeFavoritesWideFive .itemBox .item.last {
+	margin-left: 18px;
+	padding-right: 0;
+	border-right: none;
+}
+/*
+	Name:		Culinary Class Series By3
+*/
+.culclassseriesby3 p.heading {
+	display: inline;
+}
+.culclassseriesby3 .box h2.header {
+	font-size: 23px;
+	line-height: 23px;
+	font-weight: normal;
+	margin: 0 0 12px 0;
+	width: 100%;
+}
+.culclassseriesby3 .itemBox {
+	width: 100%;
+	overflow: auto;
+}
+.culclassseriesby3 .itemBox h2 {
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.culclassseriesby3 .itemBox p.story {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.culclassseriesby3 .itemBox li a {
+	font-size: 11px;
+	line-height: 1.5em;
+}
+.culclassseriesby3 .special {
+	color: #921e1e; /* bordeux heavy */
+	font-weight: bold;
+}
+.culclassseriesby3 .price {
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+.culclassseriesby3 .price span {
+	font-weight: normal;
+}
+/* ************************************
+	  Shared Styles
+   ************************************ */
+.culclassseriesby3 {
+	clear: both;
+	width: 990px;
+	overflow: auto;
+	background: url(/styles/images/content_box1_top.gif) no-repeat top left;
+	padding-top: 4px;
+	margin-bottom: 16px;
+}
+.culclassseriesby3 .box {
+	background: url(/styles/images/content_box1_btm.gif) no-repeat bottom left;
+	padding: 0px 16px 16px 16px;
+	margin-top: 12px;
+	overflow: auto;
+}
+.culclassseriesby3 .itemBox .item {
+	float: left;
+	width: 282px;
+	padding-left: 28px;
+	padding-right: 27px;
+	border-right: solid 1px #aaaaaa;
+	display: inline;
+}
+.culclassseriesby3 .itemBox .first {
+	padding-left: 0px;
+}
+.culclassseriesby3 .itemBox .last {
+	padding-right: 0px;
+	border-right: none;
+}
+.culclassseriesby3 .itemBox img {
+	display: block;
+	width: 280px;
+	height: 178px;
+	padding: 0;
+	margin: 0 0 16px 0;
+}
+.culclassseriesby3 .itemBox a.itemPicture,
+.culclassseriesby3 .itemBox a.itemPicture:hover {
+	display: block;
+	width: 280px;
+	height: 178px;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #aaaaaa;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+/* ************************************
+	  Shared Styles
+   ************************************ */
+.culclassseriesby3Short {
+	width: 792px;
+	background: url(/styles/images/content_box2_top.gif) no-repeat top left;
+}
+.culclassseriesby3Short .box {
+	background: url(/styles/images/content_box2_btm.gif) no-repeat bottom left;
+}
+.culclassseriesby3Short .itemBox a.itemPicture,
+.culclassseriesby3Short .itemBox a.itemPicture:hover {
+	width: 219px;
+	height: 137px;
+}
+.culclassseriesby3Short .itemBox img {
+	width: 219px;
+	height: 137px;
+}
+.culclassseriesby3Short .itemBox .item {
+	width: 221px;
+	margin: 0 0 0 24px;
+	padding: 0 24px 0 0;
+	border-right: solid 1px #aaaaaa;
+}
+.culclassseriesby3Short .itemBox .item.first {
+	margin: 0;
+	padding: 0 23px 0 0;
+}
+.culclassseriesby3Short .itemBox .item.last {
+	border-right: none;
+	padding: 0;
+}

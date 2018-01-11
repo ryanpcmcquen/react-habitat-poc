@@ -1,0 +1,52 @@
+.sltCarousel {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.sltCarousel .items {
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+
+	overflow: -moz-scrollbars-none;
+	overflow-y: hidden;
+	overflow-style: none;
+	-ms-overflow-style: none;
+	-webkit-overflow-scrolling: touch;
+}
+.sltCarousel .items::-webkit-scrollbar {
+	height: 0;
+}
+
+.sltCarousel .item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sltCarousel .left,
+.sltCarousel .right {
+	position: absolute;
+	top: calc(50% - 10px);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sltCarousel .left {
+	left: 0px;
+	background-image: url("//www.surlatable.com/images/slideshows/homepage/Arrows_left.png");
+}
+.sltCarousel .right {
+	right: 0px;
+	background-image: url("//www.surlatable.com/images/slideshows/homepage/Arrows_right.png");
+}
+
+.sltCarousel.hide-nav .left,
+.sltCarousel.hide-nav .right {
+	visibility: hidden;
+}

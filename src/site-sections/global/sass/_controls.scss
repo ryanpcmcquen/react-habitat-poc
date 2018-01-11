@@ -1,0 +1,501 @@
+/*
+	Name:		HTML Control Styles
+	File:		control.css
+	Purpose:	Provide a standard look to html controls, like input text, text areas,
+				radio buttons, and drop down lists.
+
+	structures:	<input class="text" type="text" />
+
+				<textarea class="text" />
+
+				<input class="password" type="password" />
+
+				<select class="dropdown">
+					<option>Blue</option>
+					<option>Red</option>
+					<option>Green</option>
+				</select>
+
+*/
+
+input,
+textarea,
+select {
+	//font-family: $font-basic;
+	color: #444444;
+}
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+input:focus:-moz-placeholder {
+	color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+	color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+	color: transparent;
+} /* IE 10+ */
+
+input.text,
+input.password,
+textarea.textarea {
+	border: solid 1px #ababab;
+	margin-right: 6px;
+}
+
+input.radio,
+input.checkbox {
+	border: none;
+	margin-right: 6px;
+}
+
+select.dropdown,
+select.select {
+	border: solid 1px #ababab;
+	margin-right: 6px;
+	color: #444444;
+}
+/* ****************************************************
+		Watermarking
+		- Works with jqwatermark.js
+   **************************************************** */
+
+input.inactive {
+	color: #aaaaaa;
+}
+/* ****************************************************
+		Buttons - Regular
+   **************************************************** */
+/*
+		Example HTML
+		<a class="button" href="#"><span>Xxxxxx</span></a>
+		or
+		<a class="button reverse" href="#"><span>Xxxxxx</span></a>
+		or
+		<a class="buttonalt" href="#"><span>Xxxxxx</span></a>
+		or
+		<a class="buttonsmall" href="#"><span>Xxxxxx</span></a>
+*/
+
+a.mycollections {
+	color: $active-color;
+	float: left;
+	display: block;
+	background: $active-background;
+	margin: 100;
+	padding-left: 4px;
+	text-decoration: none;
+	border: none;
+	white-space: nowrap;
+	span {
+		color: $active-color;
+		float: left;
+		display: block;
+		height: 23px;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 23px;
+		padding-left: 6px;
+		padding-right: 28px;
+		background: $active-background;
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+	}
+	&:hover span {
+		text-decoration: underline;
+	}
+}
+
+a.button,
+div.TTwriteReview.TT4writeReviewBtn {
+	float: left;
+	display: block;
+	background: $active-background;
+	margin: 0;
+	padding: 0 8px;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	height: 27px;
+	line-height: 28px;
+	font-family: $font-bold;
+	text-transform: uppercase;
+	color: $active-color;
+	font-size: 14px;
+	font-weight: normal;
+	white-space: nowrap;
+	span {
+		float: left;
+		display: block;
+		color: $active-color;
+		font-weight: normal;
+	}
+	&.reverse {
+		color: $active-color;
+		background: $active-background;
+		span {
+			background: transparent;
+		}
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+	}
+	&:hover span {
+		text-decoration: underline;
+	}
+	&.giftreg {
+		color: $active-color;
+		background: $active-background;
+	}
+	&.disabled,
+	&.product-unavailable,
+	&.product-disabled,
+	&.deactivateSubmitButton {
+		background-color: $disabled-background;
+		cursor: default;
+		text-decoration: none;
+		span {
+			text-decoration: none;
+		}
+	}
+}
+/* ****************************************************
+		Button - Small (primary)
+   **************************************************** */
+
+a.buttonsmall {
+	float: left;
+	display: inline;
+	font-family: $font-bold;
+	font-size: 14px;
+	color: $active-color;
+	margin: 0;
+	padding: 0 8px;
+	border: none;
+	background: $active-background;
+	color: $active-color;
+	border-radius: 5px;
+	height: 23px;
+	line-height: 24px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: normal;
+	span {
+		float: left;
+		text-decoration: none;
+		color: $active-color;
+		font-weight: normal;
+	}
+	&.reverse {
+		color: $active-color;
+		background: $active-background;
+	}
+	&.alt,
+	&.silver {
+		background: $active-background;
+		span {
+			background: $active-background;
+		}
+	}
+	&.reversealt,
+	&.silver.reverse {
+		color: $active-color;
+		background: $active-background;
+		span {
+			background: $active-background;
+		}
+	}
+	&.reverse span {
+		background: $active-background;
+	}
+	&.disabled,
+	&.product-unavailable,
+	&.product-disabled,
+	&.deactivateSubmitButton {
+		background-color: $disabled-background;
+		cursor: default;
+		text-decoration: none;
+		span {
+			text-decoration: none;
+		}
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+/* ****************************************************
+		Button Alt - Regular (secondary)
+   **************************************************** */
+
+a.buttonalt {
+	float: left;
+	display: inline;
+	color: $secondary-color;
+	background: $secondary-background;
+	font-family: $font-bold;
+	margin: 0;
+	padding: 0 8px;
+	text-decoration: none;
+	border: none;
+	font-size: 14px;
+	font-weight: normal;
+	border-radius: 5px;
+	height: 27px;
+	line-height: 29px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	&.reverse {
+		background: $secondary-background;
+		color: $secondary-color;
+		/* charcoal */
+	}
+	span {
+		float: left;
+		font-weight: normal;
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+		color: $secondary-color;
+		span {
+			text-decoration: underline;
+		}
+	}
+	&.disabled,
+	&.product-unavailable,
+	&.product-disabled,
+	&.deactivateSubmitButton {
+		background-color: $disabled-background;
+		cursor: default;
+		color: $active-color;
+		text-decoration: none;
+		span {
+			text-decoration: none;
+		}
+	}
+}
+/* ****************************************************
+		Buttons - Large
+   **************************************************** */
+/*
+		Example HTML
+		<a class="buttonlarge giftreg" href="#"><span>Xxxxxx</span></a>
+*/
+
+a.buttonlarge {
+	float: left;
+	display: inline;
+	font-family: $font-bold;
+	font-size: 16px;
+	color: $active-color;
+	margin: 0 24px 0 0;
+	border: none;
+	background: $active-background;
+	border-radius: 5px;
+	height: 40px;
+	line-height: 33px;
+	text-transform: uppercase;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: normal;
+	padding: 0 8px;
+	&.giftreg {
+		color: $active-color;
+	}
+	span {
+		font-weight: normal;
+		text-decoration: none;
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+		span {
+			text-decoration: underline;
+		}
+	}
+	&.disabled,
+	&.product-unavailable,
+	&.product-disabled,
+	&.deactivateSubmitButton {
+		background-color: $disabled-background;
+		cursor: default;
+		text-decoration: none;
+		span {
+			text-decoration: none;
+		}
+	}
+}
+/* ****************************************************
+		Button Quick View
+   **************************************************** */
+
+a.buttonqv {
+	display: block;
+	font-family: $font-bold;
+	font-size: 0.9em;
+	line-height: 28px;
+	height: 26px;
+	color: $active-color;
+	background: $active-background;
+	text-decoration: none;
+	border: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	white-space: nowrap;
+	font-weight: normal;
+	text-transform: uppercase;
+	span {
+		display: block;
+		font-weight: normal;
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+		color: $active-color;
+	}
+	&.disabled,
+	&.product-unavailable,
+	&.product-disabled,
+	&.deactivateSubmitButton {
+		background-color: $disabled-background;
+		cursor: default;
+	}
+}
+
+.prompt {
+	clear: both;
+	display: block;
+	font-size: 0.9em;
+	color: #999999;
+	/* pale gray */
+}
+/* ****************************************************
+		Button Boxes
+   **************************************************** */
+
+.buttonBar {
+	position: relative;
+	margin-bottom: 6px;
+	&.last {
+		margin-bottom: 16px;
+	}
+	&.right {
+		float: right;
+		clear: right;
+	}
+	&.two {
+		width: 211px;
+	}
+	&.three {
+		width: 320px;
+	}
+	a.buttonBox {
+		margin: 0 7px 0 0;
+	}
+	a.buttonBox.last {
+		margin: 0;
+	}
+}
+
+a.buttonBox {
+	float: left;
+	display: block;
+	width: 102px;
+	height: 142px;
+	padding: 8px 0 0 0;
+	margin: 0;
+	background: $active-background;
+	text-decoration: none;
+	border: none;
+	> span {
+		font-size: 11px;
+		line-height: 12px;
+		text-transform: uppercase;
+		text-align: center;
+		float: left;
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 102px;
+		height: 142px;
+		background: $active-background;
+	}
+	&.reverse span {
+		color: $active-color;
+	}
+	span img {
+		width: 84px;
+		height: 100px;
+		margin-bottom: 8px;
+		border: solid 1px #aaaaaa;
+		display: block;
+	}
+	.imagery {
+		display: block;
+		margin-bottom: 8px;
+	}
+	.imagery img,
+	span span img {
+		display: inline;
+		margin-bottom: 0px;
+	}
+	span.first {
+		background: none;
+		padding: 0px;
+		height: auto;
+	}
+	span.second {
+		background: none;
+		padding: 0px;
+		height: auto;
+	}
+	span.first.arrow,
+	span.second.arrow {
+		margin-left: 12px;
+		width: 90px;
+	}
+	span.second:before {
+		content: "<br/>";
+	}
+	span.arrow:after {
+		content: "\a0\bb";
+		text-decoration: none;
+	}
+	&:hover {
+		border: none;
+		text-decoration: underline;
+	}
+	&:hover span.arrow {
+		text-decoration: none;
+	}
+	&:hover span.first,
+	&:hover span.second,
+	&:hover span.first.arrow,
+	&:hover span.second.arrow {
+		text-decoration: underline;
+	}
+	&.imageonly:hover,
+	&.imageonly:hover span,
+	&.imageonly:hover span.first,
+	&.imageonly:hover span.second,
+	&:hover span.arrow:after,
+	&:hover span.first.arrow:after,
+	&:hover span.second.arrow:after {
+		text-decoration: none;
+	}
+	&.disabled,
+	&.product-unavailable,
+	&.product-disabled,
+	&.deactivateSubmitButton {
+		background-color: $disabled-background;
+		cursor: default;
+	}
+}

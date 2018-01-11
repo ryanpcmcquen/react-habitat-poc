@@ -1,0 +1,184 @@
+/*
+    Name:       Global Stylesheet
+    File:       main_global.css
+    Purpose:    Provide a standard site-wide pool of header, main nav, and footer styles.
+*/
+/* *******************************
+        Imports
+   ******************************* */
+
+/* ************************************************
+    Wrapper Styles
+   ************************************************ */
+#wrapper {
+	background: white;
+}
+
+/* ***********************************************
+        More-Info Anchor Styles
+   *********************************************** */
+a.moreinfo {
+	margin-left: 0;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: #db8f21;
+	border-bottom: dotted 1px transparent;
+}
+a.moreinfo.giftreg {
+	color: #60682f;
+}
+a.moreinfo:hover {
+	color: #db8f21;
+	// border-bottom: solid 1px #DB8F21 /* tomato */;
+}
+a.moreinfo.giftreg:hover {
+	color: #60682f;
+	//border-bottom: #60682f /* olive dark */;
+}
+p a.moreinfo,
+p a.moreinfo:hover {
+	margin-left: 2px;
+}
+/* ***********************************************
+        Text Link Anchor Styles
+   *********************************************** */
+a.link {
+	border-bottom: dotted 1px #444444;
+}
+a.link:hover {
+	color: #5c2946;
+	//border-bottom: solid 1px #5C2946 /* eggplant */;
+}
+a.imagelink,
+a.imagelink:hover {
+	border-bottom: none;
+}
+.reverse a,
+a.reverse {
+	color: #ffffff;
+	border-bottom: dotted 1px transparent; /*!important;*/
+	padding-bottom: 0px; /*!important;*/
+}
+.reverse a:hover,
+a.reverse:hover {
+	//border-bottom: solid 1px #ffffff;
+	padding-bottom: 0px;
+}
+
+/* **********************************************
+        Star Ratings
+   ********************************************** */
+.ratings {
+	width: 80px;
+	margin: 5px 0 0 0;
+	overflow: auto;
+}
+
+.ratings img {
+	float: left;
+	width: 13px !important;
+	height: 13px !important;
+	margin-right: 3px;
+	border: none !important;
+}
+
+/* **************************************************
+        default quickview, shopping cart to HIDDEN
+   ************************************************** */
+#productquickview,
+div#cartpopup {
+	display: none;
+}
+/* ************************************************
+        Side Bar Title and Top Row Title
+   ************************************************ */
+div#sidebar h1 {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+div#toptitle h1,
+div#toptitle h2 {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+div#sidebar #crumb,
+div#toptitle #crumb {
+	font-size: 0.9em;
+	line-height: 0.9em;
+	font-weight: bold;
+	padding-bottom: 24px;
+}
+
+/* *******************************************
+        price style
+   ******************************************* */
+.priceblock {
+	margin-left: 0;
+	margin-top: 0;
+	padding-top: 6px;
+	font-size: 0.9em;
+	/*padding-bottom: 5px;*/
+}
+.priceblock .name {
+	font-size: 1.1em;
+}
+.priceblock .price {
+	font-weight: bold;
+}
+.priceblock .offer {
+	font-weight: normal;
+	color: #921e1e;
+}
+.priceblock .sale {
+	color: #921e1e;
+	font-weight: bold;
+}
+.priceblock .regular {
+	color: #999999;
+	font-weight: bold;
+}
+.priceblock p {
+	margin: 0;
+}
+.text_overflow {
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	-moz-binding: url("xml/ellipsis.xml#ellipsis");
+}
+
+#accteditaddress .close {
+	background: url(/styles/images/popup_box_close_x.gif) no-repeat scroll right
+		center transparent;
+	margin-right: 10px;
+	padding-right: 18px;
+}
+#accteditaddress div.actions {
+	height: 19px;
+	margin-top: 0;
+	margin-bottom: 11px;
+}
+#accteditaddress div.popupmain p.story {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+#accteditaddress div.actions ul li {
+	float: right;
+	padding-left: 10px;
+	display: inline;
+}
+/*  fix bug 16230 : add 2 pixels of space above star-rating */
+p.starFrame img {
+	padding-top: 2px;
+}
+fieldset dl.address dd.shadow {
+	width: 45%;
+}
+
+div.boxsides.threeWide {
+	width: auto;
+}

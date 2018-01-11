@@ -1,0 +1,19 @@
+{
+	"plugins.js": [
+		"/node_modules/jquery-validation/dist/jquery.validate.js",
+		"/node_modules/jquery-validation/dist/additional-methods.js",
+		"/node_modules/jquery-sticky/jquery.sticky.js",
+		"js/_plugins/*.js"
+	],
+	"app.js": [
+		"js/_config/*.js",
+		"js/_app/opc.js",
+		"js/_app/thankyou.js",
+		"js/_app/sidebarCart.js",
+		"js/_app/step*.js",
+		"js/_app/zipValidation.js",
+		"js/_app/google_autocomplete.js",
+		"js/_app/footer.js"
+	],
+	"base.js": ["js/base.js"]
+}

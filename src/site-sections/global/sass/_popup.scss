@@ -1,0 +1,326 @@
+/* jqModal base Styling courtesy of;
+    Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+    the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+
+.jqmWindow {
+	display: none;
+
+	position: fixed;
+	top: 17%;
+	left: 50%;
+
+	margin-left: -300px;
+	width: 600px;
+
+	background-color: #eee;
+	color: #333;
+	border: 1px solid black;
+	padding: 12px;
+}
+
+.jqmOverlay {
+	background-color: #000;
+}
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: expression(this.parentNode.offsetWidth+"px");
+	height: expression(this.parentNode.offsetHeight+"px");
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+	position: absolute;
+	top: expression(
+		 (document.documentElement.scrollTop || document.body.scrollTop) +
+			Math.round(
+				17 *
+					(
+						document.documentElement.offsetHeight ||
+							document.body.clientHeight
+					) / 100
+			) + "px"
+	);
+}
+
+/****************************************************************
+    Popup Styles - shared by all popups using jqmodal
+ **************************************************************** */
+
+#backgroundpopup,
+.jqmOverlay {
+	display: block;
+	position: fixed;
+	_position: absolute; /* hack for internet explorer 6*/
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: White; /*  overriden in jgmodal.js   */
+	z-index: 1010;
+}
+#backgroundpopup {
+	display: none;
+}
+/*baseline for all jqModals*/
+.jqm-init {
+	position: fixed;
+	top: 10%;
+	left: 50%;
+
+	&#productquickview {
+		top: 1%;
+	}
+}
+/* ***************************************************************
+        Email Popup Styles (optin and optout)
+   *************************************************************** */
+
+.jqm-init a.close.popupclose {
+	font-weight: normal;
+	text-shadow: none;
+	opacity: 1;
+	font-size: 16px;
+	width: auto;
+	line-height: 36px;
+}
+
+.jqm-init h5 {
+	line-height: 36px;
+}
+
+div.popupheader {
+	color: White;
+	height: 36px;
+	line-height: 36px;
+	background-image: url(/styles/images/pop_up_box_top_midsize.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+div.popupheader h5 {
+	float: left;
+	display: inline;
+	margin-left: 12px;
+	font-size: 16px;
+	line-height: 15px;
+}
+div.popupheader a {
+	color: White;
+	border: none;
+	width: 40px;
+	float: right;
+}
+div.popupheader a:hover {
+	color: White;
+	border: none;
+	text-decoration: underline;
+}
+div.popupmain {
+	width: auto;
+	background-image: url(/styles/images/pop_up_box_btm_midsize.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	padding: 0 16px 16px 16px;
+	clear: both;
+	overflow: auto;
+}
+div.popupmain h1 {
+	font-size: 23px;
+	line-height: 48px;
+	margin-bottom: 12px;
+	border-bottom: solid 1px #aaaaaa;
+}
+div.popupmain p {
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+div.popupmain fieldset dd.shadow {
+	background: url(/styles/images/signup_text_boxes.gif) no-repeat top left;
+	height: 23px;
+}
+div.popupmain fieldset dd.shadow input {
+	margin-top: 2px;
+	margin-left: 3px;
+	width: 176px;
+	border: none;
+}
+div.popupmain ul {
+	list-style-position: inside;
+	list-style-type: square;
+}
+div.popupmain label {
+	font-weight: bold;
+}
+
+div#footer #email div.popupmain a.button span {
+}
+
+/* ***************************************************************
+        Email Popup Styles (optin and optout)
+   *************************************************************** */
+#popupcontact,
+#popupemailoptout {
+	margin-left: -245px;
+	height: auto;
+	width: 495px;
+	display: none;
+	z-index: 1050;
+}
+#popupcontact a.close,
+#popupemailoptout a.close {
+	background: url(/styles/images/popup_box_close_x.gif) no-repeat right center;
+	padding-right: 18px;
+	margin-right: 18px;
+}
+#popupcontact .popuptext,
+#popupemailoptout .popuptext {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-left: 35%;
+}
+#popupcontact .popupheader,
+#popupemailoptout .popupheader {
+	background-image: url(/styles/images/popup_box_top.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 495px;
+}
+#popupcontact .popupmain,
+#popupemailoptout .popupmain {
+	background-image: url(/styles/images/popup_box_btm.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	width: auto;
+	padding: 16px 16px 4px 16px;
+}
+body #popupcontact .popupmain,
+body #popupemailoptout .popupmain {
+	_padding: 16px 16px 20px 16px;
+}
+#popupcontact .popupheader a,
+#popupemailoptout .popupheader a {
+	color: White;
+	border: none;
+	width: 40px;
+	float: none;
+}
+#popupcontact label,
+#popupemailoptout label {
+	font-size: 12px;
+	line-height: 21px;
+}
+#popupcontact div#formDiv input {
+	line-height: normal;
+}
+
+/* *******************************************
+        Common Popup / Dialog Styles
+   ******************************************* */
+.dialogtitle,
+.dialogtitle.giftreg,
+.dialogtitle_giftreg {
+	font-size: 31px;
+	line-height: 52px;
+	margin: 0 0 16px 0;
+	border-bottom: solid 1px #aaaaaa;
+}
+.dialogtitle {
+	color: #5c2946;
+}
+.dialogtitle.giftreg,
+.dialogtitle_giftreg {
+	color: #60682f;
+}
+
+/* *******************************************
+        Notify Me Popup / Dialog Styles
+   ******************************************* */
+#notifymepopup {
+	background-image: url(/styles/images/pop_up_box_top_midsize.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 567px;
+	left: calc(50% - 567px/2);
+	overflow: auto;
+	margin-top: 4px;
+	padding-bottom: 36px;
+	display: none;
+	z-index: 1010;
+}
+#notifymepopup .box {
+	background-image: url(/styles/images/pop_up_box_btm_midsize.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	clear: both;
+	width: 535px;
+	overflow: auto;
+	padding: 0 16px 0 16px;
+}
+#notifymepopup .close {
+	background: url(/styles/images/popup_box_close_x.gif) no-repeat right center;
+	padding-right: 18px;
+	margin-right: 18px;
+	color: White;
+	border: none;
+	line-height: 35px;
+	float: right;
+}
+#notifymepopup a.close:hover {
+	text-decoration: underline;
+}
+#notifymepopup h1 {
+	font-size: 23px;
+	line-height: 45px;
+	border-bottom: 1px solid #aaaaaa;
+	margin-bottom: 15px;
+	margin: 0 16px 16px 0;
+	clear: both;
+}
+#notifymepopup h5 {
+	color: White;
+	float: left;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	width: 460px;
+	line-height: 35px;
+	padding-left: 16px;
+}
+#notifymepopup div.actions {
+	height: 19px;
+	margin: 10px 16px 16px 0;
+	float: right;
+}
+#notifymepopup div.actions a.button {
+	float: right;
+}
+
+#notifymepopup a.cancel:hover {
+	color: #5c2946;
+	//border-bottom: solid 1px #5C2946 /*  eggplant */;
+}
+#notifymepopup a.cancel {
+	border-bottom: dotted 1px #444444;
+	margin-right: 10px;
+	float: right;
+}
+#notifymepopup fieldset dl dt {
+	font-weight: bold;
+}
+#notifymepopup fieldset dl dd select {
+	width: 231px;
+}
+#notifymepopup div.actions ul li {
+	display: inline;
+	float: right;
+	padding-left: 10px;
+}

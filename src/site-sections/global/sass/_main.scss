@@ -1,0 +1,497 @@
+/*
+	Name:		Main Application Stylesheet
+	File:		main.css
+	Purpose:	Provide a standard site-wide pool of styles for ecommerce sites.
+
+*/
+
+body {
+	/*font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 12px;*/
+	line-height: 1.5;
+	color: #444444;
+	margin: 0;
+	padding: 0;
+}
+p {
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+a {
+	color: #444444;
+	text-decoration: none;
+	border-bottom: dotted 1px transparent;
+	outline: none; /* hide dotted outline in Firefox */
+	cursor: pointer;
+}
+a:hover {
+	/* color: #5C2946 eggplant */
+	/* border-bottom: solid 1px #5C2946; */
+	text-decoration: underline;
+}
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+table,
+tr,
+td {
+	border-collapse: collapse;
+	font-size: 10px;
+	line-height: 1.5;
+	color: #444444;
+	margin: 0;
+	padding: 0;
+	//font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 1em;
+}
+
+/*h1, h2, h3, h4, h5, h6
+{
+	//font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: normal;
+	
+}
+h1
+{
+	font-size: 1.7em;
+}
+h2
+{
+	font-size: 1.6em;
+}
+h3
+{
+	font-size: 1.5em;
+}
+h4
+{
+	font-size: 1.4em;
+}
+h5
+{
+	font-size: 1.3em;
+}
+h6
+{
+	font-size: 1.2em;
+}
+label
+{
+	font-size: .90em;
+}*/
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+cite {
+	font-style: italic;
+}
+
+.note {
+	font-size: 0.9em;
+	color: #444444;
+	font-weight: normal;
+}
+
+.spanrequired {
+	font-size: 0.9em;
+	font-weight: 100;
+	color: #000000; /*Black*/
+}
+.spanrequiredred {
+	font-weight: bold;
+	color: #444;
+	margin-left: 3px;
+}
+.hint {
+	font-size: 0.9em;
+	color: #999999;
+	font-weight: normal;
+}
+p.note,
+p.hint {
+	margin-bottom: 0.25em;
+}
+/*
+	***** Styled <HR> and vertical rules *****
+*/
+hr {
+	margin: 0;
+	padding: 0;
+	color: #aaaaaa;
+	height: 0;
+}
+div.vertrule {
+	background-color: #e5dadd;
+	float: left;
+	width: 1px;
+	border: 0;
+	margin: 0;
+}
+/*
+	***** No borders around hyperlink images *****
+*/
+a img {
+	border: 0;
+}
+/*
+	***** Printed Media Only - tag elements with this class to hide when displayed on screen *****
+*/
+.printonly {
+	display: none;
+}
+/*
+	***** Clearing Floats and self-adapting height *****
+*/
+.clear-block:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .clear-block {
+	height: 1%;
+}
+.clearboth {
+	clear: both;
+}
+/*
+	***** Horizontal Form Styles *****
+
+	purpose:	Use for data entry screens when labels should be
+				to the left of the data field.
+
+	structure:	<fieldset>
+					<dl>
+						<dt><label></label></dt>
+						<dd></dd>
+						<dt><label></label></dt>
+						<dd></dd>
+					</dl>
+				</fieldset>
+*/
+fieldset dl {
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 12px 0;
+}
+fieldset dl dt {
+	clear: both;
+	width: 33%;
+	float: left;
+	text-align: right;
+	padding-right: 2%;
+	word-wrap: break-word;
+}
+fieldset.left dl dt {
+	text-align: left;
+}
+fieldset dl dd {
+	margin: 0;
+	width: 64%;
+	float: left;
+	margin-bottom: 6px;
+	word-wrap: break-word;
+	word-break: normal;
+}
+fieldset label {
+	//font-size: .90em;
+	//line-height: 1.5em;
+}
+/* ****************************************************
+		Error Messages
+   **************************************************** */
+
+.ppError {
+	/* added 6/18/13 for SLT-454. Dup in opc.css */
+	color: #921e1e;
+	font-weight: bold;
+}
+
+fieldset label.haserror,
+label.haserror {
+	color: #444444;
+}
+fieldset p.message {
+	margin: 0 0 0.75em 0;
+	&.haserror {
+		margin: 0;
+	}
+}
+p.haserror,
+span.haserror {
+	padding-left: 16px;
+}
+.haserror {
+	color: #921e1e;
+}
+
+/*
+	***** Fixed layout for centered 990 page, Center html <wrapper> on a browser window width of 990 pixels. *****
+*/
+/* ***********************************
+	One-Column Layout
+   *********************************** */
+div#wrapper {
+	width: 100%;
+	max-width: 990px;
+	margin: 12px auto 0 auto;
+	text-align: left;
+}
+
+div#header {
+	clear: both;
+	width: 100%;
+	max-width: 990px;
+}
+
+div#mainnav {
+	clear: both;
+	/* overflow: auto;*/
+	width: 100%;
+	max-width: 990px;
+}
+
+div#main {
+	float: left;
+	width: 990px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: inline;
+	/* overflow: auto;*/
+}
+
+div#footer {
+	clear: both;
+	width: 100%;
+	max-width: 990px;
+	/* overflow: auto;*/
+}
+/* ***********************************
+	Two-Column Layout -
+	- sidebar and content
+   *********************************** */
+#sidebar,
+#category #sidebar,
+#accounthome #sidebar,
+#culinarycustom #sidebar,
+#culinarylocations #sidebar,
+#accounthome #sidebar,
+#accountaddressbook #sidebar,
+#accountsettings #sidebar,
+#accountorderdetail #sidebar,
+#accountorderhistorypage #sidebar,
+#accountsavedattendees #sidebar,
+#accountcookingclasses #sidebar,
+#brandshop #sidebar,
+#tiplanding #sidebar,
+#recipelanding #sidebar,
+#giftcardlanding #sidebar,
+#brandshop #sidebar,
+#culinaryaddattendees #sidebar,
+#storelocator #sidebar,
+#giftregistry #sidebar {
+	float: left;
+	width: 198px;
+	display: inline;
+	/* overflow: auto;*/
+}
+#content,
+#category #content,
+#accounthome #content,
+#culinarycustom #content,
+#culinarylocations #content,
+#accounthome #content,
+#accountaddressbook #content,
+#accountsettings #content,
+#accountorderdetail #content,
+#accountorderhistorypage #content,
+#accountsavedattendees #content,
+#accountcookingclasses #content,
+#brandshop #content,
+#tiplanding #content,
+#recipelanding #content,
+#giftcardlanding #content,
+#brandshop #content,
+#culinaryaddattendees #content,
+#storelocator #content,
+#giftregistry #content,
+#product {
+	float: left;
+	width: 792px;
+	display: inline;
+	/* overflow: auto;*/
+}
+#BVReviewsContainer {
+	margin-right: 0px !important;
+}
+/*
+	***** Sidebar styles *****
+*/
+div#sidebar a {
+	border-bottom: solid 1px white;
+}
+div#sidebar a:hover {
+	//border-bottom: solid 1px #5C2946 /* eggplant */;
+	color: #5c2946;
+}
+/*		Category Title			*/
+div#sidebar h1 {
+	margin-bottom: 1em;
+}
+/*		Crumb Trail				*/
+div#sidebar #crumb {
+	line-height: 1em;
+	font-weight: bold;
+}
+
+/*
+	***** Gift Card Detail Page, Used to style the major divisions of the page *****
+*/
+div#giftcarddetail {
+	overflow: auto;
+	width: 990px;
+	margin-top: 12px;
+	margin-bottom: 16px;
+}
+#giftcarddetail .imagry {
+	float: left;
+
+	width: 430px;
+	margin-right: 24px;
+}
+#giftcarddetail .imagry img.hero {
+	width: 426px;
+	height: 426px;
+	border: solid 1px #aaaaaa;
+}
+#giftcarddetail .information {
+	float: left;
+	overflow: auto;
+	width: 536px;
+}
+/*
+	***** Search Results Page Styles, Styles for the main area of search result pages*****
+*/
+/* *******************************************
+		Search Results Bar
+   ******************************************* */
+div#content #newsearch {
+	clear: both;
+	width: 792px;
+	margin: 0 auto 16px auto;
+	text-align: left;
+}
+div#content #newsearch #searchbar {
+	display: inline;
+	overflow: auto;
+	margin-bottom: 16px;
+}
+div#content #newsearch h2 {
+	font-size: 21px;
+	line-height: 21px;
+	margin: 0 0 20px 0;
+}
+div#content #newsearch h3 {
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 17px;
+}
+div#content #newsearch #searchbar input {
+	width: 156px;
+	margin-bottom: 16px;
+}
+div#content #newsearch #searchbar label {
+	margin-right: 3px;
+	font-weight: bold;
+}
+div#content #newsearch p {
+	margin: 0 0 12px 0;
+}
+div#content #newsearch ul {
+	margin-bottom: 12px;
+}
+div#content #newsearch ul li {
+	list-style-type: square;
+	margin-left: 18px;
+}
+div#content #newsearch #actions {
+	height: 19px;
+	margin: 0 0 0 0;
+	padding: 0;
+	float: left;
+}
+div#content #newsearch #actions a {
+	float: left;
+}
+div#content #newsearch #searchbar label,
+div#content #newsearch #searchbar input,
+div#content #newsearch #searchbar a {
+	float: left;
+	display: inline;
+}
+li {
+	word-wrap: break-word;
+	word-break: normal;
+}
+
+/*
+	Endeca search breadcrumbs (used in MainBreadcrumbs.jsp)
+*/
+div.main-breadcrumbs {
+}
+div.main-breadcrumbs div.box {
+	width: 792px;
+	clear: both;
+	overflow: auto;
+	padding-top: 4px;
+	background: url(/styles/images/content_box2_top.gif) no-repeat top left;
+	margin-bottom: 16px;
+}
+div.main-breadcrumbs div.boxsides {
+	background: url(/styles/images/content_box2_sides.gif) repeat-y top left;
+	padding: 2px 0 0 18px;
+}
+div.main-breadcrumbs div.boxbottom {
+	float: left;
+	width: 792px;
+	height: 6px;
+	background: url(/styles/images/content_box2_btm.gif) no-repeat left bottom;
+	display: inline;
+}
+ul.breadcrumbs {
+	margin-bottom: 0px !important;
+}
+li.breadcrumb {
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #5c2946;
+	line-height: 24px;
+	margin: 0 16px 0 0px !important;
+	padding: 0;
+}
+li.breadcrumb a {
+	color: #5c2946;
+}
+li.breadcrumb a:hover {
+	border-bottom: none;
+}
+li.breadcrumb a img {
+	vertical-align: text-bottom;
+}

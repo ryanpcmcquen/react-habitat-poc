@@ -1,0 +1,39 @@
+/**
+	 * Form Errors
+	 */
+/*
+			fab10f - Orange
+			fc2500 - Red
+		*/
+.formLevelError,
+.formLevelError0 {
+	margin: 0.5em;
+	color: #921e1e;
+}
+.errIcon,
+.errIcon0 {
+	background: #921e1e;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1em;
+	width: 17px;
+	color: white;
+	border-radius: 3px;
+}
+.errFields,
+.errFields0 {
+	font-weight: bold;
+}
+.errLink {
+	cursor: pointer;
+}
+.errRedFocus {
+	border: 1px solid #fab10f !important;
+}
+.errRedBorder {
+	border: 1px solid #fc2500 !important;
+}
+.errMissed {
+	border: 1px solid #fab10f !important;
+}

@@ -1,0 +1,541 @@
+/*
+	name:   Banner By 2, Banner By 3, Banner By 4, categary Banner 2-4
+	file:	banners.css
+*/
+
+/* ---------------------------
+	Banner By 2
+-----------------------------*/
+.bannerby2 {
+	clear: both;
+	width: 990px;
+	height: 74px;
+	overflow: visible;
+	background: url("../images/promo_bar1_flood_top.gif") no-repeat top left;
+	background-color: #979c51;
+	margin-bottom: 16px;
+}
+.bannerby2 .box {
+	width: 990px;
+	overflow: visible;
+	height: 74px;
+	background: url(../images/promo_bar1_flood_btm.gif) no-repeat bottom left;
+	z-index: 10;
+}
+.bannerby2 .content,
+.bannerby2 .content2 {
+	margin-top: 14px;
+	height: 38px;
+	padding: 8px 0 6px 12px;
+	background: url(../images/promo_bar_box4_btm.gif) no-repeat bottom left;
+}
+.bannerby2 .contenttop,
+.bannerby2 .contenttop2 {
+	float: left;
+	display: inline;
+	position: relative; /* stop quivering when pop-up opens */
+	width: 484px;
+	margin-left: 7px;
+	background: url(../images/promo_bar_p_box4_top_off.gif) no-repeat top left;
+}
+.bannerby2 .message {
+	position: absolute; /* stop the quivering when the pop-up opens */
+	top: 17px;
+	left: 6px;
+}
+.bannerby2 .message h2 {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 6px 0 6px 6px;
+}
+.bannerby2 .message h2 a {
+	color: #444444;
+	border-bottom: solid 1px white;
+}
+.bannerby2 .message h2 a:hover {
+	color: #444444;
+	border-bottom: solid 1px #444444;
+}
+.bannerby2 .message p {
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0 0 0 6px;
+}
+.bannerby2 .content2 img {
+	border: solid 1px #aaaaaa;
+	float: left;
+	display: inline;
+	height: 42px;
+	width: 42px;
+	margin: 0 12px 0 0;
+}
+/* ********************************************
+		Cover Styles
+   ******************************************** */
+.bannerby2 .cover {
+	clear: both;
+	display: none; /* the jQuery shows this block */
+	position: relative;
+	margin-top: -274px; /* bring the cover up */
+	margin-bottom: -0px;
+	margin-left: -12px;
+	padding: 16px 16px 0 16px;
+	top: auto;
+	bottom: auto;
+	height: 258px;
+	width: 452px;
+	overflow: hidden;
+	background: url(../images/promo_bar_box4_pop_top.gif) no-repeat top left;
+	z-index: 10;
+}
+
+.bannerby2 .cover img {
+	border: solid 1px #aaaaaa;
+	height: 240px;
+	width: 240px;
+	margin: 0 16px 0 0;
+	float: left;
+	display: inline;
+}
+.bannerby2 .cover h3 {
+	display: block;
+	padding: 0;
+	margin: 0;
+	padding: 0 0 16px 0;
+	line-height: 18px;
+	font-size: 18px;
+	color: #db8f21;
+}
+.bannerby2 .cover h4 {
+	display: block;
+	padding: 0;
+	margin: 0 0 12px 0;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+}
+.bannerby2 .cover p {
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5em;
+}
+.bannerby2 .cover a {
+	display: block;
+	margin-top: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: DB8F21;
+	border-bottom: none;
+}
+.bannerby2 .cover a:hover {
+	text-decoration: underline;
+}
+
+/* ---------------------------
+	Banner By 3
+-----------------------------*/
+.bannerby3 {
+	clear: both;
+	width: 990px;
+	height: 74px;
+	overflow: visible;
+	background: url(../images/promo_bar1_flood_top.gif) no-repeat top left;
+	background-color: #979c51;
+	margin-bottom: 16px;
+}
+.bannerby3 .box {
+	width: 990px;
+	height: 67px;
+	overflow: visible;
+	padding-bottom: 7px;
+	background: url(../images/promo_bar1_flood_btm.gif) no-repeat bottom left;
+	z-index: 10;
+}
+.bannerby3 .content,
+.bannerby3 .content2,
+.bannerby3 .content3 {
+	margin-top: 14px;
+	height: 38px;
+	padding: 8px 0 6px 12px;
+	background: url(../images/promo_bar_box3_btm.gif) no-repeat bottom left;
+}
+.bannerby3 .contenttop,
+.bannerby3 .contenttop2,
+.bannerby3 .contenttop3 {
+	float: left;
+	display: inline;
+	position: relative; /* stop quivering when pop-up opens */
+	width: 321px;
+	margin-left: 7px;
+	background: url(../images/promo_bar_p_box3_top_off.gif) no-repeat top left;
+}
+.bannerby3 .message {
+	position: absolute; /* stop the quivering when the pop-up opens */
+	top: 17px;
+	left: 6px;
+}
+.bannerby3 .message h2 {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 6px 0 6px 6px;
+	color: #444444;
+}
+.bannerby3 .message h2 a {
+	color: #444444;
+	border-bottom: solid 1px white;
+}
+.bannerby3 .message h2 a:hover {
+	color: #444444;
+	border-bottom: solid 1px #444444;
+}
+.bannerby3 .message p {
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0 0 0 6px;
+}
+.bannerby3 .content .message img,
+.bannerby3 .content2 .message img,
+.bannerby3 .content3 .message img {
+	border: solid 1px #aaaaaa;
+	float: left;
+	display: inline;
+	height: 42px;
+	width: 42px;
+	margin: 0 12px 0 0;
+}
+/* ********************************************
+		Cover Styles
+   ******************************************** */
+.bannerby3 .cover {
+	clear: both;
+	display: none;
+	margin-top: -274px; /* bring the cover up */
+	margin-left: -12px;
+	padding: 16px 16px 0 16px;
+	/*
+	position: relative;
+	top: auto;
+	bottom: auto;
+	overflow: hidden;
+	margin-bottom: -0px;
+	*/
+	height: 258px;
+	width: 289px;
+	background: url(../images/promo_bar_box3_pop_top.gif) no-repeat top left;
+	z-index: 1010;
+}
+
+.bannerby3 .cover img {
+	border: solid 1px #aaaaaa;
+	margin: 0 16px 0 0;
+	height: 240px;
+	width: 287px;
+}
+
+/* ---------------------------
+	Banner By 4
+-----------------------------*/
+.bannerby4 {
+	clear: both;
+	width: 990px;
+	height: 74px;
+	overflow: visible;
+	background: url(../images/promo_bar1_flood_top.gif) no-repeat top left;
+	background-color: #979c51;
+	margin-bottom: 16px;
+}
+.bannerby4 .box {
+	clear: both;
+	width: 990px;
+	height: 67px;
+	overflow: visible;
+	padding-bottom: 7px;
+	background: url(../images/promo_bar1_flood_btm.gif) no-repeat bottom left;
+	z-index: 10;
+}
+.bannerby4 .content,
+.bannerby4 .content2,
+.bannerby4 .content3,
+.bannerby4 .content4 {
+	margin-top: 14px;
+	height: 38px;
+	padding: 8px 0 6px 12px;
+	background: url(../images/promo_bar_box2_btm.gif) no-repeat bottom left;
+}
+.bannerby4 .contenttop4 {
+	float: left;
+	display: inline;
+	position: relative; /* stop quivering when pop-up opens */
+	width: 239px;
+	margin-left: 7px;
+	background: url(../images/promo_bar_p_box2_top_off.gif) no-repeat top left;
+}
+.bannerby4 .message {
+	position: absolute; /* stop the quivering when the pop-up opens */
+	top: 22px;
+	left: 12px;
+}
+.bannerby4 .message h2 {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 0 0 6px 0;
+	color: #444444;
+}
+.bannerby4 .message h2 a {
+	color: #444444;
+	border-bottom: solid 1px white;
+}
+.bannerby4 .message h2 a:hover {
+	color: #444444;
+	border-bottom: solid 1px #444444;
+}
+.bannerby4 .message p {
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+}
+/* ********************************************
+		Cover Styles
+   ******************************************** */
+.bannerby4 .cover {
+	clear: both;
+	display: none;
+	position: relative;
+	margin-top: -244px; /* bring the cover up */
+	margin-left: -12px;
+	padding: 16px 16px 0 16px;
+	top: auto;
+	bottom: auto;
+	height: 228px;
+	width: 207px;
+	overflow: hidden;
+	background: url(../images/promo_bar_box2_pop_top.gif) no-repeat top left;
+	z-index: 10;
+}
+
+.bannerby4 .cover img {
+	border: solid 1px #aaaaaa;
+	height: 207px;
+	width: 205px;
+	margin: 0 16px 0 0;
+}
+
+/* ---------------------------
+	Category Page Banners
+-----------------------------*/
+
+/*
+	name:   Category Page Banners
+	file:	catgBanners.css
+*/
+
+/* ********************************************
+		Shared Properties
+   ******************************************** */
+.catgBanner {
+	float: left;
+	width: 792px;
+	height: 74px;
+	/*overflow: visible;*/
+	margin-bottom: 16px;
+	background: url(../images/promo_bar2_flood_top.gif) no-repeat top left;
+	background-color: #979c51;
+	display: inline;
+}
+.catgBanner .box {
+	float: left;
+	width: 792px;
+	height: 67px;
+	/*overflow: visible;*/
+	padding-bottom: 7px;
+	background: url(../images/promo_bar2_flood_btm.gif) no-repeat bottom left;
+	display: inline;
+}
+.catgBanner .content {
+	margin-top: 14px;
+	height: 38px;
+	padding: 8px 0 6px 0;
+	position: relative; /* stop quivering when pop-up opens */
+}
+.catgBanner .contenttop {
+	float: left;
+	margin-left: 7px;
+	display: inline;
+}
+.catgBanner .message {
+	position: absolute; /* stop the quivering when the pop-up opens */
+	top: 3px;
+	left: 6px;
+	width: 97%;
+}
+.catgBanner h2 {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 6px 0 6px 6px;
+}
+.catgBanner h2 a {
+	color: #444444;
+	border-bottom: solid 1px white;
+}
+.catgBanner h2 a:hover {
+	color: #444444;
+	border-bottom: solid 1px #444444;
+}
+.catgBanner p {
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0 0 0 6px;
+}
+.catgBanner .content .message img {
+	border: solid 1px #aaaaaa;
+	float: left;
+	display: inline;
+	height: 42px;
+	width: 42px;
+	margin: 0 12px 0 0;
+}
+/* ********************************************
+		Shared Cover Styles
+   ******************************************** */
+.catgBanner .cover {
+	clear: both;
+	display: none; /* the jQuery shows this block */
+	position: relative;
+	margin-bottom: -0px;
+	padding: 16px 16px 0 16px;
+	z-index: 10;
+}
+
+.catgBanner .cover img {
+	border: solid 1px #aaaaaa;
+	float: left;
+	display: inline;
+}
+.catgBanner .cover h3 {
+	display: block;
+	padding: 0;
+	margin: 0;
+	padding: 0 0 16px 0;
+	line-height: 18px;
+	font-size: 18px;
+	color: #db8f21;
+}
+.catgBanner .cover h4 {
+	display: block;
+	padding: 0;
+	margin: 0 0 12px 0;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+}
+.catgBanner .cover p {
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5em;
+}
+.catgBanner .cover a {
+	display: block;
+	margin-top: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #db8f21;
+	border-bottom: none;
+}
+.catgBanner .cover a:hover {
+	text-decoration: underline;
+}
+
+/* ********************************************
+		Banner - 2
+   ******************************************** */
+.catgBannerby2 {
+	background-color: #979c51;
+}
+.catgBannerby2 .content {
+	background: url(../images/small_promo_bar_box1_btm.gif) no-repeat bottom
+		left;
+}
+.catgBannerby2 .contenttop {
+	width: 385px;
+	background: url(../images/small_promo_bar_p_box1_top.gif) no-repeat top left;
+}
+.catgBannerby2 .cover {
+	margin-top: -208px; /* bring the cover up */
+	height: 184px;
+	width: 353px;
+	background: url(../images/small_promo_bar_box1_pop_top.gif) no-repeat top
+		left;
+}
+.catgBannerby2 .cover img {
+	float: left;
+	height: 172px;
+	width: 172px;
+	margin: 0 12px 0 0;
+	display: inline;
+}
+.catgBannerby2 .cover .info {
+	float: left;
+	width: 167px;
+	display: inline;
+}
+/* ********************************************
+		Banner - 3
+   ******************************************** */
+.catgBannerby3 {
+	background-color: #979c51;
+}
+.catgBannerby3 .content {
+	background: url(../images/small_promo_bar_box2_btm.gif) no-repeat bottom
+		left;
+}
+.catgBannerby3 .contenttop {
+	width: 255px;
+	background: url(../images/small_promo_bar_p_box2_top.gif) no-repeat top left;
+}
+.catgBannerby3 .cover {
+	margin-top: -247px; /* bring the cover up */
+	height: 223px;
+	width: 223px;
+	background: url(../images/small_promo_bar_box2_pop_top.gif) no-repeat top
+		left;
+}
+.catgBannerby3 .cover img {
+	height: 221px;
+	width: 221px;
+}
+/* ********************************************
+		Banner - 4
+   ******************************************** */
+.catgBannerby4 {
+	background-color: #979c51;
+}
+.catgBannerby4 .content {
+	background: url(../images/small_promo_bar_box3_btm.gif) no-repeat bottom
+		left;
+}
+.catgBannerby4 .contenttop {
+	width: 189px;
+	background: url(../images/small_promo_bar_p_box3_top.gif) no-repeat top left;
+}
+.catgBannerby4 .cover {
+	margin-top: -191px; /* bring the cover up */
+	height: 167px;
+	width: 157px;
+	background: url(../images/small_promo_bar_box3_pop_top.gif) no-repeat top
+		left;
+}
+.catgBannerby4 .cover img {
+	height: 155px;
+	width: 155px;
+}
+.catgBannerby4 .message {
+	width: 95%;
+}

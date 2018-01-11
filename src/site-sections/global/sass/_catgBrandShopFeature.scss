@@ -1,0 +1,1825 @@
+/*
+	name:   Category Brand Shopping Feature
+	file:	catgBrandShopFeature.css
+*/
+/* ********************************************
+		Centered Text on left (image on right)
+   ******************************************** */
+div.brandShopCtr {
+	margin-bottom: 16px;
+	width: 792px;
+	background: url(../images/content_box2_top.gif) no-repeat top left;
+	padding-top: 6px;
+	clear: both;
+}
+div.brandShopCtr .box {
+	background: url(../images/content_box2_btm.gif) no-repeat bottom left;
+	padding: 10px 16px 16px 16px;
+	overflow: auto;
+}
+div.brandShopCtr .featureContent {
+	float: left;
+	height: 229px;
+	width: 384px;
+	position: relative;
+}
+div.brandShopCtr h2.header {
+	font-size: 26px;
+	padding-bottom: 14px;
+	line-height: 31px;
+	font-weight: normal;
+	text-transform: capitalize;
+	text-align: center;
+}
+div.brandShopCtr h3 {
+	font-size: 16px;
+	line-height: 14px;
+	margin-left: 0;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+	text-align: center;
+}
+div.brandShopCtr p {
+	font-size: 14px;
+	margin-bottom: 13px;
+	line-height: 20px;
+	text-align: center;
+}
+div.brandShopCtr .featureImage {
+	float: right;
+	margin-left: 16px;
+}
+div.brandShopCtr .featureImage img {
+	width: 358px;
+	height: 227px;
+	border: solid 1px #aaaaaa;
+	display: block; /* This is here for IE */
+}
+/* ********************************************
+		Slide Show - uses jQuery Cycle
+   ******************************************** */
+div.brandShopCtr .featureImage.simplePhotoGallery,
+div.brandShopCtr .slideShow .featureImage.slides,
+div.brandShopCtr.slideShow .featureImage.slides,
+div.brandShopCtr .featureImage.slides {
+	margin-left: 15px;
+}
+/* ********************************************
+		Videos - uses jQuery SWF
+   ******************************************** */
+div.brandShopCtr.videos .featureImage.viewer {
+	width: 360px;
+	height: 229px;
+	margin: auto;
+}
+div.brandShopCtr .featureImage .video {
+	width: 358px;
+	height: 227px;
+	border: solid 1px #aaaaaa;
+}
+div.brandShopCtr .featureImage .video object {
+	width: 358px;
+	height: 227px;
+}
+div.brandShopCtr.videos .featureImage.noflash .video,
+div.brandShopCtr .noflash .video {
+	border: none;
+}
+div.brandShopCtr.videos.hidef .featureImage.viewer {
+	width: 360px;
+	height: 203px;
+	margin: auto;
+}
+div.brandShopCtr.hidef .featureImage .video,
+div.brandShopCtr.hidef .featureImage .video object,
+div.brandShopCtr.hidef .featureImage img {
+	width: 358px;
+	height: 201px;
+}
+div.brandShopCtr.hidef .featureContent {
+	height: 203px;
+}
+div.brandShopCtr .priceinfo {
+	margin-bottom: 4px;
+	line-height: 13px;
+	font-size: 12px;
+}
+div.brandShopCtr .value {
+	line-height: 13px;
+	font-size: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+div.brandShopCtr .cost {
+	line-height: 13px;
+	font-size: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+div.brandShopCtr .costBold {
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+div.brandShopCtr .specialOffer {
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	color: #921e1e; /* bordeux heavy */
+}
+div.brandShopCtr .promoMessage {
+	line-height: 13px;
+	font-size: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	color: #921e1e; /* bordeux heavy */
+}
+div.brandShopCtr .actionbar {
+	clear: both;
+	position: absolute;
+	top: 100%;
+	margin-top: -23px;
+}
+
+/* ********************************************
+		Text on left (image on right)
+   ******************************************** */
+div.brandShop {
+	margin-bottom: 16px;
+	width: 792px;
+	background: url(../images/content_box2_top.gif) no-repeat top left;
+	padding-top: 6px;
+	clear: both;
+}
+div.brandShop .box {
+	background: url(../images/content_box2_btm.gif) no-repeat bottom left;
+	padding: 10px 16px 16px 16px;
+	overflow: auto;
+}
+div.brandShop .featureContent {
+	float: left;
+	height: 219px;
+	width: 441px;
+	position: relative;
+}
+div.brandShopCtr .featureContent.reverse,
+div.brandShopCtr .reverse,
+div.brandShop .featureContent.reverse,
+div.brandShop .reverse {
+	color: #ffffff;
+}
+div.brandShop h2.header {
+	font-size: 23px;
+	padding-bottom: 16px;
+	line-height: 19px;
+	font-weight: normal;
+}
+div.brandShop h3 {
+	font-size: 15px;
+	line-height: 16px;
+	margin-left: 0;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+div.brandShop p {
+	font-size: 15px;
+	margin-bottom: 13px;
+	line-height: 20px;
+}
+div.brandShop .featureImage {
+	float: right;
+}
+div.brandShop .featureImage img {
+	width: 303px;
+	height: 217px;
+	border: solid 1px #aaaaaa;
+	display: block; /* This is here for IE */
+}
+/* ********************************************
+		Slide Show - uses jQuery Cycle
+   ******************************************** */
+div.brandShop .featureImage.simplePhotoGallery,
+div.brandShop .slideShow .featureImage.slides,
+div.brandShop.slideShow .featureImage.slides,
+div.brandShop .featureImage.slides {
+	/*margin-left: 15px; /* TODO: Determine if this is needed */
+}
+/* ********************************************
+		Videos - uses jQuery SWF
+   ******************************************** */
+div.brandShop.videos .featureImage.viewer {
+	width: 305px;
+	height: 219px;
+	margin: auto;
+}
+div.brandShop .featureImage .video {
+	width: 303px;
+	height: 217px;
+	border: solid 1px #aaaaaa;
+}
+div.brandShop .featureImage .video object {
+	width: 303px;
+	height: 217px;
+}
+div.brandShop.videos .featureImage.noflash .video,
+div.brandShop .noflash .video {
+	border: none;
+}
+div.brandShop.videos.hidef .featureImage.viewer {
+	width: 305px;
+	height: 194px;
+	margin: auto;
+}
+div.brandShop.hidef .featureImage .video,
+div.brandShop.hidef .featureImage .video object,
+div.brandShop.hidef .featureImage img {
+	width: 303px;
+	height: 192px;
+}
+div.brandShop.hidef .featureContent {
+	height: 194px;
+}
+div.brandShop .priceinfo {
+	margin-bottom: 4px;
+	line-height: 13px;
+	font-size: 12px;
+}
+div.brandShop .value {
+	line-height: 13px;
+	font-size: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+div.brandShop .cost {
+	line-height: 13px;
+	font-size: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+div.brandShop .costBold {
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 12px;
+	margin-left: 0;
+	margin-bottom: 0px;
+}
+div.brandShop .specialOffer {
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	color: #921e1e; /* bordeux heavy */
+}
+div.brandShopCtr .promoMessage {
+	line-height: 13px;
+	font-size: 12px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	color: #921e1e; /* bordeux heavy */
+}
+div.brandShop .actionbar {
+	clear: both;
+	position: absolute;
+	top: 100%;
+	margin-top: -23px;
+}
+div.brandShopCtr.threeimage .featureImage img,
+div.brandShop.threeimage .featureImage img,
+div.threeimage .featureImage img {
+	width: 153px;
+	height: 194px;
+	margin-right: 16px;
+	float: left;
+}
+div.brandShopCtr.threeimage .featureContent,
+div.brandShop.threeimage .featureContent,
+div.threeimage .featureContent {
+	width: 253px;
+	height: 194px;
+}
+div.brandShopCtr .featureImage img.last,
+div.brandShop .featureImage img.last {
+	margin-right: 0px;
+}
+/* ********************************************
+		Category Collections Pages
+   ******************************************** */
+#categorycollections .brandShopCtr {
+	margin-top: 16px;
+	margin-bottom: 30px;
+}
+#categorycollections .boxtop {
+	width: 792px;
+	padding-top: 4px;
+	background: url(../images/content_box2_top.gif) no-repeat top left;
+}
+#categorycollections .boxbottom {
+	line-height: 12px;
+	float: left;
+	width: 792px;
+	display: block;
+	background: url(../images/carsl5_box_btm.gif) no-repeat bottom right;
+	margin-bottom: 20px;
+}
+#categorycollections .boxsides {
+	float: left;
+	padding: 20px 16px 0 16px; /* padding inside the box.  The top is 16px = 4px (margin-top) + 12px; */
+	width: 760px;
+	background: url(../images/carsl5_box_sides.gif) repeat-y top left;
+	overflow: auto;
+}
+#categorycollections .collection {
+	width: 336px;
+	text-align: center;
+	float: left;
+	padding-left: 14px;
+	margin: 0 46px 20px 0;
+}
+#categorycollections .collection.even,
+#categorycollections div.even {
+	margin-right: 0px;
+}
+#categorycollections .collection.last,
+#categorycollections div.last {
+	margin-bottom: 10px;
+}
+#categorycollections .collection .imagry img {
+	width: 336px;
+	height: 180px;
+}
+#categorycollections .collection .content {
+	padding-top: 16px;
+}
+#categorycollections .collection .content h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+#categorycollections .collection .content p.story {
+	font-size: 11px;
+	line-height: 16px;
+}
+/* ********************************************
+	name:	Gift Registry Little Something Extra
+	file:	giftLittleSomethingExtra.css
+   ******************************************** */
+#giftsomethingextraintro {
+	width: 792px;
+	float: right;
+	margin-top: 8px;
+}
+#giftsomethingextraintro .imagry {
+	float: left;
+	display: inline;
+	width: 265px;
+	height: 244px;
+}
+#giftsomethingextraintro .imagry img {
+	width: 265px;
+	height: 244px;
+}
+#giftsomethingextraintro .content {
+	padding-top: 45px;
+	float: right;
+	display: inline;
+	width: 525px;
+}
+#giftsomethingextraintro .content h2.header {
+	font-size: 39px;
+	line-height: 39px;
+	margin-bottom: 16px;
+	text-align: center;
+	color: #60682f;
+	font-weight: normal;
+}
+#giftsomethingextraintro .content h2 {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 15px;
+	margin-bottom: 16px;
+	text-align: center;
+	color: #878f46;
+}
+#giftsomethingextraintro .content h3 {
+	clear: both;
+	font-size: 17px;
+	line-height: 17px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #878f46;
+}
+#giftsomethingextraintro .content .story {
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 2em;
+}
+#giftsomethingextraintro .content .actions {
+	clear: both;
+	overflow: auto;
+	display: block;
+}
+#giftsomethingextraintro .content .actions a {
+	margin-left: 150px;
+	margin-bottom: 12px;
+}
+
+#giftsomethingextraintro .content .actions a span {
+	text-align: center;
+}
+#giftsomethingextra .completions,
+#giftsomethingextra .incentives {
+	padding-top: 0px;
+	margin-bottom: 32px;
+	float: left;
+}
+#giftsomethingextra .completions .boxtop {
+	position: relative;
+	padding-top: 38px;
+	background: url(../../images/gr_incentive_images/gr_incentive_boxheader_aftpurchase_gifts.jpg)
+		no-repeat top left;
+}
+#giftsomethingextra .incentives .boxtop {
+	position: relative;
+	padding-top: 38px;
+	background: url(../../images/gr_incentive_images/gr_incentive_boxheader_register_gifts.jpg)
+		no-repeat top left;
+}
+#giftsomethingextra .boxsides {
+	padding: 10px 17px 28px 25px;
+	width: auto;
+	overflow: auto;
+	background: url(../images/content_box2_sides.gif) repeat-y bottom left;
+}
+#giftsomethingextra .boxbottom {
+	font-size: 6px;
+	line-height: 6px;
+	height: 16px;
+	width: 792px;
+	background: url(../images/content_box2_btm.gif) no-repeat bottom left;
+}
+#giftsomethingextra .incentive {
+	padding-left: 7px;
+	text-align: center;
+	width: 236px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 14px;
+}
+#giftsomethingextra .incentive.last,
+#giftsomethingextra .completions .last,
+#giftsomethingextra .incentives .last {
+	margin-right: 0px;
+}
+
+#giftsomethingextra .incentive img {
+	width: 223px;
+	height: 130px;
+	display: block;
+	text-align: left; /* IE 7 */
+}
+#giftsomethingextra .incentive p {
+	padding-top: 8px;
+	line-height: 21px;
+	margin-left: -5px;
+	width: 234px;
+	float: left;
+}
+#giftsomethingextra .incentive a.button {
+	background: url(../images/button_purple_left.gif) no-repeat left top;
+}
+#giftsomethingextra .incentive a.button span {
+	width: 185px;
+	background: url(../images/button_purple_right.gif) no-repeat right top;
+}
+/* ********************************************
+       ===============================
+	name:	Culinary Full Page Promo
+	file:	culFullpagePromo.css	(deprecated - appended to catgbrandshopfeature)
+	desc:	Styles used for all culinary full page promo pages.  Each full page promo, like Eating Local cookbook promo page, Baking Kids Love cookbook promo page, Knives Cooks Love cookbook promo paga, Tips Cooks Love cookbook promo page, etc., share this common CSS.
+       ===============================
+   ******************************************** */
+#culpagepromo {
+	width: 792px;
+	overflow: auto;
+	margin: 0 0 16px 0;
+	padding: 4px 0 0 0;
+}
+#culpagepromo .floatingimages {
+	position: relative;
+}
+/* ********************************
+		Introduction Section
+   ******************************** */
+#culpagepromo .introduction {
+	overflow: auto;
+	padding: 4px 0 0 0;
+	margin: 0;
+	width: 792px;
+}
+#culpagepromo .floatingimages .introduction {
+	position: absolute;
+	top: 0px;
+	z-index: 10;
+}
+#culpagepromo .introduction .imagery {
+	float: right;
+	border: none;
+	margin: 0;
+	height: 202px;
+}
+#culpagepromo .introduction.twoimage .imagery,
+#culpagepromo .twoimage .imagery {
+	width: 362px;
+	width: 364px; /* TEST */
+}
+#culpagepromo .introduction .imagery img {
+	width: 265px;
+	height: 200px;
+	display: inline;
+	float: right; /* TEST */
+}
+#culpagepromo .introduction .content {
+	float: left;
+	display: inline;
+	overflow: auto;
+	width: 524px;
+	margin-right: 0px;
+	margin-top: -7px;
+}
+#culpagepromo .introduction .content.center,
+#culpagepromo .introduction .center {
+	text-align: center;
+}
+#culpagepromo .introduction.twoimage .imagery img,
+#culpagepromo .twoimage .imagery img {
+	width: 169px;
+	height: 198px;
+	margin-right: 10px;
+	border: solid 1px #aaaaaa;
+	display: block;
+	float: left;
+	float: right; /* TEST */
+}
+#culpagepromo .introduction.twoimage .content,
+#culpagepromo .twoimage .content {
+	width: 416px;
+}
+#culpagepromo .introduction .content h2 {
+	font-size: 39px;
+	line-height: 39px;
+	margin-bottom: 12px;
+	text-align: center;
+	color: #444444;
+}
+#culpagepromo .introduction .content h3 {
+	font-size: 27px;
+	line-height: 21px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #444444;
+	padding-top: 4px;
+}
+#culpagepromo .introduction .content h3.header {
+	text-transform: uppercase;
+	font-size: 23px;
+	line-height: 29px;
+	margin-bottom: 15px;
+}
+#culpagepromo .introduction .content h4 {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+#culpagepromo .introduction .content .story {
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 12px; /* ??? */
+}
+#culpagepromo .introduction .content .story .title {
+	font-style: italic;
+}
+#culpagepromo .introduction .content .actions {
+	clear: both;
+	overflow: auto;
+	display: block;
+	margin-bottom: 16px;
+}
+#culpagepromo .introduction .content .actions li {
+	margin-bottom: 12px; /* ??? */
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	/*line-height: 14px;*/
+	font-size: 13px;
+}
+#culpagepromo .introduction .content .actions a.toplink {
+}
+#culpagepromo .introduction .content .actions a.middlelink {
+}
+#culpagepromo .introduction .content .actions a.bottomlink {
+}
+#culpagepromo .introduction .content .actions li.last {
+	width: 100%;
+	margin-bottom: 0px;
+}
+#culpagepromo .introduction .content .actions li.last div {
+	width: 201px;
+	margin: 0 auto 0 auto;
+}
+/* ********************************
+		Featured Product Section
+   ******************************** */
+#culpagepromo .featureContent {
+	width: 792px;
+	padding-top: 6px;
+	background: url(../images/content_box2_top.gif) no-repeat top left;
+	clear: both;
+	margin-bottom: 16px;
+	position: relative;
+}
+#culpagepromo .featureContent.reverse,
+#culpagepromo .featureContent.reverse .note,
+#culpagepromo .reverse,
+#culpagepromo .reverse .note,
+#culpagepromo .featureContent.reverse a,
+#culpagepromo .reverse a {
+	color: #ffffff;
+}
+#culpagepromo .floatingimages .featureContent {
+	position: absolute;
+	top: 190px;
+	z-index: 1;
+}
+#culpagepromo .featureContent .box {
+	padding: 10px 16px 16px 16px;
+	background: url(../images/content_box2_btm.gif) no-repeat bottom left;
+	/*height: 438px;*/
+}
+#culpagepromo .featureContent .boxsides {
+	float: left;
+	padding: 12px 16px 0 16px;
+	width: 760px;
+	background: url(../images/content_box2_sides_trans.gif) repeat-y bottom left;
+	display: block;
+}
+#culpagepromo .featureContent .boxbottom {
+	float: left;
+	background: url(../images/content_box2_btm.gif) no-repeat bottom left;
+	width: 792px;
+	display: block;
+}
+#culpagepromo .featureContent .box .featureInfo {
+	float: left;
+	width: 292px;
+}
+#culpagepromo .featureContent .box .featureInfo.midway {
+	position: absolute;
+	top: 50%;
+}
+#culpagepromo .featureContent .box .featureInfo.right {
+	float: right;
+	width: 286px;
+}
+#culpagepromo .featureContent .box .featureInfo.fullwidth,
+#culpagepromo .featureContent .boxsides .featureInfo.fullwidth,
+#culpagepromo .featureContent .box .featureInfo.videos,
+#culpagepromo .featureContent .boxsides .featureInfo.videos,
+#culpagepromo .featureContent .boxsides .fullwidth,
+#culpagepromo .featureContent .box .fullwidth,
+#culpagepromo .featureContent .boxsides .videos,
+#culpagepromo .featureContent .box .videos {
+	width: 760px;
+}
+#culpagepromo .featureContent .center {
+	text-align: center;
+}
+#culpagepromo .floatingimages .featureContent .featureInfo {
+	margin-top: 20px;
+}
+#culpagepromo .featureContent .featureInfo .title {
+	font-style: italic;
+}
+#culpagepromo .featureContent .featureInfo h3 {
+	font-size: 23px;
+	line-height: 31px;
+	margin-bottom: 6px;
+}
+#culpagepromo .featureContent .featureInfo p {
+	padding-top: 3px;
+	font-size: 13px;
+	line-height: 20px;
+}
+#culpagepromo .featureContent .featureInfo p.last {
+	margin-bottom: 22px;
+}
+#culpagepromo .featureContent .featureInfo h4 {
+	line-height: 23px;
+	margin-bottom: 6px;
+}
+#culpagepromo .featureContent .featureInfo h4.header {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#culpagepromo .featureContent .featureInfo p.note {
+	font-size: 12px;
+}
+/* ********************************
+		Heavy Padding Section
+        (heavy padding 26px;)
+   ******************************** */
+#culpagepromo .featureContent .box.heavy .featureInfo.fullwidth,
+#culpagepromo .featureContent .boxsides.heavy .featureInfo.fullwidth,
+#culpagepromo .featureContent .box.heavy .featureInfo.videos,
+#culpagepromo .featureContent .boxsides.heavy .featureInfo.videos,
+#culpagepromo .featureContent .boxsides.heavy .fullwidth,
+#culpagepromo .featureContent .box.heavy .fullwidth,
+#culpagepromo .featureContent .boxsides.heavy .videos,
+#culpagepromo .featureContent .box.heavy .videos,
+#culpagepromo .featureContent .heavy .featureInfo,
+#culpagepromo .featureContent .heavy .videos {
+	width: 740px;
+	padding-left: 10px;
+}
+/* ********************************
+		Featured Product Video Section
+   ******************************** */
+#culpagepromo .featureContent .featureInfo.videos,
+#culpagepromo .featureContent .videos {
+	height: 347px; /*370px;*/
+}
+#culpagepromo .featureContent .featureInfo.videos .content,
+#culpagepromo .featureContent .videos .content {
+	float: left;
+	margin-right: 24px;
+}
+#culpagepromo .featureContent .featureInfo .content .logo {
+	margin-bottom: 22px;
+}
+#culpagepromo .featureContent .videos .content h4 {
+	font-size: 15px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+#culpagepromo .featureContent .videos .noframe {
+	position: relative;
+	width: 425px;
+	height: 385px;
+	padding: 0;
+	margin: 0 18px 18px 0;
+	float: left;
+}
+#culpagepromo .featureContent .videos .frame {
+	position: relative;
+	width: 409px;
+	height: 369px;
+	padding: 8px;
+	border: solid 1px #aaaaaa;
+	background-color: #f0f0d5;
+	margin: 0 18px 18px 0;
+	float: left;
+}
+#culpagepromo .featureContent .videos.featureInfo .noframe.rightside,
+#culpagepromo .featureContent .videos.featureInfo .frame.rightside,
+#culpagepromo .featureContent .videos.featureInfo .rightside,
+#culpagepromo .featureContent .videos .noframe.rightside,
+#culpagepromo .featureContent .videos .frame.rightside {
+	/*float: right;*/
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .videos .noframe .viewer.content,
+#culpagepromo .featureContent .videos .frame .viewer.content,
+#culpagepromo .featureContent .videos .noframe .content,
+#culpagepromo .featureContent .videos .noframe .viewer,
+#culpagepromo .featureContent .videos .frame .content,
+#culpagepromo .featureContent .videos .frame .viewer {
+	margin: 0px;
+}
+#culpagepromo .featureContent .videos.featureInfo .content.rightside,
+#culpagepromo .featureContent .videos.featureInfo .viewer.rightside,
+#culpagepromo .featureContent .videos .content.rightside,
+#culpagepromo .featureContent .videos .viewer.rightside {
+	/*float: right;*/
+	margin-right: 10px;
+}
+#culpagepromo .featureContent.reverse .videos .frame {
+	border: none;
+	background-color: Transparent;
+}
+#culpagepromo .featureContent .videos .viewer {
+	margin-bottom: 16px;
+}
+#culpagepromo .featureContent .videos .noframe .viewer,
+#culpagepromo .featureContent .videos .frame .viewer {
+	margin-bottom: 0px;
+}
+#culpagepromo .featureContent .videos .noframe .video,
+#culpagepromo .featureContent .videos .video {
+	width: 425px;
+	height: 349px;
+}
+#culpagepromo .featureContent .videos .frame .video {
+	width: 409px;
+	height: 333px;
+}
+/* ********************************
+		Featured Product Video Section
+                HiDef Videos
+   ******************************** */
+#culpagepromo .featureContent .videos.hidef .frame,
+#culpagepromo .featureContent .hidef .frame {
+	width: 424px;
+	height: 268px;
+}
+#culpagepromo .featureContent .videos.hidef .noframe {
+	width: 440px;
+	height: 284px;
+}
+#culpagepromo .featureContent .hidef .noframe .video object,
+#culpagepromo .featureContent .hidef .noframe .video img,
+#culpagepromo .featureContent .hidef .noframe .video,
+#culpagepromo .featureContent .hidef .video object,
+#culpagepromo .featureContent .hidef .video img,
+#culpagepromo .featureContent .hidef .video {
+	width: 440px;
+	height: 248px;
+}
+#culpagepromo .featureContent .hidef .frame .video object,
+#culpagepromo .featureContent .hidef .frame .video img,
+#culpagepromo .featureContent .hidef .frame .video {
+	width: 424px;
+	height: 232px;
+}
+/* ********************************
+		Featured Product Video Section
+           Full width HiDef Videos
+   ******************************** */
+#culpagepromo .featureContent .videos.hidef.large .frame,
+#culpagepromo .featureContent .hidef.large .frame {
+	width: 742px;
+	height: 453px;
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .videos.hidef.large .noframe,
+#culpagepromo .featureContent .hidef.large .noframe {
+	width: 760px;
+	height: 463px;
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .heavy .videos.hidef.large .frame,
+#culpagepromo .featureContent .heavy .hidef.large .frame {
+	width: 722px;
+	height: 441px;
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .heavy .videos.hidef.large .noframe,
+#culpagepromo .featureContent .heavy .hidef.large .noframe {
+	width: 740px;
+	height: 452px;
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .hidef.large .noframe .video,
+#culpagepromo .featureContent .hidef.large .video object,
+#culpagepromo .featureContent .hidef.large .video img,
+#culpagepromo .featureContent .hidef.large .video {
+	height: 428px;
+	width: 760px;
+}
+#culpagepromo .featureContent .hidef.large .frame .video object,
+#culpagepromo .featureContent .hidef.large .frame .video img,
+#culpagepromo .featureContent .hidef.large .frame .video {
+	height: 418px;
+	width: 742px;
+}
+#culpagepromo .featureContent .heavy .hidef.large .noframe .video,
+#culpagepromo .featureContent .heavy .hidef.large .video object,
+#culpagepromo .featureContent .heavy .hidef.large .video img,
+#culpagepromo .featureContent .heavy .hidef.large .video {
+	height: 417px;
+	width: 740px;
+}
+#culpagepromo .featureContent .heavy .hidef.large .frame .video object,
+#culpagepromo .featureContent .heavy .hidef.large .frame .video img,
+#culpagepromo .featureContent .heavy .hidef.large .frame .video {
+	height: 407px;
+	width: 722px;
+}
+/* ********************************
+		Featured Product Video Section
+                Page Article
+   ******************************** */
+#culpagepromo .featureContent .hidef .videoStory,
+#culpagepromo .featureContent .videos .story {
+	float: left;
+	width: 308px;
+	width: 312px;
+}
+#culpagepromo .featureContent .heavy .videos .story {
+	width: 288px;
+}
+#culpagepromo .featureContent .featureInfo.videos .story.videoStory,
+#culpagepromo .featureContent .videos .videoStory {
+	margin: 0 18px 18px 0;
+	width: 312px;
+	height: 340px;
+	padding-top: 45px;
+}
+#culpagepromo .featureContent .heavy .featureInfo.videos .story.videoStory,
+#culpagepromo .featureContent .heavy .videos .videoStory {
+	width: 312px;
+}
+#culpagepromo .featureContent .featureInfo.videos .summary,
+#culpagepromo .featureContent .videos .summary {
+	float: left;
+	width: 760px;
+}
+#culpagepromo .featureContent .heavy .featureInfo.videos .summary,
+#culpagepromo .featureContent .heavy .videos .summary {
+	width: 740px;
+}
+#culpagepromo .featureContent .featureInfo.videos .summary .article.leftside,
+#culpagepromo .featureContent .featureInfo.videos .summary .leftside,
+#culpagepromo .featureContent .videos .summary .article.leftside,
+#culpagepromo .featureContent .videos .summary .leftside {
+	width: 372px;
+	margin-right: 16px;
+}
+#culpagepromo .featureContent .featureInfo.videos .summary .article.rightside,
+#culpagepromo .featureContent .featureInfo.videos .summary .rightside,
+#culpagepromo .featureContent .videos .summary .article.rightside,
+#culpagepromo .featureContent .videos .summary .rightside {
+	width: 372px;
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .heavy .videos .summary .article.rightside,
+#culpagepromo .featureContent .heavy .videos .summary .article.leftside,
+#culpagepromo .featureContent .heavy .videos .summary .rightside,
+#culpagepromo .featureContent .heavy .videos .summary .leftside {
+	width: 362px;
+}
+#culpagepromo .featureContent .videos .story.rightside,
+#culpagepromo .featureContent .videos .rightside {
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .videos.hidef .story.videoStory,
+#culpagepromo .featureContent .videos.hidef .videoStory,
+#culpagepromo .featureContent .hidef .story.videoStory,
+#culpagepromo .featureContent .hidef .videoStory,
+#culpagepromo .featureContent .hidef .story {
+	width: 298px;
+	height: 239px;
+}
+#culpagepromo .featureContent .heavy .videos.hidef .story.videoStory,
+#culpagepromo .featureContent .heavy .videos.hidef .videoStory,
+#culpagepromo .featureContent .heavy .hidef .story.videoStory,
+#culpagepromo .featureContent .heavy .hidef .videoStory,
+#culpagepromo .featureContent .heavy .hidef .story {
+	width: 278px;
+	height: 239px;
+}
+#culpagepromo .featureContent .videos .summary .selection,
+#culpagepromo .featureContent .videos .story .selection,
+#culpagepromo .featureContent .videos .summary .article,
+#culpagepromo .featureContent .videos .story .article {
+	float: left;
+	font-size: 14px;
+	line-height: 21px;
+}
+#culpagepromo .featureContent .videos .summary h3,
+#culpagepromo .featureContent .videos .story h3 {
+	font-size: 25px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+#culpagepromo .featureContent .videos .summary h4,
+#culpagepromo .featureContent .videos .story h4 {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+#culpagepromo .featureContent .videos .summary h5,
+#culpagepromo .featureContent .videos .story h5 {
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+#culpagepromo .featureContent.reverse .videos .summary h5 a:hover,
+#culpagepromo .featureContent.reverse .videos .story h5 a:hover,
+#culpagepromo .reverse .videos .summary h5 a:hover,
+#culpagepromo .reverse .videos .story h5 a:hover {
+	//border-bottom: solid 1px #FFFFFF;
+}
+#culpagepromo .featureContent .videos .summary p,
+#culpagepromo .featureContent .videos .story p {
+	font-size: 14px;
+	line-height: 21px;
+	padding-top: 0px;
+}
+#culpagepromo .featureContent .featureInfo.videos .summary p.last,
+#culpagepromo .featureContent .featureInfo.videos .story p.last,
+#culpagepromo .featureContent .videos .summary p.last,
+#culpagepromo .featureContent .videos .story p.last {
+	margin-bottom: 0px;
+}
+#culpagepromo .featureContent .videos ul.selection {
+	margin-left: 0px;
+	list-style-type: none;
+}
+#culpagepromo .featureContent .videos ul.selection li {
+	line-height: 1.3;
+	margin-bottom: 12px;
+	padding-left: 24px;
+	background: url(../images/movie_button_off.gif) 0px 3px no-repeat;
+}
+#culpagepromo .featureContent .videos ul.selection li.playing {
+	background: url(../images/movie_button_on.gif) 0px 3px no-repeat;
+}
+/* ********************************
+		Featured Product Video Section
+              No Flash Content
+   ******************************** */
+#culpagepromo .featureContent .videos .noflash .video .story.videoStory,
+#culpagepromo .featureContent .videos .noflash .video .videoStory,
+#culpagepromo .featureContent .videos .noflash .video .story {
+	width: 403px;
+	height: 327px;
+}
+#culpagepromo .featureContent .videos .frame .noflash .video .story.videoStory,
+#culpagepromo .featureContent .videos .frame .noflash .video .videoStory,
+#culpagepromo .featureContent .videos .frame .noflash .video .story {
+	width: 387px;
+	height: 311px;
+}
+#culpagepromo
+	.featureContent
+	.videos.hidef
+	.noframe
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.videos.hidef
+	.noframe
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo .featureContent .videos.hidef .noframe .noflash .video .story,
+#culpagepromo .featureContent .hidef .noframe .noflash .video .story.videoStory,
+#culpagepromo .featureContent .hidef .noframe .noflash .video .videoStory,
+#culpagepromo .featureContent .hidef .noframe .noflash .video .story {
+	width: 418px;
+	height: 226px;
+}
+#culpagepromo
+	.featureContent
+	.videos.hidef
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo .featureContent .videos.hidef .frame .noflash .video .videoStory,
+#culpagepromo .featureContent .videos.hidef .frame .noflash .video .story,
+#culpagepromo .featureContent .hidef .frame .noflash .video .story.videoStory,
+#culpagepromo .featureContent .hidef .frame .noflash .video .videoStory,
+#culpagepromo .featureContent .hidef .frame .noflash .video .story {
+	width: 402px;
+	height: 210px;
+}
+#culpagepromo
+	.featureContent
+	.videos.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.videos.hidef.large
+	.noframe
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo
+	.featureContent
+	.videos.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story,
+#culpagepromo
+	.featureContent
+	.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo .featureContent .hidef.large .noframe .noflash .video .videoStory,
+#culpagepromo .featureContent .hidef.large .noframe .noflash .video .story {
+	height: 406px;
+	width: 738px;
+}
+#culpagepromo
+	.featureContent
+	.videos.hidef.large
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.videos.hidef.large
+	.frame
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo .featureContent .videos.hidef.large .frame .noflash .video .story,
+#culpagepromo
+	.featureContent
+	.hidef.large
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo .featureContent .hidef.large .frame .noflash .video .videoStory,
+#culpagepromo .featureContent .hidef.large .frame .noflash .video .story {
+	height: 396px;
+	width: 720px;
+}
+#culpagepromo
+	.featureContent
+	.heavy
+	.videos.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.videos.hidef.large
+	.noframe
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.videos.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story,
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.noframe
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.noframe
+	.noflash
+	.video
+	.story {
+	height: 395px;
+	width: 718px;
+}
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.noframe
+	.noflash
+	.video
+	p.getFlash {
+	padding-left: 244px;
+}
+#culpagepromo
+	.featureContent
+	.heavy
+	.videos.hidef.large
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.videos.hidef.large
+	.frame
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.videos.hidef.large
+	.frame
+	.noflash
+	.video
+	.story,
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.frame
+	.noflash
+	.video
+	.videoStory,
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.frame
+	.noflash
+	.video
+	.story {
+	height: 385px;
+	width: 700px;
+}
+#culpagepromo
+	.featureContent
+	.heavy
+	.hidef.large
+	.frame
+	.noflash
+	.video
+	p.getFlash {
+	padding-left: 235px;
+}
+/* ********************************
+		Featured Product Section
+                 Content
+   ******************************** */
+#culpagepromo .featureContent .featureInfo .imagery {
+	margin-bottom: 16px;
+	float: left;
+}
+#culpagepromo .featureContent .featureInfo .imagery.byfour img,
+#culpagepromo .featureContent .featureInfo .byfour img {
+	width: 172px;
+	height: 172px;
+	border: solid 1px #ffffff;
+	margin-right: 16px;
+}
+#culpagepromo .featureContent .featureInfo .imagery.byfour img.last,
+#culpagepromo .featureContent .featureInfo .byfour img.last {
+	margin-right: 0px;
+}
+#culpagepromo .featureContent .featureInfo .menus,
+#culpagepromo .featureContent .featureInfo .culclassseriesby3Short,
+#culpagepromo .featureContent .featureInfo .menus.culclassseriesby3Short {
+	background: none;
+	width: auto;
+}
+#culpagepromo .featureContent .featureInfo .menus h4 {
+	font-size: 18px;
+	line-height: 23px;
+	margin-bottom: 16px;
+}
+#culpagepromo .featureContent .featureInfo .menus .menu {
+	padding: 0 8px 0 0;
+	float: left;
+	overflow: auto;
+	margin-right: 8px;
+	margin-bottom: 22px;
+}
+#culpagepromo .featureContent .featureInfo .menus .menu p {
+	padding: 0px 8px 0px 8px;
+	margin-bottom: 8px;
+}
+#culpagepromo .featureContent .featureInfo .menus .menu h5.highlight {
+	float: left;
+	display: block;
+	margin: 0 0 8px 0;
+	padding-left: 4px;
+}
+#culpagepromo .featureContent .featureInfo .menus .menu h5.highlight span {
+	float: left;
+	display: block;
+	height: 27px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#culpagepromo .featureContent.reverse .featureInfo .menus .menu {
+	border-right: solid 1px #ffffff;
+}
+#culpagepromo .featureContent .featureInfo .menus.bythree .menu {
+	width: 241px;
+}
+#culpagepromo .featureContent .featureInfo .menus.bythree .menu p {
+	width: 225px;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.menus.bythree
+	.menu
+	h5.highlight
+	span {
+	width: 225px;
+}
+#culpagepromo .featureContent .featureInfo .menus .menu.last {
+	padding: 0;
+	margin-right: 0;
+	border-right: none;
+}
+#culpagepromo .featureContent .featureInfo.fullwidth .menus .actionbar,
+#culpagepromo .featureContent .featureInfo.fullwidth .summary .actionbar {
+	width: 658px;
+}
+#culpagepromo .featureContent .featureInfo.fullwidth .menus .actionbar p,
+#culpagepromo .featureContent .featureInfo.fullwidth .summary .actionbar p {
+	padding-right: 10px;
+}
+#culpagepromo .featureContent .featureInfo .menus .actionbar,
+#culpagepromo .featureContent .featureInfo .summary .actionbar {
+	float: left;
+	width: 750px;
+	height: 44px;
+	padding-left: 10px;
+	clear: both;
+}
+#culpagepromo .featureContent .featureInfo .menus .actionbar .innerbox,
+#culpagepromo .featureContent .featureInfo .summary .actionbar .innerbox {
+	float: left;
+	width: 740px;
+	padding: 15px 10px 0 0;
+	height: 29px;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.menus
+	.actionbar
+	.innerbox
+	.content {
+	float: left;
+	width: 542px;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.actionbar
+	.innerbox
+	.story {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.menus
+	.actionbar
+	.innerbox
+	.content
+	p,
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.actionbar
+	.innerbox
+	.content
+	p {
+	line-height: 23px;
+}
+#culpagepromo .featureContent .featureInfo .menus .actionbar .innerbox .action,
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.actionbar
+	.innerbox
+	.action {
+	float: right;
+	width: 191px;
+	padding-top: 4px;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.actionbar
+	.innerbox
+	.action.clearboth,
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.actionbar
+	.innerbox
+	.clearboth {
+	width: 100%;
+	/*text-align: center;*/
+	float: left;
+}
+#culpagepromo .featureContent .featureInfo .summary .location {
+	float: left;
+}
+#culpagepromo .featureContent .featureInfo .summary .location .acticle {
+	width: 460px; /* ??? */
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	line-height: 21px;
+	margin-right: 6px;
+}
+#culpagepromo .featureContent .featureInfo .summary .location .acticle h5 {
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+#culpagepromo .featureContent .featureInfo .summary .location .schedule {
+	width: 272px;
+	padding-top: 6px;
+	/*background image must be specified in the html*/
+	/*background: url(../images/content_box?_top.gif) no-repeat top left;*/
+	background: none; /* override any backgrounds set else where in the css */
+	position: relative;
+	float: left;
+	font-size: 13px;
+	line-height: 19px;
+}
+#culpagepromo
+	.featureContent.reverse
+	.featureInfo
+	.summary
+	.location
+	.schedule {
+	/* box with white sides */
+	/*background image must be specified in the html*/
+	/*background: url(../images/content_box?_top.gif) no-repeat top left;*/
+	background: none; /* override any backgrounds set else where in the css */
+}
+#culpagepromo .featureContent .featureInfo .summary .location .schedule .box {
+	padding: 6px 10px 10px 10px;
+	padding: 6px 0px 10px 0px;
+	/*background image must be specified in the html*/
+	/*background: url(../images/content_box?_btm.gif) no-repeat bottom left;*/
+	background: none; /* override any backgrounds set else where in the css */
+	height: 100%; /* ??? */
+}
+#culpagepromo
+	.featureContent.reverse
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box {
+	/* box with white sides */
+	/*background image must be specified in the html*/
+	/*background: url(../images/content_box?_btm.gif) no-repeat bottom left;*/
+	background: none; /* override any backgrounds set else where in the css */
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	h5 {
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	dl {
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	ul {
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	text-align: center;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	dl
+	dt {
+	clear: both;
+	width: 48%;
+	float: left;
+	text-align: right;
+	padding-right: 2%;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	dl
+	dd {
+	margin: 0;
+	width: 50%;
+	float: left;
+	margin-bottom: 6px;
+	text-align: left;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	dl
+	label,
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	ul
+	label {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	dl
+	dd
+	.date,
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	ul
+	.date {
+	text-transform: uppercase;
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	dl
+	dd
+	.time,
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	ul
+	.time {
+}
+#culpagepromo
+	.featureContent
+	.featureInfo
+	.summary
+	.location
+	.schedule
+	.box
+	li.last {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+/* ********************************
+		SideBySide Section
+   ******************************** */
+#culpagepromo .sidebyside {
+	width: 792px;
+	float: left;
+	clear: both;
+	overflow: auto;
+	padding-top: 6px;
+	margin-bottom: 22px;
+	/*border: solid 1px #aaaaaa;*/
+}
+/* ********************************
+		Tips Section
+   ******************************** */
+#culpagepromo .sidebyside .tips {
+	width: 456px;
+	float: left;
+	padding-top: 6px;
+	background: url(../../images/promotions/cookbook/books_box_top.gif)
+		no-repeat top left;
+}
+#culpagepromo .sidebyside .tips .box {
+	padding: 10px 16px 6px 16px;
+	background: url(../../images/promotions/cookbook/books_box_btm.gif)
+		no-repeat bottom left;
+}
+#culpagepromo .sidebyside .tips .box .clearboth {
+	font-size: 1px;
+	height: 10px;
+	line-height: 1px;
+	overflow: hidden;
+}
+#culpagepromo .sidebyside .tips.reverse {
+	color: #ffffff; /* White */
+}
+#culpagepromo .sidebyside .tips h3 {
+	font-size: 23px;
+	line-height: 25px;
+	margin-bottom: 11px;
+}
+#culpagepromo .sidebyside .tips .recipes h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+#culpagepromo .sidebyside .tips p {
+	padding-top: 3px;
+	font-size: 11px;
+	line-height: 15px;
+}
+#culpagepromo .sidebyside .tips .tip {
+	width: 424px;
+	margin: 0 0 18px 0;
+	margin: 0;
+}
+#culpagepromo .sidebyside .tips .tip.last,
+#culpagepromo .sidebyside .tips .tip.last p {
+	margin: 0;
+}
+#culpagepromo .sidebyside .tips .seperator {
+	width: 424px;
+	height: 8px;
+	border-bottom: dotted 1px #aaaaaa;
+	margin-bottom: 16px;
+}
+#culpagepromo .sidebyside .tips.reverse .seperator {
+	border-bottom: dotted 1px #ffffff;
+}
+/* ********************************
+		Recipe Section
+   ******************************** */
+#culpagepromo .sidebyside .tips .recipes {
+	width: 100%;
+}
+#culpagepromo .sidebyside .tips .recipes .ingredients {
+	padding: 0px;
+	margin: 0 4px 0 0;
+	width: 150px;
+	float: left;
+}
+#culpagepromo .sidebyside .tips .recipes .ingredients img {
+	height: 92px;
+	width: 139px;
+	display: inline;
+	margin: 0 0 10px 0;
+}
+#culpagepromo .sidebyside .tips .recipes .ingredients p {
+	padding-top: 0px;
+	margin-bottom: 4px;
+}
+#culpagepromo .sidebyside .tips .recipes .ingredients ul {
+	list-style-position: outside;
+	list-style-type: disc;
+	color: #ffffff;
+	padding-left: 16px;
+}
+#culpagepromo .sidebyside .tips .recipes .ingredients li {
+	font-size: 11px;
+	line-height: 16px;
+	margin-bottom: 4px;
+}
+#culpagepromo .sidebyside .tips .recipes .ingredients li.last {
+	margin-bottom: 0px;
+}
+#culpagepromo .sidebyside .tips .recipes .gutter {
+	border-left: dotted 1px #aaaaaa;
+	margin: 18px 0 0 0;
+	width: 12px;
+	float: left;
+}
+#culpagepromo .sidebyside .tips.reverse .recipes .gutter {
+	border-left: dotted 1px #ffffff;
+}
+#culpagepromo .sidebyside .tips .recipes .instructions {
+	width: 256px;
+	float: right;
+}
+#culpagepromo .sidebyside .tips.reverse .recipes .instructions {
+	padding-left: 12px;
+	background: url() no-repeat top left;
+	padding-left: 0px; /* TODO: This can go away once a background image has been defined */
+}
+#culpagepromo .sidebyside .tips .recipes .instructions h3 {
+	margin-bottom: 8px;
+}
+#culpagepromo .sidebyside .tips .recipes .instructions p.last {
+	margin-bottom: 0px;
+}
+/* ********************************
+		Product Section
+   ******************************** */
+#culpagepromo .sidebyside .featureInfo {
+	float: right;
+	width: 280px;
+	padding: 16px 22px 0 34px;
+}
+#culpagepromo .sidebyside .featureInfo .imagery {
+	float: left;
+	margin: 0;
+	border: none;
+}
+#culpagepromo .sidebyside .featureInfo .imagery img {
+	height: 180px;
+	width: 280px;
+	display: inline;
+}
+#culpagepromo .sidebyside .featureInfo p {
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 22px;
+}
+#culpagepromo .sidebyside .featureInfo .title {
+	font-style: italic;
+}
+/* ********************************
+		Pricing Section
+   ******************************** */
+#culpagepromo .actionbar {
+	float: left;
+	clear: both;
+}
+#culpagepromo .priceinfo {
+	margin-bottom: 22px;
+	line-height: 16px;
+}
+#culpagepromo .priceinfo .specialOffer {
+	font-weight: bold;
+	font-size: 11px;
+	color: #921e1e; /* bordeux heavy */
+}
+#culpagepromo .priceinfo .promoMessage {
+	font-size: 12px;
+	color: #921e1e; /* bordeux heavy */
+}
+#culpagepromo .priceinfo .cost {
+	font-weight: bold;
+	font-size: 11px;
+}
+#culpagepromo .priceinfo .value {
+	font-size: 12px;
+}

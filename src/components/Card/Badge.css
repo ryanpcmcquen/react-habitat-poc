@@ -1,0 +1,10 @@
+.slt-badge {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #6d8b19;
+	text-align: center;
+	color: white;
+	padding: 5px;
+	font-size: 16px;
+}

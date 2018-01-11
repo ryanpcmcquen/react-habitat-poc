@@ -1,0 +1,158 @@
+/*
+	name:	categary feature pic 2&3
+	file:	catgfeaturepic.css
+*/
+
+/*
+.catgfeaturepic.colorset-1
+{
+    background-color: #eaedd7;
+}
+*/
+.catgfeaturepic {
+	float: left;
+	padding-top: 4px;
+	margin-bottom: 16px;
+	width: 792px;
+	background: url(../images/content_box2_top.gif) no-repeat left top;
+	display: inline;
+}
+.catgfeaturepic .box {
+	float: left;
+	background: url(../images/content_box2_btm.gif) no-repeat left bottom;
+	overflow: auto;
+	padding: 0px 16px 16px 16px;
+	*padding: 0 16px 4px 16px;
+	margin-top: 3px;
+	width: 760px;
+	display: inline;
+}
+.catgfeaturepic h2.header {
+	width: 760px;
+	font-size: 23px;
+	font-weight: normal;
+	/*line-height:23px;*/
+	margin: 0 0 4px 0;
+	padding: 0;
+}
+.catgfeaturepic h3 {
+	font-size: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+}
+.catgfeaturepic .box p.story {
+	font-size: 13px;
+}
+
+/* ************************************
+	3 pic
+   ************************************ */
+.catgfeaturepic .featurestory3 {
+	float: left;
+	width: 225px;
+	margin-right: 17px;
+	display: inline;
+}
+catgfeaturepic .box .items3 {
+	float: left;
+	width: 518px;
+	display: inline;
+}
+.catgfeaturepic .box .items3 ul li {
+	float: left;
+	width: 162px;
+	margin-right: 16px;
+	display: inline;
+}
+.catgfeaturepic .box .items3 ul li.last {
+	margin-right: 0;
+}
+.catgfeaturepic .items3 dl.item1 {
+	padding: 0;
+	margin: 0;
+}
+.catgfeaturepic .items3 dl.item1 dt {
+	width: 162px;
+}
+.catgfeaturepic .items3 dl.item1 dt a {
+	display: block;
+	border: 0;
+}
+.catgfeaturepic .items3 dl.item1 dt a img {
+	border: solid 1px #aaaaaa;
+	height: 158px;
+	width: 158px;
+	/*padding-bottom: 6px;*/
+}
+.catgfeaturepic .items3 dl.item1 dd {
+	margin: 4px 0 0 0;
+	padding: 0;
+}
+.catgfeaturepic .items3 dl.item1 dd a.name {
+	font-size: 11px;
+	line-height: 1.5em;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 5px 0;
+	border: 0;
+}
+.catgfeaturepic .items3 dl.item1 dd .priceblock {
+	padding-bottom: 0;
+}
+
+/* ************************************
+	2 pic
+   ************************************ */
+.catgfeaturepic .featurestory2 {
+	float: left;
+	width: 310px;
+	margin-right: 16px;
+	display: inline;
+}
+.catgfeaturepic .box .items2 {
+	float: left;
+	width: 434px;
+	display: inline;
+}
+.catgfeaturepic .box .items2 ul li {
+	float: left;
+	margin-right: 30px;
+	width: 202px;
+	display: inline;
+}
+.catgfeaturepic .box .items2 ul li.last {
+	margin-right: 0;
+}
+.catgfeaturepic .items2 dl.item1 {
+	padding: 0;
+	margin: 0;
+}
+.catgfeaturepic .items2 dl.item1 dt {
+	width: 202px;
+}
+.catgfeaturepic .items2 dl.item1 dt a {
+	display: block;
+	border: 0;
+}
+.catgfeaturepic .items2 dl.item1 dt a img {
+	border: solid 1px #aaaaaa;
+	height: 198px;
+	width: 198px;
+}
+.catgfeaturepic .items2 dl.item1 dd {
+	margin: 4px 0 0 0;
+	padding: 0;
+	display: block;
+}
+.catgfeaturepic .items2 dl.item1 dd a.name {
+	font-size: 11px;
+	line-height: 1.5em;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 5px 0;
+	border: 0;
+}
+.catgfeaturepic .items2 dl.item1 dd .priceblock {
+	padding-bottom: 0;
+}

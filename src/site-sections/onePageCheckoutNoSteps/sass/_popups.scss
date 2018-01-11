@@ -1,0 +1,38 @@
+.checkoutPopup {
+	background: #fff;
+	left: 27%;
+	top: 30px;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+
+	.header {
+		padding: 5px 15px;
+		background: #5c2946;
+		color: #fff;
+		border-radius: 5px 5px 0 0;
+		span {
+			font-size: 1.2em;
+		}
+		a {
+			color: #fff;
+		}
+	}
+	.box {
+		overflow: auto;
+		max-height: 85vh;
+		float: left;
+
+		.right,
+		.right2,
+		h2:first-child {
+			display: none !important;
+		}
+	}
+	#custshipping {
+		.boxtop,
+		.boxside,
+		.boxbtm {
+			background: none;
+		}
+	}
+}

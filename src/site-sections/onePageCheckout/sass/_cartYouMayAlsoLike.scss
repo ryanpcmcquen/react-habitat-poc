@@ -1,0 +1,176 @@
+﻿#main .cartYouMayAlsoLike {
+	clear: both;
+	width: 990px;
+	overflow: auto;
+	background: url(/styles/images/content_box1_top.gif) no-repeat top left;
+	position: relative;
+	padding: 0;
+	margin-bottom: 16px;
+}
+#main .cartYouMayAlsoLike .box {
+	position: relative;
+	margin-top: 7px;
+	overflow: hidden;
+	padding-bottom: 7px;
+	background: url(/styles/images/content_box1_btm.gif) no-repeat bottom left;
+	width: 990px;
+}
+#main .cartYouMayAlsoLike .box h2.header,
+#main .cartYouMayAlsoLike .box h3.header {
+	font-size: 23px;
+	line-height: 23px;
+	font-weight: normal;
+	padding-right: 30px;
+	margin-bottom: 22px;
+	padding-left: 16px;
+	margin-top: 10px;
+}
+
+#main .cartYouMayAlsoLike .infiniteCarousel {
+	width: 900px;
+	margin-left: 50px;
+	padding: 0;
+	float: left;
+	display: inline;
+}
+#main .cartYouMayAlsoLike .infiniteCarousel ul li,
+#main .carousel.cartYouMayAlsoLike .infiniteCarousel ul li,
+#main .carousel.cartYouMayAlsoLike.by5 .infiniteCarousel ul li {
+	display: block;
+	float: left;
+	margin: 0 18px 0 0;
+	padding: 0;
+	width: 164px;
+}
+#main .cartYouMayAlsoLike .box .arrowforwardby5,
+#main .cartYouMayAlsoLike .box .arrowforward {
+	position: absolute;
+	height: 34px;
+	width: 34px;
+	top: 140px;
+	left: 950px;
+	text-indent: -999px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	background: url(/styles/images/content_box_slide_right_off.gif) no-repeat
+		top left;
+	z-index: 500;
+}
+#main .cartYouMayAlsoLike .box .arrowbackby5,
+#main .cartYouMayAlsoLike .box .arrowback {
+	position: absolute;
+	height: 34px;
+	width: 34px;
+	top: 140px;
+	left: 12px;
+	text-indent: -999px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	background: url(/styles/images/content_box_slide_left_off.gif) no-repeat top
+		left;
+	z-index: 500;
+}
+#main .cartYouMayAlsoLike .arrowforwardby5:hover,
+#main .cartYouMayAlsoLike .arrowforward:hover {
+	background: url(/styles/images/content_box_slide_right_on.gif) no-repeat top
+		left;
+}
+#main .cartYouMayAlsoLike .arrowbackby5:hover,
+#main .cartYouMayAlsoLike .arrowback:hover {
+	background: url(/styles/images/content_box_slide_left_on.gif) no-repeat top
+		left;
+}
+#main .cartYouMayAlsoLike .shoplink {
+	display: inline;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+}
+#main .cartYouMayAlsoLike .infiniteCarousel .story .text {
+	font-size: 14px;
+	line-height: 14px;
+	padding: 0px;
+	margin: 0px 0px 13px 0px;
+}
+/* ************************************
+		Item Styles
+   ************************************ */
+div#main .cartYouMayAlsoLike dl.item a {
+	border: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+div#main .cartYouMayAlsoLike dl.item {
+	width: 163px;
+	float: left;
+	border: 0px;
+	margin: 0;
+	padding: 0 0 14px 0;
+}
+div#main .cartYouMayAlsoLike dl.item dt {
+	overflow: hidden;
+	height: 163px;
+}
+div#main .cartYouMayAlsoLike dl.item p {
+	margin: 0px;
+}
+div#main .cartYouMayAlsoLike dl.item img {
+	padding: 0px;
+	height: 163px;
+	width: 163px;
+	margin: 0px;
+}
+div#main .cartYouMayAlsoLike dl.item dd {
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+div#main .cartYouMayAlsoLike dl.item a.name {
+	font-size: 11px;
+	line-height: 1.5em;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+div#main .cartYouMayAlsoLike dl.item p.price {
+	font-size: 11px;
+	line-height: 1.5em;
+	font-weight: bold;
+	display: inline;
+}
+div#main .cartYouMayAlsoLike dl.item p.sale {
+	font-size: 11px;
+	line-height: 1.5em;
+	color: #921e1e;
+	font-weight: bold;
+}
+div#main .cartYouMayAlsoLike dl.item p.regular {
+	font-size: 11px;
+	line-height: 1.5em;
+	color: #999999;
+}
+div#main .cartYouMayAlsoLike dl.item .offer {
+	font-size: 11px;
+	line-height: 1.5em;
+	color: #921e1e;
+	font-weight: normal;
+}
+div#main .cartYouMayAlsoLike dl.item dd.productinfo {
+	/* future use */
+}
+div#main .cartYouMayAlsoLike dl.item dd div.ratings img {
+	float: left;
+	height: 13px;
+	margin-right: 3px;
+	width: 13px;
+}
+div#main .cartYouMayAlsoLike .item .starFrame img.star {
+	width: 80px;
+	height: 14px;
+	border-style: none;
+}

@@ -1,0 +1,4 @@
+{
+	"plugins.js": ["js/plugins/*.js"],
+	"app.js": ["js/app/*.js"]
+}

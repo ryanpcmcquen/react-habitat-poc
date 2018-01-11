@@ -1,0 +1,725 @@
+/*
+**    Product Right
+*/
+
+div#product {
+	div#productRight {
+		width: 527px;
+		border-top: 1px solid #aaaaaa;
+		border-left: 1px solid #aaaaaa;
+		margin-left: -1px;
+		position: relative;
+		> div {
+			padding-left: 20px;
+			&:first-child {
+				margin-top: 20px;
+			}
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	div#product-details {
+		width: 100%;
+	}
+	div#product-details > div {
+		float: left;
+	}
+	div#product-details div#product-detailsLeft {
+		width: 390px;
+	}
+	div#product-details div#product-detailsRight {
+		width: 150px;
+	}
+	h1#product-title {
+		font-family: $font-bold;
+		font-size: 44px;
+		line-height: 1;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	div#product-turnToTeaser {
+		> div {
+			display: inline-block;
+			font-family: $font-bold;
+			font-size: 16px;
+			a#readReviews {
+				display: none;
+			}
+			div.TTratingBox {
+				float: left;
+				position: relative !important;
+				top: 2px !important;
+			}
+		}
+	}
+	div#product-descriptionTeaser {
+		border-bottom: 1px solid #aaa;
+		padding-bottom: 20px;
+		padding-top: 5px;
+		> span {
+			@include descriptionTagSpan();
+		}
+		> p {
+			display: inline;
+			line-height: 1.2;
+			> a {
+				font-family: $font-bold;
+				margin-left: 0.5em;
+			}
+		}
+	}
+	/*
+    **    Product price
+    */
+
+	div.product-price {
+		font-family: $font-bold;
+		div.product-priceMain {
+			float: left;
+			font-size: 44px;
+			position: relative;
+			display: inline-block;
+			&.product-onSale {
+				color: red;
+			}
+			span.product-priceMain-dollars:before {
+				content: "$";
+				font-size: 0.6em;
+				position: relative;
+				bottom: 0.5em;
+				display: inline-block;
+			}
+			span.product-priceMain-cents {
+				font-size: 0.6em;
+				position: relative;
+				bottom: 0.43em;
+				display: inline-block;
+				margin-left: -8px;
+			}
+		}
+		div.product-priceInfo {
+			display: inline-block;
+			float: left;
+			margin-left: 20px;
+			margin-top: 27px;
+			span#product-priceList {
+				color: #777;
+				> span {
+					text-decoration: line-through;
+				}
+			}
+			span#product-priceSaving:before {
+				content: " | ";
+				padding: 0 2px;
+			}
+		}
+	}
+	div#product-shipFree {
+		font-family: $font-bold;
+		margin-bottom: 5px;
+		position: relative;
+		top: -10px;
+	}
+	div#product-options,
+	div#product-options > div {
+		clear: both;
+		font-family: $font-bold;
+		height: auto;
+	}
+	/*
+    **    Product colors/sizes
+    */
+
+	span.product-optionsColor-current {
+		float: left;
+		text-transform: capitalize;
+		> span {
+			width: 88px;
+			float: right;
+			margin-left: 5px;
+			word-wrap: break-word;
+		}
+	}
+	div.product-optionsColor-select {
+		width: 360px;
+		float: right;
+		> a {
+			background-position: -2px -2px;
+			background-size: 110%;
+			width: 30px;
+			height: 20px;
+			float: left;
+			border: 1px solid #333;
+			border-radius: 5px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			text-indent: -999999px;
+			&.activeSelection {
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+	span.product-optionsSize-current {
+		float: left;
+		text-transform: capitalize;
+		> span {
+			width: 88px;
+			float: right;
+			margin-left: 5px;
+			word-wrap: break-word;
+		}
+	}
+	div.product-optionsSize-select {
+		width: 360px;
+		float: right;
+		> a {
+			min-width: 80px;
+			height: 22px;
+			padding: 0 5px;
+			line-height: 1.3;
+			float: left;
+			border: 1px solid #333;
+			border-radius: 5px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+			&.activeSelection {
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+	div#product-options div#product-quantity {
+		float: left;
+		clear: both;
+	}
+	div#product-options div#product-optionsQuantity {
+		margin-top: 20px;
+	}
+	div#product-options
+		div#product-optionsQuantity
+		div#product-optionsQuantity-select {
+		width: 360px;
+		float: right;
+		display: inline;
+	}
+	div#product-options
+		div#product-optionsQuantity
+		div#product-optionsQuantity-select
+		input {
+		width: 40px;
+		height: 24px;
+		border: 1px solid #333;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 13.333px;
+	}
+	div#product-availability {
+		clear: both;
+		font-family: $font-bold;
+		margin: 10px 0;
+	}
+	div#product-availability > span {
+		display: block;
+	}
+	div#product-availability > span:nth-child(n + 2) {
+		/*display:none;*/
+	}
+	div#product-availability > span#product-availability-outOfStock {
+		color: #777;
+	}
+	div#product-availability > span.product-inStock > span {
+		color: $button-green;
+	}
+	div#product-availability > span.product-inStock.product-onlineClass > span {
+		color: #9c0c1b;
+	}
+	div#product-availability > span.product-outOfStock > span,
+	div#product-availability > span.product-discontinued > span {
+		color: #f92140;
+	}
+	div#product-availability > span.product-limited > span:first-of-type {
+		color: #f0a441;
+	}
+	div#product-availability-preOrderPopover {
+		width: 500px;
+		height: auto;
+		border: 1px solid #aaa;
+		border-radius: 5px;
+		padding: 10px 20px;
+		font-size: 18px;
+		position: absolute;
+		z-index: 3;
+		background-color: #fff;
+		box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+		display: none;
+	}
+	div#product-availability-preOrderPopover h3 {
+		font-size: 20px;
+		color: $button-green;
+		text-transform: uppercase;
+	}
+	div#product-availability-preOrderPopover > p {
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+	div#product-availability label {
+		font-size: 16px;
+	}
+	div#product-availability > dd {
+		font-family: $font-regular;
+		margin-left: 20px;
+	}
+	/* WISH LIST BUTTON */
+
+	// Note: Had to use data attributes for styling due to needing low risk last minute changes. Modifying the wishlist.js so we can use consistent classes as the registry button would be preferred.
+	#product-options div.purchasing.byrows div.wishlist {
+		clear: both;
+		float: left;
+		margin-top: 4px;
+		margin-bottom: 10px;
+		&.onlineClass {
+			clear: none;
+			margin-top: 0px;
+		}
+		a {
+			&.product-addToWishlist,
+			&.buttonalt {
+				background: none;
+				text-align: center;
+				display: block;
+				text-transform: uppercase;
+				height: 40px;
+				width: 150px;
+				border-radius: 5px;
+				float: left;
+				line-height: 2.7;
+				cursor: pointer;
+				margin-right: 10px;
+				margin-bottom: 5px;
+				padding: 0px;
+				&:hover {
+					text-decoration: underline;
+				}
+				&[data-isTransientUser="false"] {
+					background-color: $button-active-bg;
+					color: $button-active-color;
+					&[data-productdisabled="true"] {
+						background-color: $button-disabled-bg;
+						color: $button-disabled-color;
+						cursor: default;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					&[data-productdisabled="false"] {
+						background-color: $button-active-bg;
+						color: $button-active-color;
+						&:hover {
+							/*color: $white;*/
+							text-decoration: none;
+						}
+					}
+					span {
+						float: none;
+						background: none;
+						padding: 0;
+						color: inherit;
+						font-weight: normal;
+						font-size: 16px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				&[data-isTransientUser="true"] {
+					background: none;
+					span {
+						background: none;
+						padding: 0;
+						color: $button-wishlist-disable-color;
+						font-weight: normal;
+						font-size: 16px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+		span.prompt {
+			display: inline-block;
+			text-transform: uppercase;
+			width: 150px;
+			clear: both;
+			float: left;
+			text-align: center;
+		}
+	}
+	/* / WISH LIST BUTTON */
+
+	div#product-actions {
+		height: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		/* min-height: 60px; */
+
+		> div {
+			font-family: $font-bold;
+		}
+		.product-button-container {
+			display: inline-block;
+			float: left;
+			span.prompt {
+				min-height: 20px;
+				text-align: center;
+				text-transform: uppercase;
+				width: 150px;
+			}
+		}
+		a.product-action-btn {
+			height: 40px;
+			width: 150px;
+			text-align: center;
+			text-transform: uppercase;
+			color: white;
+			border-radius: 5px;
+			float: left;
+			margin-right: 10px;
+			line-height: 2.7;
+			cursor: pointer;
+			border-bottom: 1px solid #fff;
+			margin-bottom: 5px;
+			box-sizing: border-box;
+			&:hover {
+				text-decoration: underline;
+			}
+			&.product-addToCart,
+			&.product-notifyMe {
+				background-color: $button-green;
+				color: white;
+			}
+			&.product-addToCart {
+				&.product-available,
+				&.product-outOfStock {
+					background-color: $button-green;
+				}
+				&.product-unavailable,
+				&.product-disabled {
+					background-color: $button-disabled-bg;
+					color: $button-disabled-color;
+				}
+				&.product-registryMode {
+					background-color: $button-active-bg;
+					color: $button-active-color;
+					&:hover {
+						color: $white;
+					}
+				}
+				&.product-unavailable,
+				&.product-disabled {
+					cursor: default;
+				}
+				&:nth-child(n + 2) {
+					display: none;
+				}
+			}
+		}
+		a#product-findInStore {
+			background-color: $button-active-bg;
+			display: block;
+			color: $button-active-color;
+			border-bottom: 1px solid #fff;
+			&.product-unavailable,
+			&.product-disabled,
+			&.product-registryMode {
+				background-color: $button-disabled-bg;
+				color: $button-disabled-color;
+				cursor: default;
+			}
+			&:hover {
+				/*color: $white;*/
+			}
+		}
+		a.product-addToRegistry {
+			color: $button-wishlist-disable-color;
+			display: block;
+			text-transform: uppercase;
+			&:hover {
+				text-decoration: underline;
+			}
+			&.product-loggedInUser {
+				background-color: $button-active-bg;
+				color: $button-active-color;
+				&:hover {
+					/*color: $white;*/
+					text-decoration: underline;
+				}
+			}
+			&.product-registryMode {
+				background-color: $button-green;
+				color: white;
+				&:hover {
+					color: white;
+					text-decoration: underline;
+				}
+			}
+			&.product-disabled {
+				background-color: $button-disabled-bg;
+				color: $button-disabled-color;
+				cursor: default;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	div#product-confidence {
+		border-top: 1px solid #aaa;
+		border-bottom: 1px solid #aaa;
+		//bottom: 0;
+		height: auto;
+		margin-bottom: -1px;
+		overflow: hidden;
+		padding-left: 0 !important;
+		//position: absolute;
+		width: 100%;
+		> a {
+			border-left: 1px solid #aaa;
+			float: left;
+			font-family: $font-bold;
+			width: 130px;
+			/*132px;*/
+
+			height: 70px;
+			overflow: auto;
+			text-align: center;
+			padding-top: 10px;
+			cursor: pointer;
+			overflow: hidden;
+			&:nth-child(n + 2) {
+				line-height: 1.2;
+			}
+			&:hover {
+				color: #5c2946;
+				//border-bottom: solid 1px #5C2946 /* eggplant */;
+			}
+			&:first-of-type {
+				/*border-left: none;
+                font-size: 14px;*/
+				img {
+					height: 34px;
+					width: 102px;
+				}
+			}
+		}
+		> a:first-child {
+			margin-top: 0px;
+			& > img {
+				margin-top: 10px;
+			}
+		}
+	}
+	div#product-confidence-popup {
+		position: absolute;
+		right: 0px;
+		background-color: rgb(255, 255, 255);
+		border: 1px solid #000;
+		border-radius: 5px;
+		padding: 10px;
+		z-index: 1;
+		box-shadow: 5px 5px 10px #888;
+		display: none;
+		img {
+			margin-bottom: 5px;
+		}
+	}
+	div#product-hazmat-message-popup {
+		width: 500px;
+		height: auto;
+		border: 1px solid #aaa;
+		border-radius: 5px;
+		padding: 10px 20px;
+		font-size: 18px;
+		position: absolute;
+		z-index: 3;
+		background-color: #fff;
+		box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+		display: none;
+	}
+	div#product-hazmat-message-popup h3 {
+		font-size: 20px;
+		color: $button-green;
+		text-transform: uppercase;
+	}
+	div#product-hazmat-message-popup > p {
+		line-height: 1;
+		margin-top: 30px;
+		font-size: 0.9em;
+	}
+	div#pdpToolbarErrorMessage {
+		float: left;
+		line-height: 1em;
+		margin-right: 10px;
+		text-align: left;
+		width: 150px;
+		clear: left;
+		min-height: 25px;
+		display: none;
+	}
+	div#product-web-only-availability > dd {
+		font-family: $font-regular;
+		margin: auto auto auto auto;
+		margin-bottom: 10px;
+		> b {
+			font-size: 0.9em;
+		}
+	}
+	div.payPalBanner {
+		margin: auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 340px;
+		font-family: "HelveticaNeueW02-65Medi", "Helvetica Neue-Thin", Helvetica,
+			Arial, "Lucida Grande", sans-serif;
+		.ad-wrap h1 {
+			font-family: "HelveticaNeueW02-65Medi", "Helvetica Neue-Thin",
+				Helvetica, Arial, "Lucida Grande", sans-serif;
+			font-weight: bold;
+		}
+		.ad-wrap .small-text {
+			font-family: "HelveticaNeueW02-65Medi", "Helvetica Neue-Thin",
+				Helvetica, Arial, "Lucida Grande", sans-serif;
+		}
+		a {
+			border-bottom: 0px;
+		}
+	}
+}
+
+#product-hazmat-learnMore {
+	font-weight: normal;
+}
+
+.stella-seal {
+	margin-top: 14px;
+	margin-bottom: -5px;
+}
+
+/* Share This Right */
+.sharethis-right {
+	margin-bottom: 40px;
+}
+
+/* Online Cooking Class Confirm Popup */
+.onlineClass-gift-container {
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	display: none;
+	width: 400px;
+	text-align: center;
+	background-color: white;
+	border: 3px solid black;
+	.row {
+		padding-top: 20px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.buttons {
+		padding-bottom: 15px;
+	}
+	a {
+		width: 100px;
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		border-radius: 5px;
+		margin-right: 25px;
+		line-height: 2.7;
+		cursor: pointer;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 5px;
+		box-sizing: border-box;
+		font-size: 16px;
+		display: inline-block;
+		&.product-confirm-yes {
+			background-color: #6d8b19;
+		}
+		&.product-confirm-no {
+			background-color: #333;
+			color: #c3c3c3;
+			border-bottom: 1px solid #fff;
+		}
+	}
+}
+
+/* Online Cooking Class Confirm Form */
+.onlineClassFormRow {
+	margin-top: 10px;
+	&.lastrow {
+		margin-bottom: 20px;
+	}
+}
+
+.characterlimit {
+	float: right;
+	color: #777777;
+}
+
+.onlineClassFormButtons {
+	text-align: center;
+	> div {
+		height: 45px;
+	}
+	button {
+		position: absolute;
+		display: table-cell;
+		margin: 0;
+		right: 0;
+		bottom: 0;
+	}
+	button.confirm {
+		height: 40px;
+		width: 150px;
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		border-radius: 5px;
+		margin-right: 10px;
+		cursor: pointer;
+		border-bottom: 1px solid #fff;
+		box-sizing: border-box;
+		background-color: #6d8b19;
+		font-size: 16px;
+	}
+	button.cancel {
+		background-color: #333;
+		color: #c3c3c3;
+		border-bottom: 1px solid #fff;
+		font-size: 16px;
+	}
+}
+
+.onlineclass-gift .form-control[required]:focus {
+	border: 1px solid red;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+		0 0 8px rgba(255, 0, 0, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+		0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.spanrequiredred.error-msg {
+	width: 100%;
+	text-align: center;
+}
+
+.gutter-gift {
+	line-height: 5px;
+}

@@ -1,0 +1,97 @@
+﻿.productFeature {
+	clear: both;
+	width: 792px;
+	background: url(../images/content_box2_top.gif) no-repeat top left;
+	padding-top: 4px;
+	margin-bottom: 16px;
+}
+
+.productFeature .box {
+	background: url(../images/content_box2_btm.gif) no-repeat bottom left;
+	padding: 0 16px 16px 16px;
+	margin-top: 12px;
+	overflow: auto;
+}
+
+.productFeature h2.header {
+	line-height: 21px;
+	font-size: 23px;
+	font-weight: normal;
+	padding-bottom: 12px;
+}
+
+.productFeature h3 {
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 15px;
+	margin-left: 0;
+	margin-bottom: 8px;
+}
+
+.productFeature .featureImage img {
+	height: 226px;
+	width: 226px;
+	border: solid 1px #aaaaaa;
+}
+
+.productFeature .box .text {
+	width: 30px;
+	margin-right: 0px;
+}
+
+.productFeature .box .purchasing {
+	float: left;
+	margin-left: -20px;
+	width: 510px;
+	display: inline;
+}
+
+.productFeature .box .purchasing li {
+	float: right;
+	margin: 0 12px 0 0;
+	padding: 5px 0px 5px 0px;
+	display: inline;
+}
+.productFeature .box .purchasing li.size {
+	margin: 0px;
+}
+.productFeature .box .purchasing li.size label {
+	margin-right: 12px;
+	padding-left: 7px;
+}
+.productFeature .box .purchasing li.size select {
+	margin-left: 8px;
+}
+.productFeature .box .purchasing li.color label {
+	margin-right: 16px;
+}
+.productFeature .box .purchasing li.color select {
+	margin-left: 5px;
+}
+
+.productFeature .box .purchasing li.colorbug {
+	text-align: right;
+	margin-right: 25px;
+}
+
+.productFeature .featureImage {
+	float: left;
+	display: inline;
+	margin-right: 22px;
+}
+
+.productFeature .featureInfo {
+	float: left;
+	display: inline;
+	width: 510px;
+}
+
+.productFeature .featureInfo p.story {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.productFeature .priceblock p img.star {
+	padding-bottom: 12px;
+	padding-top: 5px;
+}

@@ -1,0 +1,148 @@
+/* Zebra_Tooltip */
+/* ============= */
+
+.Zebra_Tooltip {
+	position: absolute;
+	z-index: 8000;
+	background: transparent;
+	font-family: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+		Verdana, sans-serif;
+}
+
+.Zebra_Tooltip .Zebra_Tooltip_Message {
+	position: relative;
+	padding: 6px 24px 6px 9px;
+	font-size: inherit;
+	text-align: left;
+	font-weight: normal;
+	line-height: inherit;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.2);
+	*margin-right: 0;
+	_width: expression(
+		document.body.clientWidth > 250 ? "250px": "auto"
+	); /* max-width for IE6 */
+}
+
+.Zebra_Tooltip .Zebra_Tooltip_Arrow {
+	display: none;
+	position: absolute;
+	height: 10px;
+	width: 20px;
+	overflow: hidden;
+	left: -20px;
+}
+
+/*.Zebra_Tooltip .Zebra_Tooltip_Arrow_Bottom  { bottom: 0 }
+.Zebra_Tooltip .Zebra_Tooltip_Arrow_Top     { top: 0    }*/
+
+/* Added for SurLaTable support: left arrows */
+.Zebra_Tooltip .Zebra_Tooltip_Arrow {
+	left: -15px !important;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+
+	top: 10px;
+}
+
+/* Speech bubble with a border - http://jsfiddle.net/joshnh/26Lww/ */
+
+/* ==== */
+.Zebra_Tooltip_Message {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	display: inline-block;
+	font: 16px/24px sans-serif;
+	padding: 10px 24px;
+	position: relative;
+}
+.Zebra_Tooltip_Message:after,
+.Zebra_Tooltip_Message:before {
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #fdfdfd;
+	top: 50%; /*7px;*/
+	content: "";
+	left: 0;
+	margin-left: -22px;
+	margin-top: -8px;
+	position: absolute;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+/*
+.Zebra_Tooltip_Message.bottom:after,
+.Zebra_Tooltip_Message.bottom:before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FFF;
+    bottom: -20px;
+    content: '';
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+}*/
+
+/* Styling for second triangle (border) */
+
+.Zebra_Tooltip_Message:before {
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid;
+	border-top-color: inherit; /* Can't be included in the shorthand to work */
+	top: 50%; /*7px;*/
+	margin-left: -24px;
+	margin-top: -8px;
+}
+
+/* ==== */
+
+.Zebra_Tooltip .Zebra_Tooltip_Arrow div {
+	position: absolute;
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	left: 0;
+	_border-left-color: pink;
+	_border-right-color: pink;
+	_filter: chroma(color=pink);
+}
+
+.Zebra_Tooltip .Zebra_Tooltip_Arrow_Bottom div {
+	top: 0;
+	_border-bottom-color: pink;
+}
+
+.Zebra_Tooltip .Zebra_Tooltip_Arrow_Top div {
+	bottom: 0;
+	_border-top-color: pink;
+}
+
+.Zebra_Tooltip .Zebra_Tooltip_Close {
+	text-decoration: none;
+	color: #999;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+
+.Zebra_Tooltip .Zebra_Tooltip_Close:hover {
+	border: none;
+	color: #c40000;
+	text-decoration: none;
+}

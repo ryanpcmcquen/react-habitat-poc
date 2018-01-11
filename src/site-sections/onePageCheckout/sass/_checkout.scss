@@ -1,0 +1,236 @@
+@media (min-width: $screen-md-max) {
+	/*.checkout{
+		.miniCart{
+				position:fixed;
+				width:25%;
+			}
+		}
+		*/
+}
+
+.checkout {
+	font-family: $font-regular;
+
+	padding-bottom: 25px;
+
+	.miniCart {
+		& > .panel-heading {
+			background: transparent;
+			border-bottom: 0px;
+			margin-top: 15px;
+		}
+
+		.orderSummary {
+			.pull-right {
+				text-align: right;
+			}
+
+			.orderSumTotalRow {
+				font-family: $font-bold;
+				font-size: 1.2em;
+				margin: 10px 15px 0px;
+				div {
+					padding: 15px 0px;
+				}
+			}
+			.orderSumPreTax,
+			.orderSumPreTaxPrice {
+				padding-top: 15px;
+			}
+			.orderSumAddr {
+				padding-bottom: 15px;
+			}
+
+			.orderSumTotal,
+			.orderSumTotalPrice {
+				border-top: 1px #ccc dotted;
+				border-bottom: 1px #ccc dotted;
+				padding: 15px;
+			}
+		}
+	}
+
+	.promoCodeForm {
+		padding-top: 15px;
+		width: 100%;
+
+		label {
+			font-size: 1em;
+			float: left;
+		}
+
+		.promoField {
+			width: 100%;
+			clear: both;
+			float: left;
+			input {
+				display: inline-block;
+				width: 80%;
+			}
+			button {
+				float: right;
+			}
+			.promoCodeDisplay {
+				font-size: 1.5em;
+				padding-right: 25px;
+			}
+			.promoDelete {
+				margin-top: -10px;
+			}
+		}
+
+		.help-block {
+			line-height: 1em;
+			clear: both;
+			padding-top: 10px;
+
+			.promoDisplay {
+				font-family: $font-bold;
+				display: block;
+				margin-top: 15px;
+			}
+			.promoDisplayDisclaimer {
+				display: block;
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	.shippingAddress {
+		.form-group {
+			margin-bottom: 0px;
+		}
+	}
+	.shippingAddressValidation {
+		margin: 25px 0;
+		& > div {
+			padding-left: 0px;
+		}
+		.shippingAddressValidationAddressCont {
+			line-height: 16px;
+			padding-left: 15px;
+			.shippingAddressValidationAddress {
+				font-family: $font-bold;
+				font-size: 1.2em;
+			}
+
+			.shippingAddressValidationlink a {
+				padding-left: 0px;
+			}
+		}
+	}
+	.shippingOptions {
+		.shippingOptionDesc {
+			text-align: left;
+			font-size: 1.2em;
+		}
+		.shippingOptionsTime {
+			font-size: 0.7em;
+		}
+		.shippingOptionsPrice {
+			font-size: 1.2em;
+		}
+	}
+	.giftOption {
+		border-top: 1px dotted #ccc;
+		border-bottom: 1px dotted #ccc;
+		margin: 25px 0px;
+		padding: 15px 0px;
+		div {
+			padding: 0px;
+			margin: 0px;
+		}
+		h4 {
+			margin-top: 20px;
+			font-family: $font-bold;
+		}
+		.checkbox {
+			margin-top: 22px;
+
+			h4 {
+				margin-top: -1px;
+			}
+		}
+
+		.giftMessage {
+			display: none;
+			clear: both;
+			padding: 15px;
+			.giftMessageProduct {
+				.giftMessageProductTitle {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	.paymentOptionsCCBody {
+		.shippingAddressBilling {
+			display: none;
+		}
+		.ccField {
+			margin-top: 25px;
+		}
+		.CVVHelp {
+			float: right;
+		}
+		#ccBillToShipAddr {
+			margin-right: 10px;
+		}
+		.paymentOptionsCCBodyNewAddrBtn {
+			padding-left: 0px;
+		}
+		.form-group {
+			.row {
+				margin: 0px;
+			}
+			div {
+				padding: 0px;
+			}
+		}
+	}
+
+	.item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		.productImg {
+			text-align: center;
+			img {
+				max-width: 100%;
+			}
+		}
+		.productName {
+			margin-bottom: 15px;
+			a {
+				font-family: $font-bold;
+			}
+		}
+
+		.productPrice {
+			text-align: right;
+			font-family: $font-bold;
+			line-height: 13px;
+
+			.total {
+			}
+			.yousave {
+				font-size: 0.8em;
+				color: $red;
+			}
+		}
+
+		.productQuantity {
+			input,
+			select {
+				max-width: 85px;
+			}
+		}
+	}
+}
+
+#shippingSubmit,
+#paymentSubmit,
+#orderSubmit {
+	display: none;
+}

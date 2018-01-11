@@ -1,0 +1,93 @@
+#giftselectregistry {
+	background-image: url(../images/pop_up_box_top_midsize.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	position: absolute;
+	_position: absolute; /* hack for internet explorer 6*/
+	width: 567px;
+	overflow: auto;
+	margin-top: 4px;
+	padding-bottom: 36px;
+	display: none;
+	z-index: 1010;
+}
+#giftselectregistry .box {
+	background-image: url(../images/pop_up_box_btm_midsize.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	clear: both;
+	width: 567px;
+	overflow: auto;
+	padding: 0;
+}
+#giftselectregistry .close {
+	background: url(../images/popup_box_close_x.gif) no-repeat right center;
+	padding-right: 18px;
+	margin-right: 18px;
+	color: White;
+	border: none;
+	line-height: 35px;
+	float: right;
+}
+#giftselectregistry a.close:hover {
+	text-decoration: underline;
+}
+
+#giftselectregistry h2.header {
+	font-size: 23px;
+	line-height: 48px;
+	border-bottom: 1px solid #60682f;
+	margin: 0 16px 16px 16px;
+	clear: both;
+	color: #60682f;
+}
+#giftselectregistry h5 {
+	color: White;
+	float: left;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	width: 460px;
+	line-height: 35px;
+	padding-left: 16px;
+}
+#giftselectregistry div.actions {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*
+*html #giftselectregistry div.actions
+{
+    margin-bottom: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 24px;
+    margin-right: auto;
+}*/
+#giftselectregistry div.actions a {
+	display: inline;
+	float: right;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+#giftselectregistry a.cancel:hover {
+	color: #5c2946;
+	border-bottom: solid 1px #5c2946;
+}
+#giftselectregistry a.cancel {
+	border-bottom: dotted 1px #444444;
+	margin-right: 10px;
+	float: right;
+}
+
+#giftselectregistry p {
+	clear: both;
+	padding: 0 16px 0 16px;
+}
+#giftselectregistry p.intro {
+	margin-bottom: 24px;
+}
+#giftselectregistry select {
+	width: 190px;
+}

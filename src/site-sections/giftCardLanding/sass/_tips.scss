@@ -1,0 +1,273 @@
+﻿/*
+	name: Product list styles   
+	file: pdpProductAccessories.css
+	desc: use this file with pdpProductAccessories.htm to populate the 
+          The Collection, Product Accessories, and companionproducts sections of the
+          Product Detail Page
+*/
+
+#tips,
+#techniques {
+	width: 792px;
+}
+#content h3.tipheading {
+	font-size: 23px;
+	line-height: 29px;
+	padding-bottom: 9px;
+	border-bottom: solid 1px #aaaaaa;
+}
+#tips .productinfo .itemwrapper,
+#techniques .productinfo .itemwrapper {
+	float: left;
+	overflow: auto;
+	border-bottom: solid 1px #aaaaaa;
+	margin: 16px 0 0 0;
+	width: 792px;
+	padding: 0 0 16px 0;
+}
+
+#tips .productinfo .itemwrapper.last,
+#techniques .productinfo .itemwrapper.last {
+	border: none;
+}
+#tips .column1,
+#techniques .column1 {
+	float: left;
+	overflow: auto;
+	width: 619px;
+	margin: 0;
+	padding: 0;
+}
+#tips .column1 a,
+#techniques .column1 a {
+	border-bottom: dotted 1px #444444;
+}
+#tips .column1 a:hover,
+#techniques .column1 a:hover {
+	border-bottom: solid 1px #5c2946;
+}
+#tips .column1 a.moreinfo,
+#techniques .column1 a.moreinfo {
+	border-bottom: none;
+}
+#tips .column1 a.moreinfo:hover,
+#techniques .column1 a.moreinfo:hover {
+	border-bottom: solid 1px #db8f21;
+}
+#tips .name,
+#techniques .name {
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 13px;
+	margin: 0 0 6px 0;
+	padding: 0px;
+}
+#tips p.starFrame,
+#techniques p.starFrame {
+	margin: 0 0 6px 0;
+	padding: 0;
+}
+#tips .productinfo .itemwrapper a img.itemImg,
+#techniques .productinfo .itemwrapper a img.itemImg {
+	float: left;
+	height: 149px;
+	width: 149px;
+	margin: 0 20px 0 0;
+	display: inline;
+}
+#tips .productinfo .itemwrapper a,
+#techniques .productinfo .itemwrapper a {
+	border: 0;
+}
+
+#tips .productinfo .itemwrapper .info,
+#techniques .productinfo .itemwrapper .info {
+	float: left;
+	width: 619px;
+	display: inline;
+}
+
+#tips .outlook,
+#techniques .outlook {
+	margin: 5px 0px 10px 25px;
+	overflow: auto;
+	font-size: 11px;
+}
+
+#tips .outlook .rating,
+#techniques .outlook .rating {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+#tips .story,
+#techniques .story {
+	margin-top: -6px;
+}
+#tips .story p,
+#techniques .story p {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding: 0px;
+}
+
+#tips .pricing,
+#techniques .pricing {
+	margin-bottom: 15px;
+	z-index: 2;
+}
+
+#tips fieldset.offers,
+#techniques fieldset.offers {
+	width: 600px;
+	font-size: 11px;
+}
+
+#tips fieldset.offers dl dd,
+#techniques fieldset.offers dl dd {
+	margin: 0;
+}
+
+#tips .offers dt,
+#techniques .offers dt {
+	width: auto;
+}
+
+#tips .offers dt label,
+#techniques .offers dt label {
+	font-weight: bold;
+}
+#tips .offers dl,
+#techniques .offers dl {
+	margin: 0px;
+	padding: 0px;
+}
+#tips .outlook .review,
+#tips .outlook .social,
+#techniques .outlook .review,
+#techniques .outlook .social {
+	display: none;
+}
+
+/* *************************************** 
+	Wide tips Styles
+   *************************************** */
+
+#tipsWide {
+	width: 990px;
+}
+#content h3.tipheading {
+	font-size: 23px;
+	line-height: 29px;
+	padding-bottom: 9px;
+	border-bottom: solid 1px #aaaaaa;
+}
+#tipsWide .productinfo .itemwrapper {
+	float: left;
+	overflow: auto;
+	border-bottom: solid 1px #aaaaaa;
+	margin: 16px 0 0 0;
+	width: 990px;
+	padding: 0 0 16px 0;
+}
+
+#tipsWide .productinfo .itemwrapper.last {
+	border: none;
+}
+
+#tipsWide .offers dt {
+	width: auto;
+}
+
+#tipsWide p.starFrame,
+#techniques p.starFrame {
+	margin: 0 0 6px 0;
+	padding: 0;
+}
+
+#tipsWide .column1 {
+	float: left;
+	overflow: auto;
+	width: 846px;
+	margin: 0;
+	padding: 0;
+}
+#tipsWide .column1 a {
+	border-bottom: dotted 1px #444444;
+}
+#tipsWide .column1 a:hover {
+	border-bottom: solid 1px #5c2946;
+}
+#tipsWide .column1 a.moreinfo {
+	border-bottom: none;
+}
+#tipsWide .column1 a.moreinfo:hover {
+	border-bottom: solid 1px #db8f21;
+}
+#tipsWide .name {
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 13px;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+#tipsWide .productinfo .itemwrapper a img.itemImg {
+	float: left;
+	height: 120px;
+	width: 120px;
+	margin: 0 20px 0 0;
+}
+#tipsWide .productinfo .itemwrapper a {
+	border: 0;
+}
+#tipsWide .productinfo .itemwrapper .info {
+	float: left;
+	width: 846px;
+	display: inline;
+}
+#tipsWide .outlook {
+	margin: 5px 0px 10px 25px;
+	overflow: auto;
+	font-size: 11px;
+}
+
+#tipsWide .outlook .rating {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+#tipsWide .story {
+	display: block;
+	margin-top: 6px;
+}
+#tipsWide .story p {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0px;
+}
+
+#tipsWide .pricing {
+	margin-bottom: 15px;
+	z-index: 2;
+}
+
+#tipsWide fieldset.offers {
+	width: 840px;
+	font-size: 11px;
+}
+#tipsWide .offers dt label {
+	font-weight: bold;
+}
+#tipsWide .offers dl {
+	margin: 0px;
+	padding: 0px;
+}
+#tipsWide .offers dl dd {
+	margin: 0;
+}
+#tipsWide .outlook .review,
+#tipsWide .outlook .social {
+	display: none;
+}

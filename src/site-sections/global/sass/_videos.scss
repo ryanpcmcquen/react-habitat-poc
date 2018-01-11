@@ -1,0 +1,343 @@
+﻿/*
+	name:   Flash Video
+	file:	videos.css
+*/
+/* ********************************************
+		Flash main functionality
+   ******************************************** */
+.videos .logo {
+	margin-bottom: 22px;
+}
+.videos .viewer h4 {
+	font-size: 15px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.videos .viewer {
+	position: relative;
+	width: 425px;
+	height: 385px;
+	padding: 0;
+	margin: 0 18px 18px 0;
+	float: left;
+}
+.videos .viewer.frame,
+.videos .frame {
+	position: relative;
+	width: 409px;
+	height: 369px;
+	padding: 8px;
+	border: solid 1px #aaaaaa;
+	background-color: #f0f0d5;
+	margin: 0 18px 18px 0;
+	float: left;
+}
+.videos .video {
+	width: 425px;
+	height: 349px;
+}
+.videos .viewer.frame .video,
+.videos .frame .video {
+	width: 409px;
+	height: 333px;
+}
+.videos .viewer .video {
+	border: none;
+}
+.videos .video .imagery img {
+	width: 423px;
+	height: 347px;
+	border: solid 1px #aaaaaa;
+}
+.videos .video .imagery a,
+.videos .video .imagery a:hover,
+.videos .video a,
+.videos .video a:hover {
+	border: none;
+}
+.videos .viewer.frame .video .imagery img,
+.videos .frame .video .imagery img {
+	width: 407px;
+	height: 331px;
+}
+/* ********************************
+        HiDef Videos
+   ******************************** */
+.videos.hidef .viewer {
+	width: 440px;
+	height: 284px;
+}
+.videos.hidef .viewer.frame,
+.hidef .frame {
+	width: 424px;
+	height: 268px;
+}
+.hidef .viewer .video img,
+.hidef .viewer .video,
+.hidef .video img,
+.hidef .video {
+	width: 440px;
+	height: 248px;
+}
+.hidef .viewer .video .imagery img,
+.hidef .video .imagery img {
+	width: 438px;
+	height: 246px;
+}
+.hidef .frame .video img,
+.hidef .frame .video {
+	width: 424px;
+	height: 232px;
+}
+.hidef .frame .video .imagery img {
+	width: 422px;
+	height: 230px;
+}
+/* ********************************
+       Full width HiDef Videos
+   ******************************** */
+.videos.hidef.large .viewer.frame,
+.large .frame {
+	width: 742px;
+	height: 453px;
+	margin-right: 0px;
+}
+.videos.hidef.large .viewer,
+.large .viewer {
+	width: 760px;
+	height: 463px;
+	margin-right: 0px;
+}
+.videos.hidef.large .viewer .video .story,
+.videos.hidef.large .viewer .video,
+.videos.hidef.large .video .story,
+.videos.hidef.large .video img,
+.videos.hidef.large .video,
+.large .viewer .video .story,
+.large .viewer .video,
+.large .video .story,
+.large .video img,
+.large .video {
+	height: 428px;
+	width: 760px;
+}
+.videos.hidef.large .video .imagery img,
+.large .video .imagery img {
+	height: 426px;
+	width: 758px;
+}
+.videos.hidef.large .frame .video .story,
+.videos.hidef.large .frame .video img,
+.videos.hidef.large .frame .video,
+.large .frame .video .story,
+.large .frame .video img,
+.large .frame .video {
+	height: 418px;
+	width: 742px;
+}
+.videos.hidef.large .viewer.frame .video .imagery img,
+.large .frame .video .imagery img {
+	height: 416px;
+	width: 740px;
+}
+/* ********************************
+        Page Article -- WHY IS THIS IN THIS FILE????
+        TODO: Determine if this belongs in this file
+   ******************************** */
+.videos.hidef .videoStory,
+.hidef .videoStory,
+.videos .story {
+	float: left;
+	width: 308px;
+	width: 312px;
+}
+.videos .story.videoStory,
+.videos .videoStory {
+	margin: 0 18px 18px 0;
+	width: 312px;
+	height: 340px;
+	padding-top: 45px;
+}
+.videos .summary {
+	float: left;
+	width: 760px;
+}
+.videos .summary .article.leftside,
+.videos .summary .leftside {
+	width: 372px;
+	margin-right: 16px;
+}
+.videos .summary .article.rightside,
+.videos .summary .rightside {
+	width: 372px;
+	margin-right: 0px;
+}
+.videos .story.rightside,
+.videos .rightside {
+	margin-right: 0px;
+}
+.videos.hidef .story.videoStory,
+.videos.hidef .videoStory,
+.hidef .story.videoStory,
+.hidef .videoStory,
+.hidef .story {
+	width: 298px;
+	height: 239px;
+}
+.videos .summary .videoMenu,
+.videos .story .videoMenu,
+.videos .summary .article,
+.videos .story .article {
+	float: left;
+	font-size: 14px;
+	line-height: 21px;
+}
+.videos .summary h3,
+.videos .story h3 {
+	font-size: 25px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.videos .summary h4,
+.videos .story h4 {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.videos .summary h5,
+.videos .story h5 {
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+.videos .summary p,
+.videos .story p {
+	font-size: 14px;
+	line-height: 21px;
+	padding-top: 0px;
+}
+.videos .summary p.last,
+.videos .story p.last {
+	margin-bottom: 0px;
+}
+.videos ul.videoMenu {
+	margin-left: 0px;
+	list-style-type: none;
+}
+.videos ul.videoMenu li {
+	line-height: 1.3;
+	margin-bottom: 12px;
+	padding-left: 24px;
+	background: url(images/movie_button_off.gif) 0px 3px no-repeat;
+}
+.videos ul.videoMenu li.playing {
+	background: url(images/movie_button_on.gif) 0px 3px no-repeat;
+}
+/* ********************************************
+		Flash not installed functionality
+   ******************************************** */
+.videos .noflash .video {
+	border: none;
+}
+.videos .viewer .video span,
+.videos .viewer .video div,
+.videos .video span,
+.videos .video div {
+	display: none;
+}
+.videos .viewer.noflash .video span,
+.videos .viewer.noflash .video div,
+.videos .noflash .video span,
+.videos .noflash .video div {
+	display: block;
+}
+.videos .noflash .video .story.videoStory,
+.videos .noflash .video .videoStory,
+.videos .noflash .video .story {
+	width: 403px;
+	height: 327px;
+	border: solid 1px #aaaaaa;
+	background-color: #f0f0d5;
+	padding: 10px;
+}
+.videos .frame .noflash .video .story.videoStory,
+.videos .frame .noflash .video .videoStory,
+.videos .frame .noflash .video .story {
+	width: 387px;
+	height: 311px;
+}
+.videos.hidef .viewer .noflash .video .story.videoStory,
+.videos.hidef .viewer .noflash .video .videoStory,
+.videos.hidef .viewer .noflash .video .story,
+.hidef .viewer .noflash .video .story.videoStory,
+.hidef .viewer .noflash .video .videoStory,
+.hidef .viewer .noflash .video .story {
+	width: 418px;
+	height: 226px;
+}
+.videos.hidef .frame .noflash .video .story.videoStory,
+.videos.hidef .frame .noflash .video .videoStory,
+.videos.hidef
+	.frame
+	.noflash
+	.video
+	.story
+	.hidef
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+.hidef .frame .noflash .video .videoStory,
+.hidef .frame .noflash .video .story {
+	width: 402px;
+	height: 20px;
+}
+.videos.hidef.large .viewer .noflash .video .story.videoStory,
+.videos.hidef.large .viewer .noflash .video .videoStory,
+.videos.hidef.large .viewer .noflash .video .story,
+.hidef.large .viewer .noflash .video .story.videoStory,
+.hidef.large .viewer .noflash .video .videoStory,
+.hidef.large .viewer .noflash .video .story {
+	height: 406px;
+	width: 738px;
+}
+.videos.hidef.large .frame .noflash .video .story.videoStory,
+.videos.hidef.large .frame .noflash .video .videoStory,
+.videos.hidef.large
+	.frame
+	.noflash
+	.video
+	.story
+	.hidef.large
+	.frame
+	.noflash
+	.video
+	.story.videoStory,
+.hidef.large .frame .noflash .video .videoStory,
+.hidef.large .frame .noflash .video .story {
+	height: 396px;
+	width: 720px;
+}
+/* ********************************************
+		Flash not installed functionality
+                  Get Adobe Flash
+   ******************************************** */
+.videos .video p.getFlash {
+	padding-left: 86px;
+}
+.videos .frame .video p.getFlash {
+	padding-left: 79px;
+}
+.videos.hidef .video p.getFlash,
+.hidef .video p.getFlash {
+	padding-left: 94px;
+}
+.videos.hidef .frame .video p.getFlash,
+.hidef .frame .video p.getFlash {
+	padding-left: 82px; /* verified */
+}
+.videos.hidef.large .video p.getFlash {
+	padding-left: 254px; /* verified */
+}
+.videos.hidef.large .frame .video p.getFlash {
+	padding-left: 245px; /* verified */
+}

@@ -1,0 +1,17 @@
+##### PROPS & METHODS
+
+---
+
+| Prop name | Type    | Default | Description                                      |
+| --------- | ------- | ------- | ------------------------------------------------ |
+| addToCart | boolean | false   | Adds the _ADD TO CART_ button and functionality. |
+
+```
+<ProductCard alt="Instant Pot" price="$299.95" sku="3436474" />
+```
+
+With _ADD TO CART_:
+
+```
+<ProductCard addToCart alt="Instant Pot" price="$299.95" sku="3436474" />
+```

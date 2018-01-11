@@ -1,0 +1,202 @@
+/*  
+**  Product Left
+*/
+
+$fluid-width: 430px;
+
+div#product {
+	div#productLeft {
+		border-top: 1px solid #aaaaaa;
+		border-right: 1px solid #aaaaaa;
+		clear: both;
+		position: relative;
+		width: 460px;
+		min-height: 460px;
+		padding-top: 15px;
+
+		div#product-fluid {
+			float: left;
+			height: auto;
+			margin-bottom: 20px;
+			margin-left: 15px;
+			width: $fluid-width;
+
+			.fluid-display {
+				min-height: $fluid-width;
+				//- if old display, do not show pointer cursor (no zoom)
+				&[id*="detail"] {
+					.fluid-external-zoom:hover {
+						cursor: default;
+					}
+				}
+				div.fluid-display-imageviewer,
+				div.fluid-display-viewgroup,
+				div[class*="iconbutton"],
+				div.fluid-display-viewgroup div {
+					margin-top: 20px;
+					position: relative !important;
+					top: auto !important;
+				}
+				div[id*="container"] {
+					height: auto !important;
+				}
+				div.fluid-display-viewgroup > div {
+					left: 0 !important;
+				}
+				div.fluid-display-imageviewer,
+				div#wrap {
+					margin-top: 0;
+				}
+				.fluid-display-variationgroup {
+					display: none;
+				}
+				.fluid-display-imagegroup {
+					display: block;
+					text-align: left;
+					width: $fluid-width;
+					a {
+						img {
+							padding: 1px;
+							&.fluid-display-imageitem-selected {
+								border: 1px solid $fluid-orange;
+							}
+						}
+						&:hover {
+							img {
+								border: 1px solid $fluid-orange;
+							}
+						}
+					}
+				}
+				.fluid-display-externalcomponent {
+					display: none;
+				}
+				> div[id^="display:iconbutton"] {
+					display: none;
+				}
+				div#wrap > div.mousetrap {
+					position: relative !important;
+				}
+			}
+		}
+
+		#fluidPopoverOpen {
+			display: none;
+			left: 0;
+			position: absolute;
+			top: 650px;
+		}
+		> div {
+			padding-right: 20px;
+			&:first-child {
+				margin-top: 20px;
+			}
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+		div#product-social {
+			position: relative;
+		}
+
+		div#product-social-media {
+			text-align: left;
+		}
+
+		div#product-social-media > img {
+			padding: 10px;
+			margin: 5px;
+		}
+
+		a.arrow {
+			top: 193px;
+			&.left {
+				left: -1px;
+			}
+			&.right {
+				background-position: -15px 0;
+				right: 2px;
+			}
+		}
+	}
+
+	/*  
+    **    Fluid Popover
+    */
+	div#product-fluidPopover {
+		background-color: #fff;
+		position: absolute;
+		width: 800px;
+		//left: 50%;
+		margin: 0 auto;
+		height: auto;
+		z-index: 5;
+		display: none;
+		border: 1px solid #aaa;
+		border-radius: 5px;
+		padding: 55px 40px 40px;
+		box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.15);
+		top: 50px;
+		z-index: 99;
+
+		.product-close {
+			position: absolute;
+			right: 40px;
+			top: 20px;
+		}
+
+		.arrow {
+			&.right {
+				right: 10px;
+			}
+			&.left {
+				left: 10px;
+			}
+		}
+
+		.product-optionsColor-current,
+		.product-optionsSize-current {
+			min-width: 145px;
+		}
+
+		div.fluid-display {
+			div.fluid-display-imageviewer {
+				min-height: 715px;
+				position: relative;
+			}
+			div[id*="display\00003Aiconbutton"] {
+				float: left;
+				left: auto;
+				position: relative;
+				top: auto;
+			}
+			div.controls {
+				margin-top: 20px;
+				position: relative;
+				width: auto;
+				z-index: 2;
+
+				&#iconbuttonContainer {
+					float: right;
+				}
+				&#colorssizesContainer {
+					float: left;
+					max-width: 585px;
+				}
+			}
+
+			div.fluid-display-viewgroup {
+				min-height: 75px;
+				position: relative;
+				z-index: 1;
+				div[id*="display\00003Aviews"] {
+					position: relative;
+					top: auto;
+				}
+			}
+		}
+	}
+	a:hover {
+		border-bottom: 1px dotted transparent;
+	}
+}

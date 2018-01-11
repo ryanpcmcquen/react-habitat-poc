@@ -1,0 +1,37 @@
+{
+	"name": "react-habitat-simple-example-with-webpack-es6",
+	"version": "1.1.0",
+	"description": "Example setup with React Habitat with es6 and webpack",
+	"main": "index.js",
+	"babel": {
+		"presets": ["env", "react"]
+	},
+	"scripts": {
+		"build": "webpack",
+		"prettier":
+			"npx prettier --config .prettierrc --write \"{,!(.git|node_modules|styleguide|test-build)/**/}*.{css,js,json,jsx,less,sass,scss,md}\"",
+		"start": "webpack-dev-server --progress"
+	},
+	"author": "Jenna Salau",
+	"license": "BSD-3-Clause",
+	"private": true,
+	"dependencies": {
+		"babel-core": "",
+		"babel-loader": "",
+		"babel-polyfill": "",
+		"babel-preset-env": "",
+		"babel-preset-react": "",
+		"open-browser-webpack-plugin": "",
+		"prop-types": "",
+		"react": "^16.x.x",
+		"react-dom": "^16.x.x",
+		"react-redux": "",
+		"react-habitat": "",
+		"redux": "",
+		"webpack": "",
+		"webpack-dev-server": ""
+	},
+	"devDependencies": {
+		"prettier": "^1.10.2"
+	}
+}
