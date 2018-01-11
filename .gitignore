@@ -1,8 +1,9 @@
-node_modules/
-bower_components/
+*.dist/
 .sass-cache/
+dist/
+bower_components/
+node_modules/
 package-lock.json
-test-build/
 ./styleguide/
 ./styleguide/*
-dist/
+test-build/
