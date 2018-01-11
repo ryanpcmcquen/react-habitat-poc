@@ -1,26 +1,35 @@
 {
-	"name": "react-habitat-simple-example-with-webpack-es6",
-	"version": "1.1.0",
-	"description": "Example setup with React Habitat with es6 and webpack",
-	"main": "index.js",
+	"name": "react-habitat-poc",
+	"version": "1.0.0",
+	"description": "Please work.",
 	"babel": {
-		"presets": ["env", "react"]
+		"presets": [
+			"env",
+			"react"
+		]
 	},
 	"scripts": {
 		"build": "webpack",
-		"prettier":
-			"npx prettier --config .prettierrc --write \"{,!(.git|node_modules|styleguide|test-build)/**/}*.{css,js,json,jsx,less,sass,scss,md}\"",
+		"prettier": "npx prettier --config .prettierrc --write \"{,!(.git|build|*dist|node_modules|styleguide|test-build)/**/}*.{css,js,json,jsx,less,sass,scss,md}\"",
 		"start": "webpack-dev-server --progress"
 	},
-	"author": "Jenna Salau",
-	"license": "BSD-3-Clause",
+	"author": "slt",
+	"license": "GPL-2.0+",
 	"private": true,
 	"dependencies": {
 		"babel-core": "",
 		"babel-loader": "",
+		"babel-plugin-add-module-exports": "^0.2.1",
+		"babel-plugin-syntax-dynamic-import": "^6.18.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-custom-element-classes": "^0.1.0",
+		"babel-plugin-transform-es2015-modules-systemjs": "^6.24.1",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
 		"babel-polyfill": "",
 		"babel-preset-env": "",
 		"babel-preset-react": "",
+		"extract-text-webpack-plugin": "",
 		"open-browser-webpack-plugin": "",
 		"prop-types": "",
 		"react": "^16.x.x",
