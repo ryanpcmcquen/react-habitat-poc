@@ -31,7 +31,7 @@ let ProductCard = props => {
 };
 ProductCard.propTypes = {
 	/** Adds the _ADD TO CART_ button and functionality. */
-	addToCart: PropTypes.boolean
+	addToCart: PropTypes.bool
 };
 ProductCard.defaultProps = {
 	addToCart: false

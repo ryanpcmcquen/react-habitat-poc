@@ -235,7 +235,7 @@ var ProductCard = function ProductCard(props) {
 };
 ProductCard.propTypes = {
 	/** Adds the _ADD TO CART_ button and functionality. */
-	addToCart: _propTypes2.default.boolean
+	addToCart: _propTypes2.default.bool
 };
 ProductCard.defaultProps = {
 	addToCart: false
