@@ -43,6 +43,7 @@ module.exports = {
 	},
 	plugins: [
 		// Auto open the demo:
-		new OpenBrowserPlugin({ url: "http://localhost:8080" })
+		new OpenBrowserPlugin({ url: "http://localhost:8080" }),
+		new ExtractTextPlugin("styles.css")
 	]
 };

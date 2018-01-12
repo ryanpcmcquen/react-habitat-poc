@@ -3,14 +3,12 @@
 	"version": "1.0.0",
 	"description": "Please work.",
 	"babel": {
-		"presets": [
-			"env",
-			"react"
-		]
+		"presets": ["env", "react"]
 	},
 	"scripts": {
 		"build": "webpack",
-		"prettier": "npx prettier --config .prettierrc --write \"{,!(.git|build|*dist|node_modules|styleguide|test-build)/**/}*.{css,js,json,jsx,less,sass,scss,md}\"",
+		"prettier":
+			"npx prettier --config .prettierrc --write \"{,!(.git|build|*dist|node_modules|styleguide|test-build)/**/}*.{css,js,json,jsx,less,sass,scss,md}\"",
 		"start": "webpack-dev-server --progress"
 	},
 	"author": "slt",
