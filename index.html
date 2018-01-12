@@ -13,8 +13,18 @@
 </head>
 
 <body>
-	<div data-component="Card" data-prop-src="https://makelin.us/300/300">
-	</div>
+	<div data-component="Cart"></div>
+	<ProductCard addToCart alt="Instant Pot" price="$299.95" sku="3436474" />
+	<div
+		data-component="ProductCard"
+		data-prop-addToCart="true"
+		data-prop-alt="Instant Pot"
+		data-prop-price="$299.95"
+		data-prop-sku="3436474"
+	></div>
+	<br />
+	<ProductCard addToCart alt="Teakhaus Edge Grain cutting board" price="$200.00" sku="3422086" />
+
 	<script type="text/javascript" src="dist/app.bundle.js"></script>
 </body>
 

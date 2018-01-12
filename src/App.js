@@ -15,12 +15,22 @@ class App extends ReactHabitat.Bootstrapper {
 		containerBuilder.factory = new ReduxDomFactory(sltStore);
 
 		// Register our components that we want to expose to the DOM:
+
+		containerBuilder
+			.registerAsync(System.import("./components/Button/Button"))
+			.as("Button");
 		containerBuilder
 			.registerAsync(System.import("./components/Card/Card"))
 			.as("Card");
+
 		containerBuilder
 			.registerAsync(System.import("./containers/Cart/Cart"))
 			.as("Cart");
+		containerBuilder
+			.registerAsync(
+				System.import("./containers/ProductCard/ProductCard")
+			)
+			.as("ProductCard");
 
 		// Set the DOM container:
 		this.setContainer(containerBuilder.build());
