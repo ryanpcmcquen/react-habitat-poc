@@ -171,6 +171,10 @@ var _extends2 = __webpack_require__(206);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
+var _assign = __webpack_require__(209);
+
+var _assign2 = _interopRequireDefault(_assign);
+
 var _react = __webpack_require__(52);
 
 var _react2 = _interopRequireDefault(_react);
@@ -211,10 +215,14 @@ var ProductCard = function ProductCard(props) {
 	});
 	var badge = isInCart ? "ADDED TO CART" : null;
 
+	// HACK: Remove `addToCart` to avoid confusing Habitat:
+	var cardProps = (0, _assign2.default)({}, props);
+	delete cardProps.addToCart;
+
 	return _react2.default.createElement(
 		"div",
 		null,
-		_react2.default.createElement(_Card2.default, (0, _extends3.default)({ style: { width: "250px" }, badge: badge }, props)),
+		_react2.default.createElement(_Card2.default, (0, _extends3.default)({ style: { width: "250px" }, badge: badge }, cardProps)),
 		price ? _react2.default.createElement(
 			"div",
 			null,

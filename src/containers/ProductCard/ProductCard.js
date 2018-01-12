@@ -13,9 +13,13 @@ let ProductCard = props => {
 	let isInCart = cart.find(item => item.hasOwnProperty(sku));
 	let badge = isInCart ? "ADDED TO CART" : null;
 
+	// HACK: Remove `addToCart` to avoid confusing Habitat:
+	const cardProps = Object.assign({}, props);
+	delete cardProps.addToCart;
+
 	return (
 		<div>
-			<Card style={{ width: "250px" }} badge={badge} {...props} />
+			<Card style={{ width: "250px" }} badge={badge} {...cardProps} />
 			{price ? <div>{price}</div> : <div />}
 			{addToCart && (
 				<Button
