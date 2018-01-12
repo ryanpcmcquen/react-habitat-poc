@@ -7651,11 +7651,11 @@ var App = function (_ReactHabitat$Bootstr) {
 
 		// Register our components that we want to expose to the DOM:
 
-		containerBuilder.registerAsync(__webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 509))).as("Cart");
+		containerBuilder.registerAsync(__webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 509))).as("Button");
 		containerBuilder.registerAsync(__webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 510))).as("Card");
 
 		containerBuilder.registerAsync(__webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 511))).as("Cart");
-		containerBuilder.registerAsync(__webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 512))).as("Card");
+		containerBuilder.registerAsync(__webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 512))).as("ProductCard");
 
 		// Set the DOM container:
 		_this.setContainer(containerBuilder.build());
