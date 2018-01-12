@@ -1,12 +1,10 @@
-This demo demonstrates a very basic React & React Habitat architecture.
+React, Redux, and React Habitat demo.
 
-## How to play?
-
-Copy this folder to your local machine.
+## How do I play?
 
 ```
-$ npm install
-$ npm start
+npm i
+npm start
 ```
 
-Visit http://localhost:8080/ in your browser
+Visit http://localhost:8080/ in your browser.
