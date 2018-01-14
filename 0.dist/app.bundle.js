@@ -95,7 +95,8 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card(props) {
-	var badge = props.badge,
+	var alt = props.alt,
+	    badge = props.badge,
 	    href = props.href,
 	    sku = props.sku,
 	    src = props.src,
@@ -122,7 +123,7 @@ var Card = function Card(props) {
 			_react2.default.createElement(
 				"a",
 				{ href: href },
-				_react2.default.createElement("img", props)
+				_react2.default.createElement("img", { alt: alt, src: src })
 			)
 		) : _react2.default.createElement(
 			"div",
@@ -132,7 +133,7 @@ var Card = function Card(props) {
 				{ className: "slt-badge" },
 				badge
 			),
-			_react2.default.createElement("img", props)
+			_react2.default.createElement("img", { alt: alt, src: src })
 		)
 	);
 };
@@ -228,7 +229,7 @@ var ProductCard = function ProductCard(props) {
 			null,
 			price
 		) : _react2.default.createElement("div", null),
-		addToCart && _react2.default.createElement(
+		addtocart && _react2.default.createElement(
 			_Button2.default,
 			{
 				color: "primary",
@@ -243,10 +244,10 @@ var ProductCard = function ProductCard(props) {
 };
 ProductCard.propTypes = {
 	/** Adds the _ADD TO CART_ button and functionality. */
-	addToCart: _propTypes2.default.bool
+	addtocart: _propTypes2.default.bool
 };
 ProductCard.defaultProps = {
-	addToCart: false
+	addtocart: false
 };
 
 // This allows us to access the `state` object

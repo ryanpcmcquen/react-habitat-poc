@@ -23,7 +23,8 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card(props) {
-	var badge = props.badge,
+	var alt = props.alt,
+	    badge = props.badge,
 	    href = props.href,
 	    sku = props.sku,
 	    src = props.src,
@@ -50,7 +51,7 @@ var Card = function Card(props) {
 			_react2.default.createElement(
 				"a",
 				{ href: href },
-				_react2.default.createElement("img", props)
+				_react2.default.createElement("img", { alt: alt, src: src })
 			)
 		) : _react2.default.createElement(
 			"div",
@@ -60,7 +61,7 @@ var Card = function Card(props) {
 				{ className: "slt-badge" },
 				badge
 			),
-			_react2.default.createElement("img", props)
+			_react2.default.createElement("img", { alt: alt, src: src })
 		)
 	);
 };

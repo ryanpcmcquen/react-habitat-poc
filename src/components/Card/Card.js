@@ -3,7 +3,7 @@ import "./Badge.css";
 import PropTypes from "prop-types";
 
 const Card = props => {
-	let { badge, href, sku, src, wrapperClasses } = props;
+	let { alt, badge, href, sku, src, wrapperClasses } = props;
 	if (!src && sku) {
 		src = `https://www.surlatable.com/images/customers/c1079/PRO-${sku}/PRO-${sku}_pdp/main_variation_Default_view_1_425x425.`;
 	}
@@ -17,13 +17,13 @@ const Card = props => {
 				<div>
 					{badge && <span className="slt-badge">{badge}</span>}
 					<a href={href}>
-						<img {...props} />
+						<img alt={alt} src={src} />
 					</a>
 				</div>
 			) : (
 				<div>
 					{badge && <span className="slt-badge">{badge}</span>}
-					<img {...props} />
+					<img alt={alt} src={src} />
 				</div>
 			)}
 		</div>
