@@ -8,7 +8,7 @@
 	"scripts": {
 		"build": "webpack",
 		"prettier":
-			"npx prettier --config .prettierrc --write \"{,!(.git|build|*dist|node_modules|styleguide|test-build)/**/}*.{css,js,json,jsx,less,sass,scss,md}\"",
+			"npx prettier --config .prettierrc.json --write \"{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,html,js,json,jsx,less,md,sass,scss}\"",
 		"start": "webpack-dev-server --progress"
 	},
 	"author": "slt",
