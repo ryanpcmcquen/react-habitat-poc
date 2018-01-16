@@ -11,7 +11,7 @@ module.exports = {
 	// },
 	entry: "./src/Manifest.js",
 	output: {
-		// filename: "[name].bundle.js",
+		// filename: "dist/[name].bundle.js"
 		filename: "dist/manifest.bundle.js"
 		// path: `${__dirname}/dist`
 	},
