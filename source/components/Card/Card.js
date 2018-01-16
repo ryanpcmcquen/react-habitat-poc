@@ -2,7 +2,7 @@ import React from "react";
 import "./Badge.css";
 import PropTypes from "prop-types";
 
-const Card = props => {
+const Card = (props) => {
 	let { alt, badge, href, sku, src, wrapperClasses } = props;
 	if (!src && sku) {
 		src = `https://www.surlatable.com/images/customers/c1079/PRO-${sku}/PRO-${sku}_pdp/main_variation_Default_view_1_425x425.`;

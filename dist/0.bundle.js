@@ -1,76 +1,4 @@
-webpackJsonp([0,1,2],{
-
-/***/ 529:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends2 = __webpack_require__(220);
-
-var _extends3 = _interopRequireDefault(_extends2);
-
-var _react = __webpack_require__(55);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(536);
-
-var _propTypes = __webpack_require__(141);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Button = function Button(props) {
-	var children = props.children,
-	    _props$classes = props.classes,
-	    classes = _props$classes === undefined ? "" : _props$classes,
-	    color = props.color,
-	    _props$size = props.size,
-	    size = _props$size === undefined ? "" : _props$size;
-
-	var sizes = {
-		large: "lg",
-		medium: "md",
-		small: "sm",
-		xsmall: "xs"
-	};
-	return _react2.default.createElement(
-		"span",
-		null,
-		_react2.default.createElement(
-			"a",
-			(0, _extends3.default)({
-				className: "btn btn-" + color + " btn-" + sizes[size] + " " + classes
-			}, props),
-			children
-		)
-	);
-};
-Button.propTypes = {
-	/** Apply any css classes using this. */
-	classes: _propTypes2.default.string,
-	/** Accepts Bootstrap colors. */
-	color: _propTypes2.default.string,
-	/** A url that the button will link to. */
-	href: _propTypes2.default.string,
-	/** Follows Bootstrap sizing. */
-	size: _propTypes2.default.oneOf(["xsmall", "small", "medium", "large"])
-};
-Button.defaultProps = {
-	color: "primary"
-};
-
-// @component
-exports.default = Button;
-module.exports = exports["default"];
-
-/***/ }),
+webpackJsonp([0],{
 
 /***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
@@ -86,7 +14,7 @@ var _react = __webpack_require__(55);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(538);
+__webpack_require__(537);
 
 var _propTypes = __webpack_require__(141);
 
@@ -159,110 +87,6 @@ module.exports = exports["default"];
 /***/ }),
 
 /***/ 532:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends2 = __webpack_require__(220);
-
-var _extends3 = _interopRequireDefault(_extends2);
-
-var _assign = __webpack_require__(223);
-
-var _assign2 = _interopRequireDefault(_assign);
-
-var _react = __webpack_require__(55);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Card = __webpack_require__(530);
-
-var _Card2 = _interopRequireDefault(_Card);
-
-var _Button = __webpack_require__(529);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-var _reactRedux = __webpack_require__(221);
-
-var ReactRedux = _interopRequireWildcard(_reactRedux);
-
-var _cartActions = __webpack_require__(540);
-
-var _propTypes = __webpack_require__(141);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ProductCard = function ProductCard(props) {
-	var addtocart = props.addtocart,
-	    cart = props.cart,
-	    price = props.price,
-	    sku = props.sku;
-	// Determine 'on-the-fly' if the sku is inside
-	// of our cart object. This keeps us from having
-	// a needless boolean and wasting memory.
-
-	var isInCart = cart.find(function (item) {
-		return item.hasOwnProperty(sku);
-	});
-	var badge = isInCart ? "ADDED TO CART" : null;
-
-	// HACK: Remove `addtocart` to avoid confusing Habitat:
-	var cardProps = (0, _assign2.default)({}, props);
-	delete cardProps.addtocart;
-
-	return _react2.default.createElement(
-		"div",
-		null,
-		_react2.default.createElement(_Card2.default, (0, _extends3.default)({ style: { width: "250px" }, badge: badge }, cardProps)),
-		price ? _react2.default.createElement(
-			"div",
-			null,
-			price
-		) : _react2.default.createElement("div", null),
-		addtocart && _react2.default.createElement(
-			_Button2.default,
-			{
-				color: "primary",
-				classes: "btn-primary add-to-cart",
-				onClick: function onClick() {
-					return (0, _cartActions.addedToCart)(props);
-				}
-			},
-			"ADD TO CART"
-		)
-	);
-};
-ProductCard.propTypes = {
-	/** Adds the _ADD TO CART_ button and functionality. */
-	addtocart: _propTypes2.default.bool
-};
-ProductCard.defaultProps = {
-	addtocart: false
-};
-
-// This allows us to access the `state` object
-// as a property inside of the `ProductCard` container.
-ProductCard = ReactRedux.connect(function (state, ownProps) {
-	return (0, _extends3.default)({ cart: state.cartReducer.cart }, ownProps);
-})(ProductCard);
-
-// @component
-exports.default = ProductCard;
-module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 533:
 /***/ (function(module, exports) {
 
 /*
@@ -345,7 +169,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 534:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -401,7 +225,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(535);
+var	fixUrls = __webpack_require__(534);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -718,7 +542,7 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ 535:
+/***/ 534:
 /***/ (function(module, exports) {
 
 
@@ -814,60 +638,13 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 536:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(537);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(534)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./Button.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./Button.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
 /***/ 537:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(533)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".btn-primary,\n.btn-primary:active,\n.btn-primary:focus,\n.btn-primary:focus:active,\n.slt-button,\n.slt-button:active,\n.slt-button:focus,\n.slt-button:focus:active {\n\tbackground-color: #6d8b19 !important;\n\tborder-color: #6d8b19 !important;\n}\n\n.btn-primary:hover,\n.btn-primary:hover:active,\n.slt-button:hover,\n.slt-button:hover:active {\n\tbackground-color: #657b28 !important;\n\tborder-color: #657b28 !important;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 538:
-/***/ (function(module, exports, __webpack_require__) {
-
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(539);
+var content = __webpack_require__(538);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -875,7 +652,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(534)(content, options);
+var update = __webpack_require__(533)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -893,10 +670,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 539:
+/***/ 538:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(533)(false);
+exports = module.exports = __webpack_require__(532)(false);
 // imports
 
 
@@ -905,35 +682,6 @@ exports.push([module.i, ".slt-badge {\n\tposition: absolute;\n\tleft: 0px;\n\tto
 
 // exports
 
-
-/***/ }),
-
-/***/ 540:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.addedToCart = undefined;
-
-var _sltStore = __webpack_require__(222);
-
-var _sltStore2 = _interopRequireDefault(_sltStore);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var addedToCart = function addedToCart(props) {
-	_sltStore2.default.dispatch({
-		quantity: 1,
-		sku: props.sku,
-		type: "ADD_TO_CART"
-	});
-};
-
-exports.addedToCart = addedToCart;
 
 /***/ })
 

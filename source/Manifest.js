@@ -28,7 +28,10 @@ class Manifest extends ReactHabitat.Bootstrapper {
 			.as("Cart");
 		containerBuilder
 			.registerAsync(
-				System.import("./containers/ProductCard/ProductCard")
+				new Promise((resolve, reject) => {
+					resolve("./containers/ProductCard/ProductCard");
+				})
+				// System.import("./containers/ProductCard/ProductCard")
 			)
 			.as("ProductCard");
 

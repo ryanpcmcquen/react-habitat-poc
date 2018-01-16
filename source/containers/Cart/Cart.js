@@ -7,7 +7,7 @@ const activeCartStyle = {
 
 // Because this component only has a `render` it
 // can be a function, rather than a class.
-let Cart = props => {
+let Cart = (props) => {
 	let cart = props.cart || [];
 
 	return (

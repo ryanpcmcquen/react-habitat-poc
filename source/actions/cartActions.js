@@ -1,6 +1,6 @@
 import sltStore from "../store/sltStore";
 
-const addedToCart = props => {
+const addedToCart = (props) => {
 	sltStore.dispatch({
 		quantity: 1,
 		sku: props.sku,

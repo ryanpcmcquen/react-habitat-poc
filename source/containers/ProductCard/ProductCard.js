@@ -5,12 +5,12 @@ import * as ReactRedux from "react-redux";
 import { addedToCart } from "../../actions/cartActions.js";
 import PropTypes from "prop-types";
 
-let ProductCard = props => {
+let ProductCard = (props) => {
 	let { addtocart, cart, price, sku } = props;
 	// Determine 'on-the-fly' if the sku is inside
 	// of our cart object. This keeps us from having
 	// a needless boolean and wasting memory.
-	let isInCart = cart.find(item => item.hasOwnProperty(sku));
+	let isInCart = cart.find((item) => item.hasOwnProperty(sku));
 	let badge = isInCart ? "ADDED TO CART" : null;
 
 	// HACK: Remove `addtocart` to avoid confusing Habitat:

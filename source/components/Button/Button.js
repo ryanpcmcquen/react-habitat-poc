@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.css";
 import PropTypes from "prop-types";
 
-const Button = props => {
+const Button = (props) => {
 	let { children, classes = "", color, size = "" } = props;
 	var sizes = {
 		large: "lg",

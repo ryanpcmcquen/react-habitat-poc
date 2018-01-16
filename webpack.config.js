@@ -52,6 +52,7 @@ module.exports = {
 		new ExtractTextPlugin("styles.css"),
 		// Auto open the demo:
 		new OpenBrowserPlugin({ url: "http://localhost:8080" })
+		// Uncomment to minify:
 		// new UglifyJsPlugin()
 	]
 };
