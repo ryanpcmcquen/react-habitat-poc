@@ -22,6 +22,7 @@ class App extends ReactHabitat.Bootstrapper {
 			.registerAsync(System.import("./components/Card/Card"))
 			.as("Card");
 
+		// Register our containers that we want to expose to the DOM:
 		containerBuilder
 			.registerAsync(System.import("./containers/Cart/Cart"))
 			.as("Cart");
