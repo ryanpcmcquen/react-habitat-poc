@@ -4,7 +4,7 @@ import sltStore from "./store/sltStore";
 import reducer from "./reducers/sltReducers";
 import ReduxDomFactory from "./ReduxDomFactory";
 
-class App extends ReactHabitat.Bootstrapper {
+class Manifest extends ReactHabitat.Bootstrapper {
 	constructor() {
 		super();
 
@@ -38,4 +38,4 @@ class App extends ReactHabitat.Bootstrapper {
 }
 
 // Export single instance:
-export default new App();
+export default new Manifest();

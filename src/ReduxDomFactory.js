@@ -19,7 +19,7 @@ export default class ReduxDomFactory {
 		this.store = store;
 	}
 
-	inject(module, props = {}, target) {
+	async inject(module, props = {}, target) {
 		if (target) {
 			ReactDom.render(
 				React.createElement(
@@ -31,12 +31,12 @@ export default class ReduxDomFactory {
 			);
 		} else {
 			console.warn(
-				"Target element is null or undefined. Cannot inject component"
+				"Target element is null or undefined. Cannot inject component."
 			);
 		}
 	}
 
-	dispose(target) {
+	async dispose(target) {
 		if (target) {
 			ReactDom.unmountComponentAtNode(target);
 		}

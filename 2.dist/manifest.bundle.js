@@ -1,6 +1,6 @@
-webpackJsonp([0,1,2],{
+webpackJsonp([2],{
 
-/***/ 509:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10,17 +10,17 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _extends2 = __webpack_require__(206);
+var _extends2 = __webpack_require__(220);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _react = __webpack_require__(52);
+var _react = __webpack_require__(55);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(516);
+__webpack_require__(536);
 
-var _propTypes = __webpack_require__(136);
+var _propTypes = __webpack_require__(141);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -72,197 +72,7 @@ module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 510:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(52);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(518);
-
-var _propTypes = __webpack_require__(136);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Card = function Card(props) {
-	var alt = props.alt,
-	    badge = props.badge,
-	    href = props.href,
-	    sku = props.sku,
-	    src = props.src,
-	    wrapperClasses = props.wrapperClasses;
-
-	if (!src && sku) {
-		src = "https://www.surlatable.com/images/customers/c1079/PRO-" + sku + "/PRO-" + sku + "_pdp/main_variation_Default_view_1_425x425.";
-	}
-	if (!href && sku) {
-		href = "https://www.surlatable.com/product/PRO-" + sku + "/";
-	}
-
-	return _react2.default.createElement(
-		"div",
-		{ className: wrapperClasses, style: { position: "relative" } },
-		href ? _react2.default.createElement(
-			"div",
-			null,
-			badge && _react2.default.createElement(
-				"span",
-				{ className: "slt-badge" },
-				badge
-			),
-			_react2.default.createElement(
-				"a",
-				{ href: href },
-				_react2.default.createElement("img", { alt: alt, src: src })
-			)
-		) : _react2.default.createElement(
-			"div",
-			null,
-			badge && _react2.default.createElement(
-				"span",
-				{ className: "slt-badge" },
-				badge
-			),
-			_react2.default.createElement("img", { alt: alt, src: src })
-		)
-	);
-};
-
-Card.propTypes = {
-	/** A colored badge that overlays on the image. */
-	badge: _propTypes2.default.string,
-	/** A url that the image will link to. */
-	href: _propTypes2.default.string,
-	/** The path to the image (url). */
-	src: _propTypes2.default.string,
-	/** The SKU of the product. This populates the default image. Specifying an image will overwrite the default. */
-	sku: _propTypes2.default.string,
-	/** Classes to apply to the wrapping `<div>`. */
-	wrapperClasses: _propTypes2.default.string
-};
-Card.defaultProps = {};
-
-// @component
-exports.default = Card;
-module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 512:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends2 = __webpack_require__(206);
-
-var _extends3 = _interopRequireDefault(_extends2);
-
-var _assign = __webpack_require__(209);
-
-var _assign2 = _interopRequireDefault(_assign);
-
-var _react = __webpack_require__(52);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Card = __webpack_require__(510);
-
-var _Card2 = _interopRequireDefault(_Card);
-
-var _Button = __webpack_require__(509);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-var _reactRedux = __webpack_require__(207);
-
-var ReactRedux = _interopRequireWildcard(_reactRedux);
-
-var _cartActions = __webpack_require__(520);
-
-var _propTypes = __webpack_require__(136);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ProductCard = function ProductCard(props) {
-	var addtocart = props.addtocart,
-	    cart = props.cart,
-	    price = props.price,
-	    sku = props.sku;
-	// Determine 'on-the-fly' if the sku is inside
-	// of our cart object. This keeps us from having
-	// a needless boolean and wasting memory.
-
-	var isInCart = cart.find(function (item) {
-		return item.hasOwnProperty(sku);
-	});
-	var badge = isInCart ? "ADDED TO CART" : null;
-
-	// HACK: Remove `addtocart` to avoid confusing Habitat:
-	var cardProps = (0, _assign2.default)({}, props);
-	delete cardProps.addtocart;
-
-	return _react2.default.createElement(
-		"div",
-		null,
-		_react2.default.createElement(_Card2.default, (0, _extends3.default)({ style: { width: "250px" }, badge: badge }, cardProps)),
-		price ? _react2.default.createElement(
-			"div",
-			null,
-			price
-		) : _react2.default.createElement("div", null),
-		addtocart && _react2.default.createElement(
-			_Button2.default,
-			{
-				color: "primary",
-				classes: "btn-primary add-to-cart",
-				onClick: function onClick() {
-					return (0, _cartActions.addedToCart)(props);
-				}
-			},
-			"ADD TO CART"
-		)
-	);
-};
-ProductCard.propTypes = {
-	/** Adds the _ADD TO CART_ button and functionality. */
-	addtocart: _propTypes2.default.bool
-};
-ProductCard.defaultProps = {
-	addtocart: false
-};
-
-// This allows us to access the `state` object
-// as a property inside of the `ProductCard` container.
-ProductCard = ReactRedux.connect(function (state, ownProps) {
-	return (0, _extends3.default)({ cart: state.cartReducer.cart }, ownProps);
-})(ProductCard);
-
-// @component
-exports.default = ProductCard;
-module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 513:
+/***/ 533:
 /***/ (function(module, exports) {
 
 /*
@@ -345,7 +155,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 514:
+/***/ 534:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -401,7 +211,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(515);
+var	fixUrls = __webpack_require__(535);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -718,7 +528,7 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ 515:
+/***/ 535:
 /***/ (function(module, exports) {
 
 
@@ -814,13 +624,13 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 516:
+/***/ 536:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(517);
+var content = __webpack_require__(537);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -828,7 +638,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(514)(content, options);
+var update = __webpack_require__(534)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -846,10 +656,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 517:
+/***/ 537:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(513)(false);
+exports = module.exports = __webpack_require__(533)(false);
 // imports
 
 
@@ -858,82 +668,6 @@ exports.push([module.i, ".btn-primary,\n.btn-primary:active,\n.btn-primary:focus
 
 // exports
 
-
-/***/ }),
-
-/***/ 518:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(519);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(514)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./Badge.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./Badge.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 519:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(513)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".slt-badge {\n\tposition: absolute;\n\tleft: 0px;\n\ttop: 0px;\n\tbackground-color: #6d8b19;\n\ttext-align: center;\n\tcolor: white;\n\tpadding: 5px;\n\tfont-size: 16px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 520:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.addedToCart = undefined;
-
-var _sltStore = __webpack_require__(208);
-
-var _sltStore2 = _interopRequireDefault(_sltStore);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var addedToCart = function addedToCart(props) {
-	_sltStore2.default.dispatch({
-		quantity: 1,
-		sku: props.sku,
-		type: "ADD_TO_CART"
-	});
-};
-
-exports.addedToCart = addedToCart;
 
 /***/ })
 

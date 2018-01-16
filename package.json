@@ -41,6 +41,6 @@
 		"webpack-dev-server": ""
 	},
 	"devDependencies": {
-		"prettier": "^1.10.2"
+		"prettier": ""
 	}
 }
