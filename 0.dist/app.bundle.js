@@ -203,7 +203,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ProductCard = function ProductCard(props) {
-	var addToCart = props.addToCart,
+	var addtocart = props.addtocart,
 	    cart = props.cart,
 	    price = props.price,
 	    sku = props.sku;
@@ -216,9 +216,9 @@ var ProductCard = function ProductCard(props) {
 	});
 	var badge = isInCart ? "ADDED TO CART" : null;
 
-	// HACK: Remove `addToCart` to avoid confusing Habitat:
+	// HACK: Remove `addtocart` to avoid confusing Habitat:
 	var cardProps = (0, _assign2.default)({}, props);
-	delete cardProps.addToCart;
+	delete cardProps.addtocart;
 
 	return _react2.default.createElement(
 		"div",
