@@ -3,9 +3,17 @@ const OpenBrowserPlugin = require("open-browser-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-	entry: "./src/App.js",
+	// entry: {
+	// 	Button: "./src/bundle_Button.js",
+	// 	Card: "./src/bundle_Card.js",
+	// 	Cart: "./src/bundle_Cart.js",
+	// 	ProductCard: "./src/bundle_ProductCard.js"
+	// },
+	entry: "./src/Manifest.js",
 	output: {
-		filename: "dist/app.bundle.js"
+		// filename: "[name].bundle.js",
+		filename: "manifest.bundle.js",
+		path: `${__dirname}/dist`
 	},
 	resolve: {
 		extensions: [".js", ".jsx"]

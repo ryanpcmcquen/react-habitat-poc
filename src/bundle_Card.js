@@ -4,7 +4,7 @@ import sltStore from "./store/sltStore";
 import reducer from "./reducers/sltReducers";
 import ReduxDomFactory from "./ReduxDomFactory";
 
-class App extends ReactHabitat.Bootstrapper {
+class Card extends ReactHabitat.Bootstrapper {
 	constructor() {
 		super();
 
@@ -14,23 +14,10 @@ class App extends ReactHabitat.Bootstrapper {
 		// Set the container to use our redux factory:
 		containerBuilder.factory = new ReduxDomFactory(sltStore);
 
-		// Register our components that we want to expose to the DOM:
-
-		containerBuilder
-			.registerAsync(System.import("./components/Button/Button"))
-			.as("Button");
+		// Register our component that we want to expose to the DOM:
 		containerBuilder
 			.registerAsync(System.import("./components/Card/Card"))
 			.as("Card");
-
-		containerBuilder
-			.registerAsync(System.import("./containers/Cart/Cart"))
-			.as("Cart");
-		containerBuilder
-			.registerAsync(
-				System.import("./containers/ProductCard/ProductCard")
-			)
-			.as("ProductCard");
 
 		// Set the DOM container:
 		this.setContainer(containerBuilder.build());
@@ -38,4 +25,4 @@ class App extends ReactHabitat.Bootstrapper {
 }
 
 // Export single instance:
-export default new App();
+export default new Card();

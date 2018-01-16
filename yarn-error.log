@@ -1,0 +1,84 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\rmcquen\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run prettier
+
+PATH: 
+  C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\IBM\Client Access\Emulator;C:\Program Files (x86)\IBM\Client Access\Shared;C:\Program Files (x86)\IBM\Client Access\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files\MacType;C:\Program Files\nodejs\;C:\Users\rmcquen\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\rmcquen\AppData\Local\Programs\Python\Python36-32\;C:\Users\rmcquen\AppData\Local\atom\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\rmcquen\AppData\Local\Keybase\;C:\Users\rmcquen\AppData\Roaming\npm
+
+Yarn version: 
+  1.4.0
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+  	"name": "react-habitat-poc",
+  	"version": "1.0.0",
+  	"description": "Please work.",
+  	"babel": {
+  		"presets": ["env", "react"]
+  	},
+  	"scripts": {
+  		"build": "webpack",
+  		"prettier":
+  			"npx prettier --config .prettierrc.json --write \"{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,js,json,jsx,less,md,sass,scss}\"",
+  		"start": "webpack-dev-server --progress"
+  	},
+  	"author": "slt",
+  	"license": "GPL-2.0+",
+  	"private": true,
+  	"dependencies": {
+  		"babel-core": "",
+  		"babel-loader": "",
+  		"babel-plugin-add-module-exports": "",
+  		"babel-plugin-syntax-dynamic-import": "",
+  		"babel-plugin-transform-class-properties": "",
+  		"babel-plugin-transform-custom-element-classes": "",
+  		"babel-plugin-transform-es2015-modules-systemjs": "",
+  		"babel-plugin-transform-object-rest-spread": "",
+  		"babel-plugin-transform-runtime": "",
+  		"babel-polyfill": "",
+  		"babel-preset-env": "",
+  		"babel-preset-react": "",
+  		"css-loader": "",
+  		"extract-text-webpack-plugin": "",
+  		"open-browser-webpack-plugin": "",
+  		"prop-types": "",
+  		"react": "^16.x.x",
+  		"react-dom": "^16.x.x",
+  		"react-habitat": "",
+  		"react-redux": "",
+  		"redux": "",
+  		"style-loader": "",
+  		"webpack": "",
+  		"webpack-dev-server": ""
+  	},
+  	"devDependencies": {
+  		"prettier": "^1.10.2"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 2
+  Command: C:\windows\system32\cmd.exe
+  Arguments: /d /s /c npx prettier --config .prettierrc.json --write "{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,js,json,jsx,less,md,sass,scss}"
+  Directory: C:\Users\rmcquen\react-habitat-poc
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\rmcquen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\rmcquen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\rmcquen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30822:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

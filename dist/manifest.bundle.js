@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + ".dist/app.bundle.js";
+/******/ 		script.src = __webpack_require__.p + "" + chunkId + ".manifest.bundle.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -7656,7 +7656,6 @@ var App = function (_ReactHabitat$Bootstr) {
 		containerBuilder.factory = new _ReduxDomFactory2.default(_sltStore2.default);
 
 		// Register our components that we want to expose to the DOM:
-
 		containerBuilder.registerAsync(__webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 509))).as("Button");
 		containerBuilder.registerAsync(__webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 510))).as("Card");
 
