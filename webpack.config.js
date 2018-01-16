@@ -1,19 +1,18 @@
+const path = require("path");
 const webpack = require("webpack");
-const OpenBrowserPlugin = require("open-browser-webpack-plugin");
+
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const OpenBrowserPlugin = require("open-browser-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-	// entry: {
-	// 	Button: "./src/bundle_Button.js",
-	// 	Card: "./src/bundle_Card.js",
-	// 	Cart: "./src/bundle_Cart.js",
-	// 	ProductCard: "./src/bundle_ProductCard.js"
-	// },
-	entry: "./src/Manifest.js",
+	entry: {
+		manifest: "./source/Manifest.js"
+	},
 	output: {
-		// filename: "dist/[name].bundle.js"
-		filename: "dist/manifest.bundle.js"
-		// path: `${__dirname}/dist`
+		filename: "[name].bundle.js",
+		path: path.resolve(__dirname, "dist/"),
+		publicPath: "dist/"
 	},
 	resolve: {
 		extensions: [".js", ".jsx"]
@@ -50,8 +49,9 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new ExtractTextPlugin("styles.css"),
 		// Auto open the demo:
-		new OpenBrowserPlugin({ url: "http://localhost:8080" }),
-		new ExtractTextPlugin("styles.css")
+		new OpenBrowserPlugin({ url: "http://localhost:8080" })
+		// new UglifyJsPlugin()
 	]
 };
