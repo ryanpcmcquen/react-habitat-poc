@@ -190,8 +190,6 @@ var _Button2 = _interopRequireDefault(_Button);
 
 var _reactRedux = __webpack_require__(209);
 
-var ReactRedux = _interopRequireWildcard(_reactRedux);
-
 var _cartActions = __webpack_require__(524);
 
 var _propTypes = __webpack_require__(69);
@@ -199,8 +197,6 @@ var _propTypes = __webpack_require__(69);
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactAsyncComponent = __webpack_require__(137);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -212,6 +208,8 @@ var ProductCard = function ProductCard(props) {
 	// Determine 'on-the-fly' if the sku is inside
 	// of our cart object. This keeps us from having
 	// a needless boolean and wasting memory.
+	// It also ensures our determination does not suffer
+	// from caching or any other latency.
 
 	var isInCart = cart.find(function (item) {
 		return item.hasOwnProperty(sku);
@@ -254,8 +252,10 @@ ProductCard.defaultProps = {
 
 // This allows us to access the `state` object
 // as a property inside of the `ProductCard` container.
-ProductCard = ReactRedux.connect(function (state, ownProps) {
-	return (0, _extends3.default)({ cart: state.cartReducer.cart }, ownProps);
+ProductCard = (0, _reactRedux.connect)(function (state, ownProps) {
+	return (0, _extends3.default)({
+		cart: state.cartReducer.cart
+	}, ownProps);
 })(ProductCard);
 
 // @component

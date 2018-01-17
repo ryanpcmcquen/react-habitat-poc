@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Card/Card";
 import Button from "../../components/Button/Button";
-import * as ReactRedux from "react-redux";
+import { connect } from "react-redux";
 import { addedToCart } from "../../actions/cartActions.js";
 import PropTypes from "prop-types";
 import { asyncComponent } from "react-async-component";
@@ -11,6 +11,8 @@ let ProductCard = (props) => {
 	// Determine 'on-the-fly' if the sku is inside
 	// of our cart object. This keeps us from having
 	// a needless boolean and wasting memory.
+	// It also ensures our determination does not suffer
+	// from caching or any other latency.
 	let isInCart = cart.find((item) => item.hasOwnProperty(sku));
 	let badge = isInCart ? "ADDED TO CART" : null;
 
@@ -44,7 +46,7 @@ ProductCard.defaultProps = {
 
 // This allows us to access the `state` object
 // as a property inside of the `ProductCard` container.
-ProductCard = ReactRedux.connect((state, ownProps) => ({
+ProductCard = connect((state, ownProps) => ({
 	cart: state.cartReducer.cart,
 	...ownProps
 }))(ProductCard);
