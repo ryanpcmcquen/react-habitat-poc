@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 529:
+/***/ 514:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10,69 +10,83 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _extends2 = __webpack_require__(221);
-
-var _extends3 = _interopRequireDefault(_extends2);
-
-var _react = __webpack_require__(55);
+var _react = __webpack_require__(32);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(535);
+__webpack_require__(522);
 
-var _propTypes = __webpack_require__(141);
+var _propTypes = __webpack_require__(69);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Button = function Button(props) {
-	var children = props.children,
-	    _props$classes = props.classes,
-	    classes = _props$classes === undefined ? "" : _props$classes,
-	    color = props.color,
-	    _props$size = props.size,
-	    size = _props$size === undefined ? "" : _props$size;
+var Card = function Card(props) {
+	var alt = props.alt,
+	    badge = props.badge,
+	    href = props.href,
+	    sku = props.sku,
+	    src = props.src,
+	    wrapperClasses = props.wrapperClasses;
 
-	var sizes = {
-		large: "lg",
-		medium: "md",
-		small: "sm",
-		xsmall: "xs"
-	};
+	if (!src && sku) {
+		src = "https://www.surlatable.com/images/customers/c1079/PRO-" + sku + "/PRO-" + sku + "_pdp/main_variation_Default_view_1_425x425.";
+	}
+	if (!href && sku) {
+		href = "https://www.surlatable.com/product/PRO-" + sku + "/";
+	}
+
 	return _react2.default.createElement(
-		"span",
-		null,
-		_react2.default.createElement(
-			"a",
-			(0, _extends3.default)({
-				className: "btn btn-" + color + " btn-" + sizes[size] + " " + classes
-			}, props),
-			children
+		"div",
+		{ className: wrapperClasses, style: { position: "relative" } },
+		href ? _react2.default.createElement(
+			"div",
+			null,
+			badge && _react2.default.createElement(
+				"span",
+				{ className: "slt-badge" },
+				badge
+			),
+			_react2.default.createElement(
+				"a",
+				{ href: href },
+				_react2.default.createElement("img", { alt: alt, src: src })
+			)
+		) : _react2.default.createElement(
+			"div",
+			null,
+			badge && _react2.default.createElement(
+				"span",
+				{ className: "slt-badge" },
+				badge
+			),
+			_react2.default.createElement("img", { alt: alt, src: src })
 		)
 	);
 };
-Button.propTypes = {
-	/** Apply any css classes using this. */
-	classes: _propTypes2.default.string,
-	/** Accepts Bootstrap colors. */
-	color: _propTypes2.default.string,
-	/** A url that the button will link to. */
+
+Card.propTypes = {
+	/** A colored badge that overlays on the image. */
+	badge: _propTypes2.default.string,
+	/** A url that the image will link to. */
 	href: _propTypes2.default.string,
-	/** Follows Bootstrap sizing. */
-	size: _propTypes2.default.oneOf(["xsmall", "small", "medium", "large"])
+	/** The path to the image (url). */
+	src: _propTypes2.default.string,
+	/** The SKU of the product. This populates the default image. Specifying an image will overwrite the default. */
+	sku: _propTypes2.default.string,
+	/** Classes to apply to the wrapping `<div>`. */
+	wrapperClasses: _propTypes2.default.string
 };
-Button.defaultProps = {
-	color: "primary"
-};
+Card.defaultProps = {};
 
 // @component
-exports.default = Button;
+exports.default = Card;
 module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 532:
+/***/ 517:
 /***/ (function(module, exports) {
 
 /*
@@ -155,7 +169,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 533:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -211,7 +225,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(534);
+var	fixUrls = __webpack_require__(519);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -528,7 +542,7 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ 534:
+/***/ 519:
 /***/ (function(module, exports) {
 
 
@@ -624,13 +638,13 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 535:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(536);
+var content = __webpack_require__(523);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -638,14 +652,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(533)(content, options);
+var update = __webpack_require__(518)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./Button.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./Button.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./Badge.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./Badge.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -656,15 +670,15 @@ if(false) {
 
 /***/ }),
 
-/***/ 536:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(532)(false);
+exports = module.exports = __webpack_require__(517)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".btn-primary,\n.btn-primary:active,\n.btn-primary:focus,\n.btn-primary:focus:active,\n.slt-button,\n.slt-button:active,\n.slt-button:focus,\n.slt-button:focus:active {\n\tbackground-color: #6d8b19 !important;\n\tborder-color: #6d8b19 !important;\n}\n\n.btn-primary:hover,\n.btn-primary:hover:active,\n.slt-button:hover,\n.slt-button:hover:active {\n\tbackground-color: #657b28 !important;\n\tborder-color: #657b28 !important;\n}\n", ""]);
+exports.push([module.i, ".slt-badge {\n\tposition: absolute;\n\tleft: 0px;\n\ttop: 0px;\n\tbackground-color: #6d8b19;\n\ttext-align: center;\n\tcolor: white;\n\tpadding: 5px;\n\tfont-size: 16px;\n}\n", ""]);
 
 // exports
 

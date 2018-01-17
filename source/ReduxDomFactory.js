@@ -10,6 +10,7 @@
 import { Provider } from "react-redux";
 import React from "react";
 import ReactDom from "react-dom";
+import { asyncComponent } from "react-async-component";
 
 /**
  * React Redux DOM Factory
@@ -19,13 +20,19 @@ export default class ReduxDomFactory {
 		this.store = store;
 	}
 
-	async inject(module, props = {}, target) {
+	inject(module, props = {}, target) {
 		if (target) {
 			ReactDom.render(
 				React.createElement(
 					Provider,
 					{ store: this.store },
-					React.createElement(module, props)
+					React.createElement(
+						// asyncComponent({
+						// 	resolve: () => module
+						// }),
+						module,
+						props
+					)
 				),
 				target
 			);
@@ -36,7 +43,7 @@ export default class ReduxDomFactory {
 		}
 	}
 
-	async dispose(target) {
+	dispose(target) {
 		if (target) {
 			ReactDom.unmountComponentAtNode(target);
 		}
