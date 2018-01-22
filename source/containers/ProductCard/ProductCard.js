@@ -55,4 +55,5 @@ ProductCard = connect((state, ownProps) => ({
 }))(ProductCard);
 
 // @component
-export default asyncComponent({ resolve: () => ProductCard });
+export default ProductCard;
+// export default asyncComponent({ resolve: () => ProductCard });

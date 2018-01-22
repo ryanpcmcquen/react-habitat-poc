@@ -37,5 +37,5 @@ Button.defaultProps = {
 };
 
 // @component
-export default asyncComponent({ resolve: () => Button });
-// export default Button;
+export default Button;
+// export default asyncComponent({ resolve: () => Button });
