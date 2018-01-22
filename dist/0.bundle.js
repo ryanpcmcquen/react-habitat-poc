@@ -201,7 +201,7 @@ var _reactAsyncComponent = __webpack_require__(137);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ProductCard = function ProductCard(props) {
-	var add_to_cart = props.add_to_cart,
+	var addToCart = props.addToCart,
 	    cart = props.cart,
 	    price = props.price,
 	    sku = props.sku;
@@ -216,9 +216,9 @@ var ProductCard = function ProductCard(props) {
 	});
 	var badge = isInCart ? "ADDED TO CART" : null;
 
-	// HACK: Remove `add_to_cart` to avoid confusing Habitat:
+	// HACK: Remove `addToCart` to avoid confusing Habitat:
 	var cardProps = (0, _assign2.default)({}, props);
-	delete cardProps.add_to_cart;
+	delete cardProps.addToCart;
 
 	return _react2.default.createElement(
 		"div",
@@ -229,11 +229,11 @@ var ProductCard = function ProductCard(props) {
 			null,
 			price
 		) : _react2.default.createElement("div", null),
-		add_to_cart && _react2.default.createElement(
+		addToCart && _react2.default.createElement(
 			_Button2.default,
 			{
 				color: "primary",
-				classes: "btn-primary add-to-cart",
+				classes: "btn-primary addToCart",
 				onClick: function onClick() {
 					return (0, _cartActions.addedToCart)(props);
 				}
@@ -244,10 +244,10 @@ var ProductCard = function ProductCard(props) {
 };
 ProductCard.propTypes = {
 	/** Adds the _ADD TO CART_ button and functionality. */
-	add_to_cart: _propTypes2.default.bool
+	addToCart: _propTypes2.default.bool
 };
 ProductCard.defaultProps = {
-	add_to_cart: false
+	addToCart: false
 };
 
 // This allows us to access the `state` object
