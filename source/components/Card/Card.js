@@ -48,5 +48,5 @@ Card.propTypes = {
 Card.defaultProps = {};
 
 // @component
-export default asyncComponent({ resolve: () => Card });
-// export default Card;
+export default Card;
+// export default asyncComponent({ resolve: () => Card });

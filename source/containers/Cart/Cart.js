@@ -29,5 +29,5 @@ Cart = ReactRedux.connect((state, ownProps) => {
 })(Cart);
 
 // @component
-export default asyncComponent({ resolve: () => Cart });
-// export default Cart;
+export default Cart;
+// export default asyncComponent({ resolve: () => Cart });
