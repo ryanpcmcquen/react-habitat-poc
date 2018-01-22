@@ -22,6 +22,8 @@ var _reactRedux = __webpack_require__(209);
 
 var ReactRedux = _interopRequireWildcard(_reactRedux);
 
+var _reactAsyncComponent = __webpack_require__(207);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -59,7 +61,11 @@ Cart = ReactRedux.connect(function (state, ownProps) {
 })(Cart);
 
 // @component
-exports.default = Cart;
+exports.default = (0, _reactAsyncComponent.asyncComponent)({ resolve: function resolve() {
+		return Cart;
+	} });
+// export default Cart;
+
 module.exports = exports["default"];
 
 /***/ })

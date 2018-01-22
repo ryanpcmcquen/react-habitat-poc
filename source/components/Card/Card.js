@@ -1,6 +1,7 @@
 import React from "react";
 import "./Badge.css";
 import PropTypes from "prop-types";
+import { asyncComponent } from "react-async-component";
 
 const Card = (props) => {
 	let { alt = "", badge, href, sku, src, wrapperClasses = "" } = props;
@@ -47,4 +48,5 @@ Card.propTypes = {
 Card.defaultProps = {};
 
 // @component
-export default Card;
+export default asyncComponent({ resolve: () => Card });
+// export default Card;

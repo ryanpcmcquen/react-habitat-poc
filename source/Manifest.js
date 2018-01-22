@@ -3,7 +3,6 @@ import ReactHabitat from "react-habitat";
 import sltStore from "./store/sltStore";
 import reducer from "./reducers/sltReducers";
 import ReduxDomFactory from "./ReduxDomFactory";
-import { asyncComponent } from "react-async-component";
 
 class Manifest extends ReactHabitat.Bootstrapper {
 	constructor() {
@@ -25,19 +24,11 @@ class Manifest extends ReactHabitat.Bootstrapper {
 
 		// Register our containers that we want to expose to the DOM:
 		containerBuilder
-			.registerAsync(
-				// asyncComponent({
-				// resolve: () =>
-				System.import("./containers/Cart/Cart")
-				// })
-			)
+			.registerAsync(System.import("./containers/Cart/Cart"))
 			.as("Cart");
 		containerBuilder
 			.registerAsync(
-				// asyncComponent({
-				// resolve: () =>
 				System.import("./containers/ProductCard/ProductCard")
-				// })
 			)
 			.as("ProductCard");
 

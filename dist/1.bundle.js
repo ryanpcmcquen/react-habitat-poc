@@ -20,6 +20,8 @@ var _propTypes = __webpack_require__(69);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _reactAsyncComponent = __webpack_require__(207);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card(props) {
@@ -85,7 +87,11 @@ Card.propTypes = {
 Card.defaultProps = {};
 
 // @component
-exports.default = Card;
+exports.default = (0, _reactAsyncComponent.asyncComponent)({ resolve: function resolve() {
+		return Card;
+	} });
+// export default Card;
+
 module.exports = exports["default"];
 
 /***/ }),

@@ -24,6 +24,8 @@ var _propTypes = __webpack_require__(69);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _reactAsyncComponent = __webpack_require__(207);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Button = function Button(props) {
@@ -67,7 +69,11 @@ Button.defaultProps = {
 };
 
 // @component
-exports.default = Button;
+exports.default = (0, _reactAsyncComponent.asyncComponent)({ resolve: function resolve() {
+		return Button;
+	} });
+// export default Button;
+
 module.exports = exports["default"];
 
 /***/ }),
@@ -91,6 +97,8 @@ __webpack_require__(522);
 var _propTypes = __webpack_require__(69);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactAsyncComponent = __webpack_require__(207);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -157,7 +165,11 @@ Card.propTypes = {
 Card.defaultProps = {};
 
 // @component
-exports.default = Card;
+exports.default = (0, _reactAsyncComponent.asyncComponent)({ resolve: function resolve() {
+		return Card;
+	} });
+// export default Card;
+
 module.exports = exports["default"];
 
 /***/ }),
@@ -200,7 +212,7 @@ var _propTypes = __webpack_require__(69);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactAsyncComponent = __webpack_require__(137);
+var _reactAsyncComponent = __webpack_require__(207);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
