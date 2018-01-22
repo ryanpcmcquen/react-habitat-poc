@@ -52,12 +52,12 @@ module.exports = {
 		new ExtractTextPlugin("styles.css"),
 		// Auto open the demo:
 		new OpenBrowserPlugin({ url: "http://localhost:8080" }),
+		// This minifies the built sources:
+		new UglifyJsPlugin(),
 		// Define how small something should be for Webpack to separate
 		// it from the build.
 		new webpack.optimize.MinChunkSizePlugin({
 			minChunkSize: 1
-		}),
-		// Uncomment to minify:
-		new UglifyJsPlugin()
+		})
 	]
 };
