@@ -223,6 +223,9 @@ var ProductCard = function ProductCard(props) {
 	// HACK: Remove `addToCart` to avoid confusing Habitat:
 	var cardProps = (0, _assign2.default)({}, props);
 	delete cardProps.addToCart;
+	// TODO:
+	// Determine which props are actually needed by Card
+	// and pass those explicitly.
 
 	return _react2.default.createElement(
 		"div",

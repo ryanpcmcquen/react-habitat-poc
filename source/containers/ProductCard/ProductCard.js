@@ -19,6 +19,9 @@ let ProductCard = (props) => {
 	// HACK: Remove `addToCart` to avoid confusing Habitat:
 	const cardProps = Object.assign({}, props);
 	delete cardProps.addToCart;
+	// TODO:
+	// Determine which props are actually needed by Card
+	// and pass those explicitly.
 
 	return (
 		<div>
