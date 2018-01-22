@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 510:
+/***/ 514:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10,25 +10,29 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(52);
+var _react = __webpack_require__(32);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(518);
+__webpack_require__(522);
 
-var _propTypes = __webpack_require__(136);
+var _propTypes = __webpack_require__(69);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactAsyncComponent = __webpack_require__(207);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card(props) {
-	var alt = props.alt,
+	var _props$alt = props.alt,
+	    alt = _props$alt === undefined ? "" : _props$alt,
 	    badge = props.badge,
 	    href = props.href,
 	    sku = props.sku,
 	    src = props.src,
-	    wrapperClasses = props.wrapperClasses;
+	    _props$wrapperClasses = props.wrapperClasses,
+	    wrapperClasses = _props$wrapperClasses === undefined ? "" : _props$wrapperClasses;
 
 	if (!src && sku) {
 		src = "https://www.surlatable.com/images/customers/c1079/PRO-" + sku + "/PRO-" + sku + "_pdp/main_variation_Default_view_1_425x425.";
@@ -67,26 +71,32 @@ var Card = function Card(props) {
 };
 
 Card.propTypes = {
+	/** The alt tag of the image. */
+	alt: _propTypes2.default.string,
 	/** A colored badge that overlays on the image. */
 	badge: _propTypes2.default.string,
 	/** A url that the image will link to. */
 	href: _propTypes2.default.string,
-	/** The path to the image (url). */
-	src: _propTypes2.default.string,
 	/** The SKU of the product. This populates the default image. Specifying an image will overwrite the default. */
 	sku: _propTypes2.default.string,
+	/** The path to the image (url). */
+	src: _propTypes2.default.string,
 	/** Classes to apply to the wrapping `<div>`. */
 	wrapperClasses: _propTypes2.default.string
 };
 Card.defaultProps = {};
 
 // @component
-exports.default = Card;
+exports.default = (0, _reactAsyncComponent.asyncComponent)({ resolve: function resolve() {
+		return Card;
+	} });
+// export default Card;
+
 module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 513:
+/***/ 517:
 /***/ (function(module, exports) {
 
 /*
@@ -169,7 +179,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 514:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -225,7 +235,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(515);
+var	fixUrls = __webpack_require__(519);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -542,7 +552,7 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 
-/***/ 515:
+/***/ 519:
 /***/ (function(module, exports) {
 
 
@@ -638,13 +648,13 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 518:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(519);
+var content = __webpack_require__(523);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -652,7 +662,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(514)(content, options);
+var update = __webpack_require__(518)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -670,10 +680,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 519:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(513)(false);
+exports = module.exports = __webpack_require__(517)(false);
 // imports
 
 

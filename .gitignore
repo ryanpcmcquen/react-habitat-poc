@@ -5,3 +5,5 @@ package-lock.json
 ./styleguide/
 ./styleguide/*
 test-build/
+yarn-error.log
+yarn.lock

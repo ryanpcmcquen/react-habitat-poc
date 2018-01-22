@@ -8,7 +8,7 @@
 	"scripts": {
 		"build": "webpack",
 		"prettier":
-			"npx prettier --config .prettierrc.json --write \"{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,html,js,json,jsx,less,md,sass,scss}\"",
+			"npx prettier --config .prettierrc.json --write \"{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,js,json,jsx,less,md,sass,scss}\"",
 		"start": "webpack-dev-server --progress"
 	},
 	"author": "slt",
@@ -32,6 +32,7 @@
 		"open-browser-webpack-plugin": "",
 		"prop-types": "",
 		"react": "^16.x.x",
+		"react-async-component": "^1.0.2",
 		"react-dom": "^16.x.x",
 		"react-habitat": "",
 		"react-redux": "",
@@ -41,6 +42,7 @@
 		"webpack-dev-server": ""
 	},
 	"devDependencies": {
-		"prettier": "^1.10.2"
+		"prettier": "",
+		"uglifyjs-webpack-plugin": "^1.1.6"
 	}
 }

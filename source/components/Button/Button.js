@@ -1,8 +1,9 @@
 import React from "react";
 import "./Button.css";
 import PropTypes from "prop-types";
+import { asyncComponent } from "react-async-component";
 
-const Button = props => {
+const Button = (props) => {
 	let { children, classes = "", color, size = "" } = props;
 	var sizes = {
 		large: "lg",
@@ -36,4 +37,5 @@ Button.defaultProps = {
 };
 
 // @component
-export default Button;
+export default asyncComponent({ resolve: () => Button });
+// export default Button;
