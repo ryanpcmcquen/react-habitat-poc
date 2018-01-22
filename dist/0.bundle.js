@@ -95,12 +95,14 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card(props) {
-	var alt = props.alt,
+	var _props$alt = props.alt,
+	    alt = _props$alt === undefined ? "" : _props$alt,
 	    badge = props.badge,
 	    href = props.href,
 	    sku = props.sku,
 	    src = props.src,
-	    wrapperClasses = props.wrapperClasses;
+	    _props$wrapperClasses = props.wrapperClasses,
+	    wrapperClasses = _props$wrapperClasses === undefined ? "" : _props$wrapperClasses;
 
 	if (!src && sku) {
 		src = "https://www.surlatable.com/images/customers/c1079/PRO-" + sku + "/PRO-" + sku + "_pdp/main_variation_Default_view_1_425x425.";
@@ -139,14 +141,16 @@ var Card = function Card(props) {
 };
 
 Card.propTypes = {
+	/** The alt tag of the image. */
+	alt: _propTypes2.default.string,
 	/** A colored badge that overlays on the image. */
 	badge: _propTypes2.default.string,
 	/** A url that the image will link to. */
 	href: _propTypes2.default.string,
-	/** The path to the image (url). */
-	src: _propTypes2.default.string,
 	/** The SKU of the product. This populates the default image. Specifying an image will overwrite the default. */
 	sku: _propTypes2.default.string,
+	/** The path to the image (url). */
+	src: _propTypes2.default.string,
 	/** Classes to apply to the wrapping `<div>`. */
 	wrapperClasses: _propTypes2.default.string
 };
