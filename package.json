@@ -9,7 +9,9 @@
 		"build": "webpack",
 		"prettier":
 			"npx prettier --config .prettierrc.json --write \"{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,js,json,jsx,less,md,sass,scss}\"",
-		"start": "webpack-dev-server --progress"
+		"start": "webpack-dev-server --progress",
+		"styleguide": "styleguidist server",
+		"styleguide:build": "styleguidist build"
 	},
 	"author": "slt",
 	"license": "GPL-2.0+",
@@ -27,8 +29,10 @@
 		"babel-polyfill": "",
 		"babel-preset-env": "",
 		"babel-preset-react": "",
+		"bootstrap": "^3.x.x",
 		"css-loader": "",
 		"extract-text-webpack-plugin": "",
+		"jquery": "^2.x.x",
 		"open-browser-webpack-plugin": "",
 		"prop-types": "",
 		"react": "^16.x.x",
@@ -43,6 +47,7 @@
 	},
 	"devDependencies": {
 		"prettier": "",
+		"react-styleguidist": "^6.2.0",
 		"uglifyjs-webpack-plugin": "^1.1.6"
 	}
 }
