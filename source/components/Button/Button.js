@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { asyncComponent } from "react-async-component";
 
 const Button = (props) => {
-	let { children, classes = "", color, size = "" } = props;
+	let { children, classes = "", color, size = "", text = "" } = props;
 	var sizes = {
 		large: "lg",
 		medium: "md",
@@ -17,7 +17,7 @@ const Button = (props) => {
 				className={`btn btn-${color} btn-${sizes[size]} ${classes}`}
 				{...props}
 			>
-				{children}
+				{children || text}
 			</a>
 		</span>
 	);

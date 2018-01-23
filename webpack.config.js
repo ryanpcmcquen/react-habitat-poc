@@ -53,7 +53,7 @@ module.exports = {
 		// Auto open the demo:
 		new OpenBrowserPlugin({ url: "http://localhost:8080" }),
 		// This minifies the built sources:
-		new UglifyJsPlugin(),
+		// new UglifyJsPlugin(),
 		// Define how small something should be for Webpack to separate
 		// it from the build.
 		new webpack.optimize.MinChunkSizePlugin({
