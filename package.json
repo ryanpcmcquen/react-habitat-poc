@@ -6,7 +6,8 @@
 		"presets": ["env", "react"]
 	},
 	"scripts": {
-		"build": "npm run prettier && webpack && styleguidist build",
+		"build": "webpack",
+		"build:all": "npm run prettier && webpack && styleguidist build",
 		"prettier":
 			"npx prettier --config .prettierrc.json --write \"{,!(.git|*build|*dist|node_modules|styleguide)/**/}*.{css,js,json,jsx,less,md,sass,scss}\"",
 		"start": "webpack-dev-server --progress",
@@ -38,7 +39,8 @@
 		"react": "^16.x.x",
 		"react-async-component": "^1.0.2",
 		"react-dom": "^16.x.x",
-		"react-habitat": "",
+		"react-habitat":
+			"git://github.com/ryanpcmcquen/react-habitat.git#bugfix/lazy-loading",
 		"react-redux": "",
 		"redux": "",
 		"style-loader": "",

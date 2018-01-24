@@ -57,7 +57,7 @@ module.exports = {
 		// Define how small something should be for Webpack to separate
 		// it from the build.
 		new webpack.optimize.MinChunkSizePlugin({
-			minChunkSize: 1
+			minChunkSize: 10000
 		})
 	]
 };
