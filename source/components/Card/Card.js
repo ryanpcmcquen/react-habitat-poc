@@ -49,4 +49,3 @@ Card.defaultProps = {};
 
 // @component
 export default Card;
-// export default asyncComponent({ resolve: () => Card });

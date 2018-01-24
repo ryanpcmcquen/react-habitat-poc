@@ -1,7 +1,6 @@
 import React from "react";
 import "./Button.css";
 import PropTypes from "prop-types";
-import { asyncComponent } from "react-async-component";
 
 const Button = (props) => {
 	let { children, classes = "", color, size = "", text = "" } = props;
@@ -38,4 +37,3 @@ Button.defaultProps = {
 
 // @component
 export default Button;
-// export default asyncComponent({ resolve: () => Button });

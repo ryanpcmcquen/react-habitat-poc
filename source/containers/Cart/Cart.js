@@ -30,4 +30,3 @@ Cart = ReactRedux.connect((state, ownProps) => {
 
 // @component
 export default Cart;
-// export default asyncComponent({ resolve: () => Cart });

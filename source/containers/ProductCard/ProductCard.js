@@ -56,4 +56,3 @@ ProductCard = connect((state, ownProps) => ({
 
 // @component
 export default ProductCard;
-// export default asyncComponent({ resolve: () => ProductCard });
