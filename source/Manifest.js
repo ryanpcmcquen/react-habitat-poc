@@ -18,6 +18,7 @@ class Manifest extends ReactHabitat.Bootstrapper {
 		containerBuilder
 			.registerAsync(() => System.import("./components/Button/Button"))
 			.as("Button");
+
 		containerBuilder
 			.registerAsync(() => System.import("./components/Card/Card"))
 			.as("Card");

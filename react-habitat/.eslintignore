@@ -1,6 +1,0 @@
-dist/**/*.js
-lib/**/*.js
-lib/**/*.jsx
-
-karma.conf.js
-webpack.config.js
