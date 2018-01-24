@@ -1,4 +1,4 @@
-import "babel-polyfill";
+// import "babel-polyfill";
 import ReactHabitat from "react-habitat";
 import sltStore from "./store/sltStore";
 import reducer from "./reducers/sltReducers";

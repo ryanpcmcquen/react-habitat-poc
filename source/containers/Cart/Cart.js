@@ -1,5 +1,5 @@
 import React from "react";
-import * as ReactRedux from "react-redux";
+import { connect } from "react-redux";
 import { asyncComponent } from "react-async-component";
 
 const activeCartStyle = {
@@ -24,7 +24,7 @@ let Cart = (props) => {
 
 // This allows us to access the `state` object
 // as a property inside of the `Cart` container.
-Cart = ReactRedux.connect((state, ownProps) => {
+Cart = connect((state, ownProps) => {
 	return { cart: state.cartReducer.cart, ...ownProps };
 })(Cart);
 
