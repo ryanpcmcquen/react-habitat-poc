@@ -55,9 +55,10 @@ module.exports = {
 		// This minifies the built sources:
 		new UglifyJsPlugin(),
 		// Define how small something should be for Webpack to separate
-		// it from the build.
+		// it from the build. Setting it to '1', guarantees
+		// that all components end up in their own file.
 		new webpack.optimize.MinChunkSizePlugin({
-			minChunkSize: 10000
+			minChunkSize: 1
 		})
 	]
 };
