@@ -7,7 +7,12 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
 	entry: {
-		manifest: "./source/Manifest.js"
+		manifest: "./source/Manifest.js",
+		redux: ["react-habitat", "react-redux", "redux"]
+	},
+	externals: {
+		react: "React",
+		reactdom: "ReactDOM"
 	},
 	output: {
 		filename: "[name].bundle.js",
@@ -54,6 +59,10 @@ module.exports = {
 		new OpenBrowserPlugin({ url: "http://localhost:8080" }),
 		// This minifies the built sources:
 		new UglifyJsPlugin(),
+		new webpack.optimize.CommonsChunkPlugin({
+			names: ["redux"],
+			minChunks: Infinity
+		}),
 		// Define how small something should be for Webpack to separate
 		// it from the build. Setting it to '1', guarantees
 		// that all components end up in their own file.

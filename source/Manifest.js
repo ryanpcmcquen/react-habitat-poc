@@ -11,7 +11,7 @@ class Manifest extends ReactHabitat.Bootstrapper {
 		// Create a new container:
 		const containerBuilder = new ReactHabitat.ContainerBuilder();
 
-		// Set the container to use our redux factory:
+		// Set the container to use our Redux factory:
 		containerBuilder.factory = new ReduxDomFactory(sltStore);
 
 		// Register our components that we want to expose to the DOM:
@@ -36,6 +36,11 @@ class Manifest extends ReactHabitat.Bootstrapper {
 
 		// Set the DOM container:
 		this.setContainer(containerBuilder.build());
+
+		// Allow legacy components to be built as 'one-offs':
+		window.updateHabitat = this.update.bind(this);
+		// ^ To use this, do:
+		//     window.updateHabitat();
 	}
 }
 
