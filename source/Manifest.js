@@ -16,19 +16,57 @@ class Manifest extends ReactHabitat.Bootstrapper {
 
 		// Register our components that we want to expose to the DOM:
 		containerBuilder
-			.registerAsync(System.import("./components/Button/Button"))
+			// .registerAsync(System.import("./components/Button/Button"))
+			// .as("Button");
+			.registerAsync(
+				new Promise((resolve) => {
+					require.ensure(["./components/Button/Button"], () => {
+						resolve(require("./components/Button/Button"));
+					});
+				})
+			)
 			.as("Button");
 		containerBuilder
-			.registerAsync(System.import("./components/Card/Card"))
+			// .registerAsync(System.import("./components/Card/Card"))
+			// .as("Card");
+			.registerAsync(
+				new Promise((resolve) => {
+					require.ensure(["./components/Card/Card"], () => {
+						resolve(require("./components/Card/Card"));
+					});
+				})
+			)
 			.as("Card");
 
 		// Register our containers that we want to expose to the DOM:
 		containerBuilder
-			.registerAsync(System.import("./containers/Cart/Cart"))
-			.as("Cart");
-		containerBuilder
+			// .registerAsync(System.import("./containers/Cart/Cart"))
+			// .as("Cart");
 			.registerAsync(
-				System.import("./containers/ProductCard/ProductCard")
+				new Promise((resolve) => {
+					require.ensure(["./containers/Cart/Cart"], () => {
+						resolve(require("./containers/Cart/Cart"));
+					});
+				})
+			)
+			.as("Cart");
+
+		containerBuilder
+			// .registerAsync(
+			// System.import("./containers/ProductCard/ProductCard")
+			// )
+			// .as("ProductCard");
+			.registerAsync(
+				new Promise((resolve) => {
+					require.ensure(
+						["./containers/ProductCard/ProductCard"],
+						() => {
+							resolve(
+								require("./containers/ProductCard/ProductCard")
+							);
+						}
+					);
+				})
 			)
 			.as("ProductCard");
 
