@@ -12,7 +12,7 @@ module.exports = {
 	},
 	externals: {
 		react: "React",
-		reactdom: "ReactDOM"
+		"react-dom": "ReactDOM"
 	},
 	output: {
 		filename: "[name].bundle.js",
