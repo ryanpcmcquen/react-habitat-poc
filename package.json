@@ -31,6 +31,7 @@
 		"babel-polyfill": "",
 		"babel-preset-env": "",
 		"babel-preset-react": "",
+		"babel-runtime": "^6.26.0",
 		"css-loader": "",
 		"extract-text-webpack-plugin": "",
 		"open-browser-webpack-plugin": "",
