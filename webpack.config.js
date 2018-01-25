@@ -30,7 +30,7 @@ module.exports = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						presets: ["env", "react"],
+						presets: ["env", "es2015-ie", "react"],
 						plugins: [
 							"add-module-exports",
 							"syntax-dynamic-import",
