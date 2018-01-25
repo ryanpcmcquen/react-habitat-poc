@@ -1,3 +1,5 @@
 import { asyncComponent } from "react-async-component";
 
-export default asyncComponent({ resolve: () => System.import("./Card") });
+const Card = asyncComponent({ resolve: () => System.import("./Card") });
+
+export default Card;

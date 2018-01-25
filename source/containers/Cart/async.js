@@ -1,3 +1,5 @@
 import { asyncComponent } from "react-async-component";
 
-export default asyncComponent({ resolve: () => System.import("./Cart") });
+const Cart = asyncComponent({ resolve: () => System.import("./Cart") });
+
+export default Cart;

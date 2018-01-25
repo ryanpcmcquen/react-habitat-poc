@@ -1,5 +1,6 @@
 import { asyncComponent } from "react-async-component";
 
-export default asyncComponent({
+const ProductCard = asyncComponent({
 	resolve: () => System.import("./ProductCard")
 });
+export default ProductCard;

@@ -1,3 +1,5 @@
 import { asyncComponent } from "react-async-component";
 
-export default asyncComponent({ resolve: () => System.import("./Button") });
+const Button = asyncComponent({ resolve: () => System.import("./Button") });
+
+export default Button;

@@ -36,8 +36,7 @@
 		"open-browser-webpack-plugin": "",
 		"prop-types": "",
 		"react-async-component": "^1.0.2",
-		"react-habitat":
-			"git://github.com/ryanpcmcquen/react-habitat.git#bugfix/lazy-loading",
+		"react-habitat": "1.0.0-beta",
 		"react-redux": "",
 		"redux": "",
 		"style-loader": "",
