@@ -10,7 +10,6 @@
 import { Provider } from "react-redux";
 import React from "react";
 import ReactDom from "react-dom";
-import { asyncComponent } from "react-async-component";
 
 /**
  * React Redux DOM Factory
@@ -26,13 +25,7 @@ export default class ReduxDomFactory {
 				React.createElement(
 					Provider,
 					{ store: this.store },
-					React.createElement(
-						// asyncComponent({
-						// 	resolve: () => module
-						// }),
-						module,
-						props
-					)
+					React.createElement(module, props)
 				),
 				target
 			);

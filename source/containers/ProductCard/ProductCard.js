@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../../components/Card/Card";
-import Button from "../../components/Button/Button";
+import Card from "../../components/Card/async";
+import Button from "../../components/Button/async";
 import { connect } from "react-redux";
 import { addedToCart } from "../../actions/cartActions.js";
 import PropTypes from "prop-types";
@@ -56,4 +56,3 @@ ProductCard = connect((state, ownProps) => ({
 
 // @component
 export default ProductCard;
-// export default asyncComponent({ resolve: () => ProductCard });

@@ -1,6 +1,0 @@
-{
-	"bloomReach.js": ["js/bloomReach/**/*.js"],
-	"flipbook.js": ["js/flipbook/**/*.js"],
-	"paginatedSlideshow.js": ["js/paginatedSlideshow/**/*.js"],
-	"sltCarousel.js": ["js/sltCarousel/**/*.js"]
-}
