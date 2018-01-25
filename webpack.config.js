@@ -8,7 +8,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 module.exports = {
 	entry: {
 		manifest: "./source/Manifest.js",
-		redux: ["react-habitat", "react-redux", "redux"]
+		vendor: ["react-habitat", "react-redux", "redux"]
 	},
 	externals: {
 		react: "React",
@@ -60,7 +60,7 @@ module.exports = {
 		// This minifies the built sources:
 		new UglifyJsPlugin(),
 		new webpack.optimize.CommonsChunkPlugin({
-			names: ["redux"],
+			names: ["vendor"],
 			minChunks: Infinity
 		}),
 		// Define how small something should be for Webpack to separate
