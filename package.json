@@ -37,6 +37,7 @@
 		"prop-types": "",
 		"react-async-component": "^1.0.2",
 		"react-habitat": "1.0.0-beta",
+		"react-habitat-redux": "^2.0.3",
 		"react-redux": "",
 		"redux": "",
 		"style-loader": "",

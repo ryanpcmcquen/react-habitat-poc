@@ -2,7 +2,7 @@
 import ReactHabitat from "react-habitat";
 import sltStore from "./store/sltStore";
 import reducer from "./reducers/sltReducers";
-import ReduxDomFactory from "./ReduxDomFactory";
+import { ReduxDomFactory } from "react-habitat-redux";
 
 class Manifest extends ReactHabitat.Bootstrapper {
 	constructor() {
