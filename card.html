@@ -15,7 +15,12 @@
 <body>
 	<div data-component="Card" data-prop-src="https://makelin.us/200/200"></div>
 
-	<script type="text/javascript" src="dist/manifest.bundle.js"></script>
+	<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js" defer></script>
+	<script crossorigin src="https://unpkg.com/react@16.2.0/umd/react.production.min.js" defer></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16.2.0/umd/react-dom.production.min.js" defer></script>
+	<script type="text/javascript" src="dist/vendor.bundle.js" defer></script>
+	<script type="text/javascript" src="dist/manifest.bundle.js" defer></script>
+
 </body>
 
 </html>
