@@ -11,7 +11,7 @@ class Manifest extends ReactHabitat.Bootstrapper {
 		// Create a new container:
 		const containerBuilder = new ReactHabitat.ContainerBuilder();
 
-		// Set the container to use our Redux factory:
+		// Set the container to use the React Habitat Redux factory:
 		containerBuilder.factory = new ReduxDomFactory(sltStore);
 
 		// Register our components that we want to expose to the DOM:
