@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { asyncComponent } from "react-async-component";
 
 const activeCartStyle = {
 	color: "#E57D24"
