@@ -30,15 +30,19 @@ module.exports = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						presets: ["env", "es2015-ie", "react"],
+						presets: [
+							"env",
+							// "es2015-ie",
+							"react"
+						],
 						plugins: [
 							"add-module-exports",
 							"syntax-dynamic-import",
 							"transform-class-properties",
 							"transform-custom-element-classes",
 							"transform-es2015-classes",
-							"transform-object-rest-spread",
-							"transform-runtime"
+							"transform-object-rest-spread"
+							// "transform-runtime"
 						]
 					}
 				}

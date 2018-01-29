@@ -17,35 +17,30 @@
 	"license": "GPL-2.0+",
 	"private": true,
 	"dependencies": {
+		"react-habitat": "1.0.0-beta",
+		"react-habitat-redux": "",
+		"react-redux": "",
+		"redux": ""
+	},
+	"devDependencies": {
 		"babel-core": "",
 		"babel-loader": "",
 		"babel-plugin-add-module-exports": "",
-		"babel-plugin-syntax-dynamic-import": "",
+		"babel-plugin-dynamic-import-webpack": "",
 		"babel-plugin-transform-class-properties": "",
 		"babel-plugin-transform-custom-element-classes": "",
-		"babel-plugin-transform-es2015-modules-systemjs": "",
 		"babel-plugin-transform-object-rest-spread": "",
-		"babel-plugin-transform-runtime": "",
-		"babel-polyfill": "",
 		"babel-preset-env": "",
-		"babel-preset-es2015-ie": "^6.7.0",
 		"babel-preset-react": "",
-		"babel-runtime": "^6.26.0",
 		"css-loader": "",
 		"extract-text-webpack-plugin": "",
 		"open-browser-webpack-plugin": "",
 		"prop-types": "",
-		"react-async-component": "^1.0.2",
-		"react-habitat": "1.0.0-beta",
-		"react-habitat-redux": "^2.0.3",
-		"react-redux": "",
-		"redux": "",
+		"prettier": "",
+		"react-async-component": "",
 		"style-loader": "",
+		"uglifyjs-webpack-plugin": "",
 		"webpack": "",
 		"webpack-dev-server": ""
-	},
-	"devDependencies": {
-		"prettier": "",
-		"uglifyjs-webpack-plugin": "^1.1.6"
 	}
 }
