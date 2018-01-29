@@ -17,7 +17,7 @@
 	"license": "GPL-2.0+",
 	"private": true,
 	"dependencies": {
-		"react-habitat": "1.0.0-beta",
+		"react-habitat": "^1.0.0-beta",
 		"react-habitat-redux": "",
 		"react-redux": "",
 		"redux": ""

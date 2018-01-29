@@ -16,22 +16,20 @@ class Manifest extends ReactHabitat.Bootstrapper {
 
 		// Register our components that we want to expose to the DOM:
 		containerBuilder
-			.registerAsync(() => System.import("./components/Button/async"))
+			.registerAsync(() => import("./components/Button/Button"))
 			.as("Button");
 
 		containerBuilder
-			.registerAsync(() => System.import("./components/Card/async"))
+			.registerAsync(() => import("./components/Card/Card"))
 			.as("Card");
 
 		// Register our containers that we want to expose to the DOM:
 		containerBuilder
-			.registerAsync(() => System.import("./containers/Cart/async"))
+			.registerAsync(() => import("./containers/Cart/Cart"))
 			.as("Cart");
 
 		containerBuilder
-			.registerAsync(() =>
-				System.import("./containers/ProductCard/async")
-			)
+			.registerAsync(() => import("./containers/ProductCard/ProductCard"))
 			.as("ProductCard");
 
 		// Set the DOM container:

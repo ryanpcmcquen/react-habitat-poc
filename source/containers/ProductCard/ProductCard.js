@@ -1,10 +1,11 @@
 import React from "react";
-import Card from "../../components/Card/async";
+
 import Button from "../../components/Button/async";
+import Card from "../../components/Card/async";
+
 import { connect } from "react-redux";
 import { addedToCart } from "../../actions/cartActions.js";
 import PropTypes from "prop-types";
-import { asyncComponent } from "react-async-component";
 
 let ProductCard = (props) => {
 	let { addToCart, cart, price, sku } = props;
