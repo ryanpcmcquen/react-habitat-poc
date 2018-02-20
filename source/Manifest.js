@@ -1,8 +1,10 @@
 // import "babel-polyfill";
 import ReactHabitat from "react-habitat";
-import sltStore from "./store/sltStore";
+import configureStore from "./store/configureStore";
 import reducer from "./reducers/sltReducers";
 import { ReduxDomFactory } from "react-habitat-redux";
+
+const store = configureStore();
 
 class Manifest extends ReactHabitat.Bootstrapper {
 	constructor() {
@@ -12,7 +14,7 @@ class Manifest extends ReactHabitat.Bootstrapper {
 		const containerBuilder = new ReactHabitat.ContainerBuilder();
 
 		// Set the container to use the React Habitat Redux factory:
-		containerBuilder.factory = new ReduxDomFactory(sltStore);
+		containerBuilder.factory = new ReduxDomFactory(store);
 
 		// Register our components that we want to expose to the DOM:
 		containerBuilder
