@@ -50,10 +50,12 @@ ProductCard.defaultProps = {
 
 // This allows us to access the `state` object
 // as a property inside of the `ProductCard` container.
-ProductCard = connect((state, ownProps) => ({
-	cart: state.getState().cartReducer.cart,
-	...ownProps
-}))(ProductCard);
+ProductCard = connect((state, ownProps) => {
+	return {
+		cart: state.cartReducer.cart,
+		...ownProps
+	};
+})(ProductCard);
 
 // @component
 export default ProductCard;
