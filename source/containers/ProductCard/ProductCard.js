@@ -8,7 +8,7 @@ import { addedToCart } from "../../actions/cartActions.js";
 import PropTypes from "prop-types";
 
 let ProductCard = (props) => {
-	let { addToCart, cart, price, sku } = props;
+	let { addToCart, cart, dispatch, price, sku } = props;
 	// Determine 'on-the-fly' if the sku is inside
 	// of our cart object. This keeps us from having
 	// a needless boolean and wasting memory.
@@ -32,7 +32,7 @@ let ProductCard = (props) => {
 				<Button
 					color="primary"
 					classes="btn-primary addToCart"
-					onClick={() => addedToCart(props)}
+					onClick={() => dispatch(addedToCart(props))}
 				>
 					ADD TO CART
 				</Button>
@@ -51,7 +51,7 @@ ProductCard.defaultProps = {
 // This allows us to access the `state` object
 // as a property inside of the `ProductCard` container.
 ProductCard = connect((state, ownProps) => ({
-	cart: state.cartReducer.cart,
+	cart: state.getState().cartReducer.cart,
 	...ownProps
 }))(ProductCard);
 

@@ -7,6 +7,7 @@
 // - The spread operators inside of the `return` make
 //   sure that all former keys & values are passed to the new
 //   object that is returned.
+import * as ActionTypes from "../actions/cartActions";
 const cartReducer = (state = { cart: [] }, action) => {
 	switch (action.type) {
 		case "ADD_TO_CART":

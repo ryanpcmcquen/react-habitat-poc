@@ -1,7 +1,7 @@
 import { createStore } from "redux";
 import sltReducers from "../reducers/sltReducers";
 import { loadState, saveState } from "./localStorage";
-const sltStore = () => {
+const configureStore = () => {
 	const persistedState = loadState();
 
 	const store = createStore(
@@ -13,10 +13,8 @@ const sltStore = () => {
 	);
 
 	store.subscribe(() => {
-		saveState({
-			cart: store.getState().cart
-		});
+		saveState(store.getState());
 	});
 	return store;
 };
-export default sltStore;
+export default configureStore;

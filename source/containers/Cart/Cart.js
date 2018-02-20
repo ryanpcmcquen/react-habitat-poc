@@ -24,7 +24,7 @@ let Cart = (props) => {
 // This allows us to access the `state` object
 // as a property inside of the `Cart` container.
 Cart = connect((state, ownProps) => {
-	return { cart: state.cartReducer.cart, ...ownProps };
+	return { cart: state.getState().cartReducer.cart, ...ownProps };
 })(Cart);
 
 // @component
