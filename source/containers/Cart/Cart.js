@@ -14,7 +14,7 @@ let Cart = (props) => {
 				className="glyphicon glyphicon-shopping-cart"
 				style={cart.length ? activeCartStyle : null}
 			/>
-			<span className="shopping-cart-count">({cart.length || 0})</span>
+			(<span className="shopping-cart-count">{cart.length || 0}</span>)
 		</div>
 	);
 };
